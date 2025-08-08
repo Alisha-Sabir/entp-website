@@ -10,41 +10,41 @@ export default function BusinessPayment() {
   const paymentSlideData = [
     {
       id: 1,
-      icon: "/images/copy_icon.png",
+      // icon: "/images/copy_icon.png",
       title: "Create a free account",
       description:
         "Onboard with entterprice within minutes - no fees, no hassle, no minimum balance",
-      slide: "/images/payment_slide_1.png",
+      slide: "/images/slide_1.png",
       //   width: 800,
       //   height: 400,
     },
     {
       id: 2,
-      icon: "/images/access_icon.png",
+      // icon: "/images/access_icon.png",
       title: "Complete KYB & Upload Documents",
       description:
         "Submit your business details, ownership structure, and documents to meet regulatory requirements.",
-      slide: "/images/payment_slide_1.png",
+      slide: "/images/slide_2.png",
       //   width: 800,
       //   height: 400,
     },
     {
       id: 3,
-      icon: "/images/control_icon.png",
+      // icon: "/images/control_icon.png",
       title: "Get Verified by Compliance Team",
       description:
         "Our team reviews your information to verify and activate your account swiftly and securely.",
-      slide: "/images/payment_slide_1.png",
+      slide: "/images/slide_3.png",
       //   width: 500,
       //   height: 400,
     },
     {
       id: 4,
-      icon: "/images/control_icon.png",
+      // icon: "/images/control_icon.png",
       title: "Start Making Global Payments",
       description:
         "Once verified, initiate vendor payments globally, set beneficiaries, and track transfers in real-time.",
-      slide: "/images/payment_slide_1.png",
+      slide: "/images/slide_4.png",
       //   width: 500,
       //   height: 400,
     },
