@@ -40,7 +40,7 @@ export default function Home() {
       <FXSection />
       <TransferAnywhere />
       <TrackSection />
-      <GlobalFootprint />
+      {/* <GlobalFootprint /> */}
       <div className="newsletter-container">
         <NewsLetter />
       </div>
