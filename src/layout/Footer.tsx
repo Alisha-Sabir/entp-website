@@ -69,7 +69,7 @@ export default function Footer({ style }: any) {
               <Col md={6} lg={2} xl={2} className="mx-auto mb-4 custom-link">
                 <h6 className="mb-4">About Us</h6>
                 <p>
-                  <Link href="/careers" className="text-reset">
+                  <Link href="/" className="text-reset">
                     Careers
                   </Link>
                 </p>
@@ -84,7 +84,7 @@ export default function Footer({ style }: any) {
                   Team
                 </p>
                 <p className="text-reset">
-                  <Link href="/contact-us" className="text-reset">
+                  <Link href="/" className="text-reset">
                     Contact Us
                   </Link>
                 </p>

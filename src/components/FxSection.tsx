@@ -15,7 +15,7 @@ const FXSection = () => {
               Hong Kong, China, and key trade corridors.
             </p>
           </Col>
-          <Row className="mt-5">
+          <Row className="my-5">
             <Col md={6} className="text-start">
               <Image
                 src="/images/fx_screen_1.png"

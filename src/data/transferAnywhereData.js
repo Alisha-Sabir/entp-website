@@ -41,20 +41,20 @@ const transferAnywhereData = [
     cardText: "HKD",
     imgAlt: "HKD",
   },
+  // {
+  //   id: 8,
+  //   cardImg: "/images/SAR.png",
+  //   cardText: "SAR",
+  //   imgAlt: "SAR",
+  // },
   {
     id: 8,
-    cardImg: "/images/SAR.png",
-    cardText: "SAR",
-    imgAlt: "SAR",
-  },
-  {
-    id: 9,
     cardImg: "/images/CAD.png",
     cardText: "CAD",
     imgAlt: "CAD",
   },
   {
-    id: 10,
+    id: 9,
     cardImg: "/images/SGD.png",
     cardText: "SGD",
     imgAlt: "SGD",

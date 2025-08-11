@@ -7,16 +7,16 @@ import Slider from "react-slick";
 const TransferAnywhere = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 8,
+    slidesToShow: 9,
     autoplay: true,
-    speed: 18000,
+    speed: 19000,
     pauseOnHover: false, // Prevent pause on hover
     pauseOnFocus: false, // Prevent pause on focus
     autoplaySpeed: 0,
     // className: "center",
     // centerMode: true,
     cssEase: "linear",
-    slidesToScroll: 8,
+    slidesToScroll: 9,
     // dots: true,
     responsive: [
       {
@@ -52,7 +52,7 @@ const TransferAnywhere = () => {
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 9,
           // slidesToScroll: 5,
           infinite: true,
           pauseOnHover: false,
@@ -79,7 +79,7 @@ const TransferAnywhere = () => {
               return (
                 <div key={item.id} className="py-3 pb-5">
                   <Card
-                    style={{ maxWidth: "120px" }}
+                    style={{ maxWidth: "130px" }}
                     className="d-flex align-items-center currency-card border-1 border-secondary"
                   >
                     <Image
@@ -88,7 +88,7 @@ const TransferAnywhere = () => {
                       width={90}
                       height={83}
                       quality={100}
-                      className="img-fluid pt-3"
+                      className="img-fluid pt-3 currency-image"
                     />
                     <span className="py-4">{item.cardText}</span>
                   </Card>

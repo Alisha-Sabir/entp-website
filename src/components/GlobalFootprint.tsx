@@ -49,8 +49,10 @@ const GlobalFootprint = () => {
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <p style={{ maxWidth: "800px" }} className="para-color">
-              Explore Entterprice’s presence across strategic markets and
-              financial corridors.
+              {/* Explore Entterprice’s presence across strategic markets and
+              financial corridors. */}
+              Entterprice has a global presence across four jurisdictions and
+              expanding.
             </p>
           </Col>
           <Row>

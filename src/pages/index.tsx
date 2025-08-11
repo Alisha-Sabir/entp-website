@@ -3,6 +3,8 @@ import FXSection from "@/components/FxSection";
 import GlobalFootprint from "@/components/GlobalFootprint";
 import HomeSection from "@/components/HomeSection";
 import InternationalTransaction from "@/components/InternationalTransaction";
+import RelationshipManager from "@/components/RelationshipManager";
+import TeamComponent from "@/components/TeamComponent";
 import TrackSection from "@/components/TrackSection";
 import TransferAnywhere from "@/components/TransferAnywhere";
 import WorkWith from "@/components/WorkWith";
@@ -14,9 +16,9 @@ export default function Home() {
   return (
     <>
       <Header />
+      <HomeSection />
       <BusinessPayment />
       <InternationalTransaction />
-      {/* <HomeSection /> */}
       {/* <div style={{ position: "relative" }}>
         <NewsLetter
           style={{
@@ -39,6 +41,7 @@ export default function Home() {
       <WorkWith />
       <FXSection />
       <TransferAnywhere />
+      {/* <RelationshipManager /> */}
       <TrackSection />
       {/* <GlobalFootprint /> */}
       <div className="newsletter-container">
