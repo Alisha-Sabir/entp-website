@@ -101,11 +101,11 @@ export default function BusinessPayment() {
           </Col>
         </div>
         <Row className="d-flex align-items-center">
-          <Col md={12} lg={6} xl={5} className="pe-5">
+          <Col md={12} lg={6} xl={5} className="pe-lg-5">
             {paymentSlideData.map((item, index) => (
               <div
                 key={item.id}
-                className="d-flex align-items-start gap-3 payment-card pe-1"
+                className="d-flex align-items-start gap-3 payment-card pe-1 my-2 my-lg-0"
               >
                 {/* xs - md- steps */}
                 <Col
@@ -153,20 +153,18 @@ export default function BusinessPayment() {
                   }}
                 >
                   <div>
-                    <Row>
-                      <Col md={12}>
-                        <span style={{ fontSize: "19px" }} className="fw-bold">
-                          {item.title}
-                        </span>
-                        <br />
-                        <p
-                          className="font-medium m-0 p-0"
-                          style={{ color: "#6D6D6C" }}
-                        >
-                          {item.description}
-                        </p>
-                      </Col>
-                    </Row>
+                    <Col md={12}>
+                      <span style={{ fontSize: "19px" }} className="fw-bold">
+                        {item.title}
+                      </span>
+                      <br />
+                      <p
+                        className="font-medium m-0 p-0"
+                        style={{ color: "#6D6D6C" }}
+                      >
+                        {item.description}
+                      </p>
+                    </Col>
                   </div>
                 </Card>
               </div>

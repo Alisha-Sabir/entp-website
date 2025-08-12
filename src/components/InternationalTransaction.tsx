@@ -36,7 +36,7 @@ const InternationalTransaction = () => {
   ];
   return (
     <section className="linear-bg">
-      <Container fluid className="ms-0 ps-0">
+      <Container fluid>
         <Row className=" d-flex justify-content-center align-items-center">
           <Col md={12} lg={5} xl={4}>
             <div className="globe-container-b">
