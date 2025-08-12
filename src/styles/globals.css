@@ -321,6 +321,20 @@ body {
   z-index: 1;
 }
 
+.nav-link {
+  border-bottom: 2px solid transparent !important;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #f8d613 !important;
+  transition: 0.2s ease-in;
+}
+
+.nav-link.active {
+  background-color: #f8d613 !important;
+  color: #f8d613 !important;
+}
+
 /* 
 .border-light {
   border-right: 2px solid yellow;
@@ -733,6 +747,13 @@ body {
 } */
 
 /* *****************        Responsive Media Screens          ********************** */
+
+@media (max-width: 2559px) {
+  .ps-xxl-custom {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
 
 @media (max-width: 1440px) {
 }

@@ -2,6 +2,15 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 import Image from "next/image";
 
 const InternationalTransaction = () => {
+  const breakpoints = {
+    xs: "0px",
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+    xxl: "1440px",
+  };
+
   const cards = [
     {
       id: 1,
@@ -36,7 +45,7 @@ const InternationalTransaction = () => {
   ];
   return (
     <section className="linear-bg">
-      <Container fluid>
+      <Container fluid className="ps-xxl-custom">
         <Row className=" d-flex justify-content-center align-items-center">
           <Col md={12} lg={5} xl={4}>
             <div className="globe-container-b">
@@ -64,70 +73,72 @@ const InternationalTransaction = () => {
             </div>
           </Col>
           <Col md={12} lg={7} xl={8} className="py-5 px-4 ps-md-5 px-xl-0">
-            <h1 className="font-bold">
-              Purpose-built to facilitate
-              <br />
-              International Trade
-            </h1>
-            <h5 className="fw-medium pe-md-5">
-              Pay and collect from vendors instantly, anywhere anytime,
-              <br />
-              using Entteprice
-            </h5>
-            <Row>
-              <div className="d-block d-md-flex pt-5 pb-3 pb-xl-0">
-                {cards.slice(0, 3).map((item: any, index: any) => (
-                  <Col
-                    key={item.id}
-                    xs={12}
-                    md={4}
-                    lg={4}
-                    className="pe-lg-1 pe-xl-3"
-                  >
-                    <Col md={12}>
-                      <Image
-                        src={item.img}
-                        alt={`Feature ${index + 1}`}
-                        width={30}
-                        height={40}
-                        quality={100}
-                        className="img-fluid"
-                      />
+            <div className="ms-lg-5">
+              <h1 className="font-bold">
+                Purpose-built to facilitate
+                <br />
+                International Trade
+              </h1>
+              <h5 className="fw-medium pe-md-5">
+                Pay and collect from vendors instantly, anywhere anytime,
+                <br />
+                using Entteprice
+              </h5>
+              <Row>
+                <div className="d-block d-md-flex pt-5 pb-3 pb-xl-0">
+                  {cards.slice(0, 3).map((item: any, index: any) => (
+                    <Col
+                      key={item.id}
+                      xs={12}
+                      md={4}
+                      lg={4}
+                      className="pe-lg-1 pe-xl-3"
+                    >
+                      <Col md={12}>
+                        <Image
+                          src={item.img}
+                          alt={`Feature ${index + 1}`}
+                          width={30}
+                          height={40}
+                          quality={100}
+                          className="img-fluid"
+                        />
+                      </Col>
+                      <Col md={7} className="fw-medium mt-3">
+                        <p>{item.text}</p>
+                      </Col>
                     </Col>
-                    <Col md={7} className="fw-medium mt-3">
-                      <p>{item.text}</p>
+                  ))}
+                </div>
+              </Row>
+              <Row>
+                <div className="d-block d-md-flex pt-md-5 pb-3 pb-xl-0">
+                  {cards.slice(3, 6).map((item: any, index: any) => (
+                    <Col
+                      key={item.id}
+                      xs={12}
+                      md={4}
+                      lg={4}
+                      className="pe-lg-1 pe-xl-3"
+                    >
+                      <Col md={12}>
+                        <Image
+                          src={item.img}
+                          alt={`Feature ${index + 4}`}
+                          width={30}
+                          height={40}
+                          quality={100}
+                          className="img-fluid"
+                        />
+                      </Col>
+                      <Col md={8} className="fw-medium mt-3">
+                        <p>{item.text}</p>
+                      </Col>
                     </Col>
-                  </Col>
-                ))}
-              </div>
-            </Row>
-            <Row>
-              <div className="d-block d-md-flex pt-md-5 pb-3 pb-xl-0">
-                {cards.slice(3, 6).map((item: any, index: any) => (
-                  <Col
-                    key={item.id}
-                    xs={12}
-                    md={4}
-                    lg={4}
-                    className="pe-lg-1 pe-xl-3"
-                  >
-                    <Col md={12}>
-                      <Image
-                        src={item.img}
-                        alt={`Feature ${index + 4}`}
-                        width={30}
-                        height={40}
-                        quality={100}
-                        className="img-fluid"
-                      />
-                    </Col>
-                    <Col md={8} className="fw-medium mt-3">
-                      <p>{item.text}</p>
-                    </Col>
-                  </Col>
-                ))}
-              </div>
-            </Row>
+                  ))}
+                </div>
+              </Row>
+            </div>
           </Col>
         </Row>
       </Container>
