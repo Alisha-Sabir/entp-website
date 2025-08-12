@@ -5,7 +5,7 @@ const FXSection = () => {
   return (
     <>
       <section className="fx-wave-bg">
-        <Container fluid className="mt-5 text-center py-5 ">
+        <Container fluid className="mt-xl-5 text-center py-3 py-xl-5">
           <Col className="pt-3">
             <h1 className="font-bold">Slash your FX Rates</h1>
           </Col>
@@ -22,7 +22,7 @@ const FXSection = () => {
                 alt="FX Major Currencies"
                 width={700}
                 height={100}
-                className="img-fluid"
+                className="img-fluid mb-3 mb-md-0"
                 // style={{ zIndex: 1 }}
               />
             </Col>

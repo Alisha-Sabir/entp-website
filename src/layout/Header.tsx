@@ -140,7 +140,7 @@ const Header = () => {
                 <div className="glow-line d-none d-xl-block"></div>
 
                 <Nav.Link
-                  // onClick={() => handleNavigation("/about-us")}
+                  // onClick={() => router.push("/governance")}
                   className="text-white nav-links px-xl-3"
                 >
                   Governance

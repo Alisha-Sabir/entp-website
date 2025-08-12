@@ -7,7 +7,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { RiTwitterXFill, RiYoutubeFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 
-export default function Footer({ style }: any) {
+export default function Footer() {
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => setShowModal(true);
@@ -16,11 +16,11 @@ export default function Footer({ style }: any) {
   return (
     <>
       <footer
-        className="text-light overflow-hidden vh-100 d-flex flex-column justify-content-end"
+        className="text-light overflow-hidden pt-md-5 pt-lg-5 d-flex flex-column justify-content-end"
         // style={style}
         style={{ backgroundColor: "#22221D" }}
       >
-        <Container className="text-center text-md-start pb-5">
+        <Container className="text-center text-md-start pb-5 pt-xl-5">
           <Row className="pt-5">
             <Col md={4} lg={7} className="pt-5 overflow-hidden">
               <Image

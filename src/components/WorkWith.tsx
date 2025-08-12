@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Button, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 const WorkWith = () => {
   const cards = [
@@ -34,7 +34,7 @@ const WorkWith = () => {
                 <>
                   <h4
                     style={{ color: "#383838", lineHeight: "33px" }}
-                    className="font-medium pe-5"
+                    className="font-medium pe-xl-5"
                   >
                     We provide EnTTerPrice Accounts for Payout, Collection and
                     Corporate FX to Startups, SME’s and Traders within the
@@ -51,14 +51,14 @@ const WorkWith = () => {
               width={500}
               height={50}
               quality={100}
-              className="img-fluid mb-3 mb-md-0"
+              className="img-fluid mb-3 mb-md-0 mt-3 mt-lg-0"
             />
           </Col>
         </div>
-        <Row className="text-center">
+        <div className="text-center">
           <div
             style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-lg-flex pt-5 pb-3 pb-xl-0 gap-3"
+            className="d-block d-lg-flex pt-5 pb-3 pb-xl-0"
           >
             {cards.map((item: any, index: any) => (
               <Col
@@ -66,7 +66,7 @@ const WorkWith = () => {
                 xs={12}
                 md={12}
                 lg={4}
-                className="rounded-3 pt-5 pb-3 px-5"
+                className="rounded-3 pt-5 pb-3 px-2 px-xl-5 mb-2 mb-lg-0 me-lg-3"
                 style={{ border: "2px solid #ededed" }}
               >
                 <Col md={12}>
@@ -88,7 +88,7 @@ const WorkWith = () => {
               </Col>
             ))}
           </div>
-        </Row>
+        </div>
       </Container>
     </section>
   );

@@ -287,12 +287,38 @@ body {
   background-color: transparent;
   color: white;
   font-weight: var(--medium);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.currency-card::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #f8d613;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 1s ease, height 1s ease;
+  z-index: 0;
+}
+
+.currency-card:hover::before {
+  width: 300%;
+  height: 300%;
 }
 
 .currency-card:hover {
-  background-color: #f8d613;
-  /* box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); */
   color: black;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.currency-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* 
@@ -353,18 +379,18 @@ body {
   /* font-family: ; */
 }
 
-.form-control:focus {
+.letter .form-control:focus {
   box-shadow: 0 0 0 0.1rem transparent;
   border: 1px solid transparent;
 }
 
-.form-control-lg {
+.letter .form-control-lg {
   background-color: #ffeb7a !important;
   border: 3px solid #fff19e !important;
   font-size: 18px;
 }
 
-.form-control-lg::placeholder {
+.letter .form-control-lg::placeholder {
   color: black !important;
 }
 
@@ -478,26 +504,6 @@ body {
   background-color: #ffd700;
   content: "";
 }
-
-/* @media (max-width: 1440px) {
- 
-}
-
-@media (max-width: 1260px) {
-  
-}
-
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 768px) {
- 
-}
-
-@media (max-width: 576px) {
-  
-} */
 
 /* 
 @keyframes para {
@@ -667,11 +673,10 @@ body {
 
 .manager-details {
   position: absolute;
-  bottom: -20%;
+  bottom: -15%;
   left: 50%;
   opacity: 0;
   transform: translate(-50%, calc(-50% + 100%));
-
   padding: 1rem;
   color: black;
   background: #f8d613;
@@ -726,3 +731,121 @@ body {
 .slider-container.manager-section .slick-dots li.slick-active button {
   background-color: #ffd700;
 } */
+
+/* *****************        Responsive Media Screens          ********************** */
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1260px) {
+}
+
+@media (max-width: 1024px) {
+  .globe {
+    width: 350px;
+    height: 350px;
+  }
+
+  .fx-rate {
+    left: 80px;
+    width: 100px;
+  }
+
+  .transfer {
+    right: 0px;
+    width: 100px;
+  }
+
+  .manager-details {
+    bottom: -25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .manager-details {
+    bottom: -20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .globe {
+    width: 230px;
+    height: 230px;
+  }
+
+  .fx-rate {
+    left: 80px;
+    width: 80px;
+  }
+
+  .transfer {
+    width: 80px;
+  }
+
+  .globe-container-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    width: 220px;
+  }
+  .globe-b {
+    width: 300px;
+    height: 400px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+  }
+
+  .manager-details {
+    bottom: -20%;
+  }
+}
+
+/* @media (max-width: 1440px) {
+  .container-fluid {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+.glass-bg {
+  background: #3d3c2f96;
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form .form-control-lg {
+  background-color: #d7d6d0 !important;
+  border: 3px solid #d7d6d0 !important;
+  font-size: 18px;
+  font-weight: var(--medium) !important;
+}
+
+.contact-form .input-group-text {
+  background-color: #d7d6d0;
+  font-weight: var(--medium) !important;
+  font-size: 18px !important;
+  text-align: top !important;
+  /* color: red !important; */
+}
+
+.contact-form .form-control:focus {
+  box-shadow: 0 0 0 0.1rem transparent;
+  border: 1px solid transparent;
+}
+
+/* Accordion FAQ section */
+
+.accordion-button:hover {
+  background-color: #ffff;
+  color: black;
+  box-shadow: 0 0 0 0.1rem #ffd700;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffff;
+  color: black;
+  box-shadow: 0 0 0 0.1rem #ffd700;
+}

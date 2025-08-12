@@ -5,7 +5,7 @@ export default function RelationshipManager() {
   return (
     <>
       <TeamComponent
-        backgroundColor="white"
+        // backgroundColor="white"
         heading={relationshipManager.heading}
         subHeading={
           <h5

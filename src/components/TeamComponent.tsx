@@ -13,14 +13,14 @@ interface TeamMember {
 }
 
 interface TeamComponentProps {
-  backgroundColor: string;
+  //   backgroundColor: string;
   heading?: string;
   subHeading?: any;
   members: TeamMember[];
 }
 
 export default function TeamComponent({
-  backgroundColor,
+  //   backgroundColor,
   heading,
   subHeading,
   members,
@@ -68,12 +68,11 @@ export default function TeamComponent({
   };
 
   return (
-    <section style={{ backgroundColor }}>
-      <Container className="mt-5 text-center text-lg-start mb-5 pb-5">
+    <section>
+      <Container className="mt-5 text-center text-lg-start mb-4 mb-md-5 pb-xl-0">
         <div className="justify-content-center d-flex">
           <Col xs={12} xl={8} className="text-center">
             <h1 className="font-bold">{heading}</h1>
-
             <style>
               {`
               .custom-color span {
@@ -82,6 +81,7 @@ export default function TeamComponent({
             `}
             </style>
             <div
+              className="mt-3"
               style={{ color: "#6D6D6C" }}
               //   className="font-bold"
               //   dangerouslySetInnerHTML={{
@@ -109,8 +109,8 @@ export default function TeamComponent({
                     {member.memberName}
                   </p>
                   <div className="manager-details rounded-3 text-start">
-                    <b className="fs-5">{member.memberName}</b>
-                    <p style={{ fontSize: "18px" }}>{member.memberQualities}</p>
+                    <b style={{ fontSize: "18px" }}>{member.memberName}</b>
+                    <p style={{ fontSize: "15px" }}>{member.memberQualities}</p>
                   </div>
                 </div>
               </div>

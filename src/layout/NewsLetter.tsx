@@ -71,14 +71,14 @@ const NewsLetter = ({ style }: any) => {
   return (
     <section style={style}>
       <Container
-        className="pb-md-5 px-5 letter-bg rounded-3 shadow-lg"
+        className="pb-md-5 px-xl-5 letter-bg rounded-3 shadow-lg pt-xl-5"
         style={{
           backgroundColor: "#f8d613",
         }}
       >
-        <Form onSubmit={handleSubmit(onSubmit)} className="px-5">
-          <Row className="d-flex flex-row align-items-center justify-content-center px-5">
-            <Col xs={12} md={8} lg={10} className="text-center pt-5">
+        <Form onSubmit={handleSubmit(onSubmit)} className="px-xl-5">
+          <Row className="d-flex flex-row align-items-center justify-content-center px-xl-5">
+            <Col xs={12} md={12} lg={10} className="text-center pt-5">
               <Image
                 src="/images/letter_box.png"
                 alt="newsletter_icon"
@@ -94,7 +94,7 @@ const NewsLetter = ({ style }: any) => {
               </p>
             </Col>
           </Row>
-          <Row className="my-3 px-5">
+          <Row className="my-3 px-xl-5 letter">
             <Col xs={12} md={4} lg={4} className="mb-4 mb-md-0">
               <Form.Control
                 type="text"
@@ -149,7 +149,7 @@ const NewsLetter = ({ style }: any) => {
                   },
                 })}
                 size="lg"
-                className="  py-2"
+                className="py-2"
                 maxLength={100}
               />
               {errors.email && (

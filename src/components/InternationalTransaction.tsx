@@ -31,14 +31,14 @@ const InternationalTransaction = () => {
     {
       id: 6,
       text: "Built for Business Users",
-      img: "/images/b_icon_5.png",
+      img: "/images/b_icon_6.png",
     },
   ];
   return (
     <section className="linear-bg">
       <Container fluid className="ms-0 ps-0">
         <Row className=" d-flex justify-content-center align-items-center">
-          <Col md={4}>
+          <Col md={12} lg={5} xl={4}>
             <div className="globe-container-b">
               {/* <img
                 src="/images/dot_map.png"
@@ -63,24 +63,24 @@ const InternationalTransaction = () => {
               </div>
             </div>
           </Col>
-          <Col md={8} className="py-5">
+          <Col md={12} lg={7} xl={8} className="py-5 px-4 ps-md-5 px-xl-0">
             <h1 className="font-bold">
               Purpose-built to facilitate
               <br />
               International Trade
             </h1>
-            <h5 className="fw-medium pe-5">
+            <h5 className="fw-medium pe-md-5">
               Pay and collect from vendors instantly, anywhere anytime,
               <br />
               using Entteprice
             </h5>
             <Row>
-              <div className="d-block d-lg-flex pt-5 pb-3 pb-xl-0">
+              <div className="d-block d-md-flex pt-5 pb-3 pb-xl-0">
                 {cards.slice(0, 3).map((item: any, index: any) => (
                   <Col
                     key={item.id}
                     xs={12}
-                    md={12}
+                    md={4}
                     lg={4}
                     className="pe-lg-1 pe-xl-3"
                   >
@@ -102,19 +102,19 @@ const InternationalTransaction = () => {
               </div>
             </Row>
             <Row>
-              <div className="d-block d-lg-flex pt-5 pb-3 pb-xl-0">
+              <div className="d-block d-md-flex pt-md-5 pb-3 pb-xl-0">
                 {cards.slice(3, 6).map((item: any, index: any) => (
                   <Col
                     key={item.id}
                     xs={12}
-                    md={12}
+                    md={4}
                     lg={4}
                     className="pe-lg-1 pe-xl-3"
                   >
                     <Col md={12}>
                       <Image
                         src={item.img}
-                        alt={`Feature ${index + 1}`}
+                        alt={`Feature ${index + 4}`}
                         width={30}
                         height={40}
                         quality={100}

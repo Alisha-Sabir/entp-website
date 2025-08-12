@@ -22,8 +22,8 @@ const TransferAnywhere = () => {
       {
         breakpoint: 576, // xs 576px
         settings: {
-          slidesToShow: 1,
-          // slidesToScroll: 2,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           pauseOnHover: false,
           pauseOnFocus: false,
@@ -32,8 +32,8 @@ const TransferAnywhere = () => {
       {
         breakpoint: 768, // md 768px
         settings: {
-          slidesToShow: 3,
-          // slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 5,
           infinite: true,
           pauseOnHover: false,
           pauseOnFocus: false,
@@ -42,8 +42,8 @@ const TransferAnywhere = () => {
       {
         breakpoint: 1024, // lg and xl
         settings: {
-          slidesToShow: 4,
-          // slidesToScroll: 5,
+          slidesToShow: 6,
+          slidesToScroll: 6,
           infinite: true,
           pauseOnHover: false,
           pauseOnFocus: false,
@@ -53,7 +53,7 @@ const TransferAnywhere = () => {
         breakpoint: 1440,
         settings: {
           slidesToShow: 9,
-          // slidesToScroll: 5,
+          slidesToScroll: 9,
           infinite: true,
           pauseOnHover: false,
           pauseOnFocus: false,
@@ -63,7 +63,7 @@ const TransferAnywhere = () => {
   };
 
   return (
-    <section className="py-5" style={{ backgroundColor: "#22221D" }}>
+    <section className="py-lg-5" style={{ backgroundColor: "#22221D" }}>
       <Container fluid className="overflow-hidden py-3">
         <Row className="justify-content-center text-center align-items-center">
           <div className="mt-5">
@@ -88,7 +88,7 @@ const TransferAnywhere = () => {
                       width={90}
                       height={83}
                       quality={100}
-                      className="img-fluid pt-3 currency-image"
+                      className="img-fluid pt-3"
                     />
                     <span className="py-4">{item.cardText}</span>
                   </Card>

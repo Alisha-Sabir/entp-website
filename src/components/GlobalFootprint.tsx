@@ -43,7 +43,7 @@ const GlobalFootprint = () => {
             className="img-fluid"
           />
         </div>
-        <Container className="mt-5 text-center pt-5 overflow-none">
+        <Container className="mt-5 text-center pt-xl-3 overflow-none">
           <Col className="pt-3">
             <h1 className="font-bold">Our Global Footprint</h1>
           </Col>
@@ -57,7 +57,7 @@ const GlobalFootprint = () => {
           </Col>
           <Row>
             {card.map((item: any) => (
-              <Col md={3} key={item.id}>
+              <Col md={6} lg={3} key={item.id}>
                 <Card className="border-0">
                   <Image
                     src={item.cardImg}

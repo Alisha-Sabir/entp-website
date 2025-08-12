@@ -41,17 +41,31 @@ export default function Home() {
       <WorkWith />
       <FXSection />
       <TransferAnywhere />
-      {/* <RelationshipManager /> */}
+      <RelationshipManager />
       <TrackSection />
-      {/* <GlobalFootprint /> */}
-      <div className="newsletter-container">
-        <NewsLetter />
+      <GlobalFootprint />
+      <div className="d-none d-md-block" style={{ position: "relative" }}>
+        <div
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: -400,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "100%",
+          }}
+        >
+          <NewsLetter />
+        </div>
+        <div style={{ marginTop: "500px" }}>
+          <Footer />
+        </div>
       </div>
-      <div className="footer-wrapper">
+
+      <div className="d-md-none">
+        <NewsLetter />
         <Footer />
       </div>
-      {/* <NewsLetter />
-      <Footer /> */}
     </>
   );
 }

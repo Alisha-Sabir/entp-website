@@ -76,7 +76,7 @@ export default function BusinessPayment() {
         <Image
           width={100}
           height={40}
-          alt="Payments"
+          alt="Pattern_1"
           src="/images/payment_pattern.png"
           className="img-fluid"
         />
@@ -85,12 +85,12 @@ export default function BusinessPayment() {
         <Image
           width={320}
           height={90}
-          alt="Payments"
+          alt="Pattern_2"
           src="/images/payment_pattern_right.png"
           className="img-fluid"
         />
       </div>
-      <Container className="py-5">
+      <Container className="py-3 py-lg-5">
         <div className="w-100 text-center my-5">
           <h1 className="fw-bold">Streamlining Global Trade Payments</h1>
           <Col className="d-flex justify-content-center align-items-center">
@@ -101,15 +101,28 @@ export default function BusinessPayment() {
           </Col>
         </div>
         <Row className="d-flex align-items-center">
-          <Col md={12} lg={5} className="pe-5">
+          <Col md={12} lg={6} xl={5} className="pe-5">
             {paymentSlideData.map((item, index) => (
               <div
                 key={item.id}
                 className="d-flex align-items-start gap-3 payment-card pe-1"
               >
+                {/* xs - md- steps */}
                 <Col
                   xs="auto"
-                  className="d-flex flex-column align-items-center pe-0"
+                  className="flex-column align-items-center pe-0 d-flex d-lg-none"
+                >
+                  <div
+                    className={`step-icon mt-2 active
+                    } d-flex justify-content-center align-items-center`}
+                  >
+                    <span className="step-number">{index + 1}</span>
+                  </div>
+                </Col>
+                {/*  lg - xl steps */}
+                <Col
+                  xs="auto"
+                  className="flex-column align-items-center pe-0 d-none d-lg-flex"
                 >
                   <div
                     className={`step-icon mt-1 ${
@@ -128,7 +141,7 @@ export default function BusinessPayment() {
                 </Col>
                 <Card
                   key={index}
-                  className="py-1 border-0 w-100 mb-1"
+                  className="py-1 bg-transparent border-0 w-100 mb-1"
                   onClick={() => goToSlide(index)}
                   role="button"
                   style={{
@@ -136,43 +149,11 @@ export default function BusinessPayment() {
                     // boxShadow:
                     //   index === activeIndex ? "2px 2px lightgray" : "none",
                     transition: "background-color 0.3s ease",
+                    zIndex: 1,
                   }}
                 >
                   <div>
                     <Row>
-                      {/* <Col xs={12} xl={1} className="d-flex align-items-top">
-                      <Image
-                        src={item.icon}
-                        alt={`Icon for ${item.title}`}
-                        width={50}
-                        height={50}
-                        quality={100}
-                      />
-                    </Col> */}
-                      {/* <Col xs="auto" className="d-flex align-items-start pe-0">
-                      <div className="step-icon d-flex justify-content-center align-items-center">
-                        <span className="step-number">{index + 1}</span>
-                      </div>
-                    </Col> */}
-                      {/* <Col
-                        xs="auto"
-                        className="d-flex flex-column align-items-center pe-0"
-                      >
-                        <div
-                          className={`step-icon ${
-                            index === activeIndex ? "active" : "inactive"
-                          } d-flex justify-content-center align-items-center`}
-                        >
-                          <span className="step-number">{index + 1}</span>
-                        </div>
-                        {index < 3 && (
-                          <div
-                            className={`step-line ${
-                              index === activeIndex ? "active" : "inactive"
-                            }`}
-                          ></div>
-                        )}
-                      </Col> */}
                       <Col md={12}>
                         <span style={{ fontSize: "19px" }} className="fw-bold">
                           {item.title}
@@ -203,7 +184,12 @@ export default function BusinessPayment() {
             </Button>
           </Col>
 
-          <Col md={12} lg={7} className="border-0 overflow-hidden">
+          <Col
+            // md={12}
+            lg={6}
+            xl={7}
+            className="border-0 overflow-hidden d-none d-lg-block"
+          >
             <Slider ref={sliderRef} {...sliderSettings} className="border-0">
               {paymentSlideData.map((item, index) => (
                 <div

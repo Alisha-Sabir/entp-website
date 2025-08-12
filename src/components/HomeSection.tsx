@@ -45,11 +45,11 @@ const HomeSection = () => {
       className="home-pattern"
       style={{ backgroundColor: "#22221d" }}
     >
-      <Container className="pb-lg-5 pt-5">
-        <Row className="align-items-end align-items-xl-start pb-5">
+      <Container className="pb-xl-5 pt-5">
+        <Row className="align-items-end align-items-lg-start pb-0 pb-xl-5">
           <Col
             xs={12}
-            md={6}
+            md={12}
             lg={6}
             xl={5}
             className="my-0 my-xl-5 pb-3 overflow-hidden"
@@ -83,13 +83,13 @@ const HomeSection = () => {
           </Col>
           <Col
             xs={12}
-            md={6}
+            md={12}
             lg={6}
             xl={7}
-            className="d-flex justify-content-center align-items-end mb-4 mb-xl-0"
+            className="d-flex justify-content-center align-items-end mb-lg-4 mb-xl-0"
           >
             <div
-              className="d-none d-md-block position-relative"
+              className="d-block position-relative mt-3 mt-md-5 mt-lg-0"
               style={{ zIndex: 0 }}
               ref={squareRef}
             >
@@ -204,15 +204,15 @@ const HomeSection = () => {
         <Row className="text-center">
           <div
             // style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-lg-flex pt-5 pb-3 pb-xl-0 gap-3 position-relative"
+            className="d-block d-md-flex pt-5 pb-3 pb-xl-0 gap-1 gap-xl-3 position-relative"
           >
             {cards.map((item: any, index: any) => (
               <Col
                 key={item.id}
                 xs={12}
-                md={12}
+                md={4}
                 lg={4}
-                className="rounded-4 pt-5 pb-3 px-5"
+                className="rounded-4 pt-5 pb-3 px-0 px-md-2 px-xl-5 mb-2 mb-md-0"
                 style={{
                   borderTop: "2px solid #45453e",
                   borderBottom: "2px solid #31312b",
