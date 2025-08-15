@@ -82,6 +82,20 @@ export default function ContactHome() {
             {/* <Col lg={2} /> */}
             <Col md={12} lg={5} className="text-center text-lg-start">
               <div className="glass-bg">
+                <svg
+                  height="100%"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    rx="8"
+                    ry="8"
+                    className="lines"
+                    height="100%"
+                    width="100%"
+                    stroke-linejoin="round"
+                  />
+                </svg>
                 <Row className="d-flex flex-column align-items-center mb-4 text-center">
                   <Col md={10} lg={10}>
                     <h1 className="my-4 text-start">Contact Us</h1>

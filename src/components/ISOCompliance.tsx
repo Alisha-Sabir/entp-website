@@ -34,7 +34,7 @@ export default function ISOCompliance() {
       <Container
         // fluid
         style={{ color: "#6D6D6C" }}
-        className="mt-5 text-center text-lg-start font-medium"
+        className="mt-xl-3 text-center text-lg-start font-medium"
       >
         <div className="d-block d-lg-flex align-items-center">
           <Col xs={12} lg={6} className="pt-3">
@@ -76,26 +76,30 @@ export default function ISOCompliance() {
               width={500}
               height={100}
               quality={100}
-              className="img-fluid"
+              className="img-fluid p-3 p-xl-0"
             />
           </Col>
         </div>
+
         <div
-          style={{
-            backgroundColor: "#FFFBE4",
-            borderTop: "transparent",
-            borderBottom: "2px solid #96958e",
-            borderLeft: "2px solid #96958e",
-            borderTopLeftRadius: 500,
-            borderTopRightRadius: 500,
-            borderRight: "2px solid #E0E0E0",
-          }}
-          className="rounded-3 p-4 text-center mb-5"
+          style={{ backgroundColor: "#FFFBE4" }}
+          className="rounded-3 px-2 px-lg-4 py-4 text-center mb-5 gray-border mt-3 mt-md-0"
         >
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <rect
+              rx="8"
+              ry="8"
+              className="lines"
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+            />
+          </svg>
           <h4 className="text-dark font-bold my-3">
             Data Protection & Privacy Laws:
           </h4>
-          <p style={{ color: "#6D6D6C" }} className="px-5 font-medium">
+          <p style={{ color: "#6D6D6C" }} className="px-2 px-lg-5 font-medium">
             We comply with the{" "}
             <span className="text-dark font-bold">
               General Data Protection Regulation (GDPR)

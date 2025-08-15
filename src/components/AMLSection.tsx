@@ -30,13 +30,13 @@ export default function AMLSection() {
       <Container
         fluid
         style={{ color: "#6D6D6C" }}
-        className="mt-5 text-center text-lg-start font-medium"
+        className="mt-5 font-medium"
       >
-        <div className="d-block d-lg-flex align-items-center">
-          <Col lg={1}></Col>
-          <Col xs={12} lg={4} className="pt-3">
-            <div className="mb-lg-5 mt-lg-0">
-              <h1 className="font-bold text-dark">
+        <div className="d-block d-lg-flex align-items-center text-start px-2 p-md-5 p-lg-0 p-xl-5">
+          {/* <Col xl={1}></Col> */}
+          <Col xs={12} lg={5} xl={6} className="pt-3 ms-lg-5 ms-xl-0">
+            <div className="mb-xl-5 mt-lg-0">
+              <h1 className="font-bold text-dark text-center text-lg-start">
                 AML & Transaction Monitoring
               </h1>
               <p style={{ color: "#6D6D6C", fontSize: "20px" }}>
@@ -67,14 +67,14 @@ export default function AMLSection() {
               </ul>
             </div>
           </Col>
-          <Col xs={12} lg={7} className="text-center text-lg-end mt-5">
+          <Col xs={12} lg={7} className="text-center text-lg-end mt-lg-5">
             <Image
               src="/images/aml_frame.png"
               alt="Person Image"
               width={900}
               height={100}
               quality={100}
-              className="img-fluid mt-4 mt-md-0"
+              className="img-fluid"
             />
           </Col>
         </div>

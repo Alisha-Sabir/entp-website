@@ -125,7 +125,10 @@ const Header = () => {
               className="justify-content-center"
             >
               <Nav className="mx-auto text-start text-xl-center gap-2 gap-xl-0 gap-xl-1">
-                <Nav.Link className="text-white nav-links pe-xl-4">
+                <Nav.Link
+                  // onClick={() => router.push("/about-us")}
+                  className="text-white nav-links pe-xl-4"
+                >
                   About
                 </Nav.Link>
                 <div className="glow-line d-none d-xl-block"></div>
@@ -140,7 +143,7 @@ const Header = () => {
                 <div className="glow-line d-none d-xl-block"></div>
 
                 <Nav.Link
-                  // onClick={() => router.push("/governance")}
+                  onClick={() => router.push("/governance")}
                   className="text-white nav-links px-xl-3"
                 >
                   Governance

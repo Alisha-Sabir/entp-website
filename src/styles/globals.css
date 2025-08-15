@@ -834,7 +834,60 @@ body {
   background: #3d3c2f96;
   backdrop-filter: blur(15px);
   border-radius: 12px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.glass-bg svg {
+  position: absolute;
+}
+
+.glass-bg .lines {
+  stroke-dasharray: 500;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: rgba(250, 229, 4, 0.338);
+  animation: svgAnimation 3s linear infinite;
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.gray-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gray-border svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gray-border .lines {
+  stroke-dasharray: 700;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: rgba(119, 119, 108, 0.725);
+  animation: svgAnimation 3s linear infinite;
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
 }
 
 .contact-form .form-control-lg {
@@ -848,7 +901,7 @@ body {
   background-color: #d7d6d0;
   font-weight: var(--medium) !important;
   font-size: 18px !important;
-  text-align: top !important;
+  align-items: start !important;
   /* color: red !important; */
 }
 
@@ -856,7 +909,6 @@ body {
   box-shadow: 0 0 0 0.1rem transparent;
   border: 1px solid transparent;
 }
-
 /* Accordion FAQ section */
 
 .accordion-button:hover {
@@ -866,7 +918,30 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
+  content: "" !important;
   background-color: #ffff;
   color: black;
   box-shadow: 0 0 0 0.1rem #ffd700;
+}
+
+.accordion-button::after {
+  background-image: none !important;
+}
+.accordion-button::after {
+  content: "+" !important;
+  font-size: 1.5rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-" !important;
+  font-size: 2rem;
+}
+
+.yellow-gradient {
+  background: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 252, 238, 1) 100%
+  );
 }

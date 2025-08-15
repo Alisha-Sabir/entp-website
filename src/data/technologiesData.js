@@ -1,0 +1,88 @@
+const technologiesData = [
+  {
+    id: 1,
+    image: "/images/PSEB.png",
+    imgAlt: "PSEB",
+    width: 130,
+    height: 100,
+  },
+  {
+    id: 2,
+    image: "/images/hk.png",
+    imgAlt: "hk",
+    width: 110,
+    height: 100,
+  },
+  {
+    id: 3,
+    image: "/images/Fintrac.png",
+    imgAlt: "fintrac",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 4,
+    image: "/images/Wio.png",
+    imgAlt: "Wio",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 5,
+    image: "/images/xxida.png",
+    imgAlt: "xxida",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 6,
+    image: "/images/zand.png",
+    imgAlt: "zand",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 7,
+    image: "/images/kun.png",
+    imgAlt: "KUN",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 8,
+    image: "/images/changer.png",
+    imgAlt: "chnager",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 9,
+    image: "/images/by_uae.png",
+    imgAlt: "UAE",
+    width: 100,
+    height: 100,
+  },
+  {
+    id: 10,
+    image: "/images/mbank.png",
+    imgAlt: "MBank",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 11,
+    image: "/images/aquanow.png",
+    imgAlt: "AquaNow",
+    width: 150,
+    height: 100,
+  },
+  {
+    id: 12,
+    image: "/images/ruya.png",
+    imgAlt: "ruya",
+    width: 150,
+    height: 100,
+  },
+];
+
+export default technologiesData;
