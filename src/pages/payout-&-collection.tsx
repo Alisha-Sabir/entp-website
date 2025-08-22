@@ -27,6 +27,19 @@ export default function PayoutAndCollection() {
         <title>Pay Out & Collection - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {/* {isLoading ? (
+        <div
+          style={{
+            minHeight: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Loader opacity="50%" />
+        </div>
+      ) : (
+        <> */}
       <Header />
       <GetPaidHome />
       <ImporterExporter />
@@ -55,5 +68,7 @@ export default function PayoutAndCollection() {
         <Footer />
       </div>
     </>
+    //   )}
+    // </>
   );
 }

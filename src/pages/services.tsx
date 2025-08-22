@@ -24,6 +24,19 @@ export default function Services() {
         <title>Services - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {/* {isLoading ? (
+        <div
+          style={{
+            minHeight: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Loader opacity="50%" />
+        </div>
+      ) : (
+        <> */}
       <Header />
       <ServicesHome />
       <OurServices />
@@ -53,5 +66,7 @@ export default function Services() {
         <Footer />
       </div>
     </>
+    //   )}
+    // </>
   );
 }

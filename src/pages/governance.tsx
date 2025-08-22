@@ -24,6 +24,19 @@ export default function Home() {
         <title>Governance - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {/* {isLoading ? (
+        <div
+          style={{
+            minHeight: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Loader opacity="50%" />
+        </div>
+      ) : (
+        <> */}
       <Header />
       <SecurityHome />
       <IntroSection />
@@ -54,5 +67,7 @@ export default function Home() {
       <Footer padding={false} />
       {/* </div> */}
     </>
+    //   )}
+    // </>
   );
 }

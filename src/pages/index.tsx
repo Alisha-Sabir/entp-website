@@ -17,22 +17,22 @@ import Head from "next/head";
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
-
-    if (document.readyState === "complete") {
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
-    }
-  }, []);
-
   // useEffect(() => {
-  //   setIsLoading(false);
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
+
+  //   if (document.readyState === "complete") {
+  //     handleLoad();
+  //   } else {
+  //     window.addEventListener("load", handleLoad);
+  //     return () => window.removeEventListener("load", handleLoad);
+  //   }
   // }, []);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
 
   return (
     <>
@@ -41,35 +41,30 @@ export default function Home() {
         <title>Home - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {/* {isLoading ? (
+        <div
+          style={{
+            minHeight: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Loader opacity="50%" />
+        </div>
+      ) : (
+        <> */}
       <Header />
       <HomeSection />
       <BusinessPayment />
       <InternationalTransaction />
-      {/* <div style={{ position: "relative" }}>
-        <NewsLetter
-          style={{
-            position: "absolute",
-            top: "-500px",
-            left: 0,
-            right: 0,
-            zIndex: 2,
-          }}
-        />
-        <Footer
-          style={{
-            backgroundColor: "#22221D",
-            position: "relative",
-            zIndex: 1,
-            paddingTop: "120px",
-          }}
-        />
-      </div> */}
       <WorkWith />
       <FXSection />
       <TransferAnywhere />
       <RelationshipManager />
       <TrackSection />
       <GlobalFootprint />
+
       <div className="d-none d-md-block" style={{ position: "relative" }}>
         <div
           style={{
@@ -93,5 +88,7 @@ export default function Home() {
         <Footer />
       </div>
     </>
+    //   )}
+    // </>
   );
 }

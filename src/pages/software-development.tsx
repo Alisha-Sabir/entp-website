@@ -28,6 +28,19 @@ export default function SoftwareDevelopment() {
         <title>Software Development - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {/* {isLoading ? (
+        <div
+          style={{
+            minHeight: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Loader opacity="50%" />
+        </div>
+      ) : (
+        <> */}
       <Header />
       <SaasHome />
       <SoftwareDevEntp />
@@ -62,5 +75,7 @@ export default function SoftwareDevelopment() {
         <Footer />
       </div>
     </>
+    //   )}
+    // </>
   );
 }
