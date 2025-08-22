@@ -1,15 +1,25 @@
 import AMLSection from "@/components/AMLSection";
 import IntroSection from "@/components/IntroSection";
 import ISOCompliance from "@/components/ISOCompliance";
+import Loader from "@/components/Loader";
 import PrivacySecurity from "@/components/PrivacySecurity";
 import RegulatoryCompliance from "@/components/RegulatoryCompliance";
 import SecurityHome from "@/components/SecurityHome";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
     <>
+      {isLoading && <Loader opacity={"50%"} />}
+
       <Header />
       <SecurityHome />
       <IntroSection />
@@ -37,7 +47,7 @@ export default function Home() {
 
       {/* <div className="d-md-none">
         <NewsLetter /> */}
-      <Footer />
+      <Footer padding={false} />
       {/* </div> */}
     </>
   );

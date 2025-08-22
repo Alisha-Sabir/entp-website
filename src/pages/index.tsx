@@ -4,17 +4,38 @@ import GlobalFootprint from "@/components/GlobalFootprint";
 import HomeSection from "@/components/HomeSection";
 import InternationalTransaction from "@/components/InternationalTransaction";
 import RelationshipManager from "@/components/RelationshipManager";
-import TeamComponent from "@/components/TeamComponent";
 import TrackSection from "@/components/TrackSection";
 import TransferAnywhere from "@/components/TransferAnywhere";
 import WorkWith from "@/components/WorkWith";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import NewsLetter from "@/layout/NewsLetter";
+import { useEffect, useState } from "react";
+import Loader from "@/components/Loader";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
+
+  //   if (document.readyState === "complete") {
+  //     handleLoad();
+  //   } else {
+  //     window.addEventListener("load", handleLoad);
+  //     return () => window.removeEventListener("load", handleLoad);
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
     <>
+      {isLoading && <Loader opacity={"50%"} />}
       <Header />
       <HomeSection />
       <BusinessPayment />

@@ -92,20 +92,20 @@ const InternationalTransaction = () => {
                       xs={12}
                       md={4}
                       lg={4}
-                      className="pe-lg-1 pe-xl-3"
+                      // className="pe-lg-1 pe-xl-3"
                     >
                       <Col md={12}>
                         <Image
                           src={item.img}
                           alt={`Feature ${index + 1}`}
-                          width={30}
+                          width={50}
                           height={40}
                           quality={100}
                           className="img-fluid"
                         />
                       </Col>
-                      <Col md={7} className="fw-medium mt-3">
-                        <p>{item.text}</p>
+                      <Col md={10} xl={8} className="fw-bold mt-3">
+                        <h5>{item.text}</h5>
                       </Col>
                     </Col>
                   ))}
@@ -119,20 +119,20 @@ const InternationalTransaction = () => {
                       xs={12}
                       md={4}
                       lg={4}
-                      className="pe-lg-1 pe-xl-3"
+                      // className="pe-lg-1 pe-xl-3"
                     >
                       <Col md={12}>
                         <Image
                           src={item.img}
                           alt={`Feature ${index + 4}`}
-                          width={30}
+                          width={50}
                           height={40}
                           quality={100}
                           className="img-fluid"
                         />
                       </Col>
-                      <Col md={8} className="fw-medium mt-3">
-                        <p>{item.text}</p>
+                      <Col md={10} xl={9} className="fw-bold mt-3">
+                        <h5>{item.text}</h5>
                       </Col>
                     </Col>
                   ))}

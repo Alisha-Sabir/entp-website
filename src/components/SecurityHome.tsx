@@ -3,11 +3,11 @@ import { Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
 import Header from "@/layout/Header";
 
-export default function SecurityHome() {
+export default function sSecurityHome() {
   return (
     <>
       <section style={{ backgroundColor: "#22221D", color: "white" }}>
-        <Container className="py-lg-5 pt-lg-5">
+        <Container className="py-lg-5 pt-lg-5 text-center text-md-start">
           <Row className="d-flex align-items-center justify-content-center py-xl-5">
             <Col md={12} lg={6} className="mt-5 pe-lg-5">
               <h1 className="font-bold display-5 mb-3">
@@ -29,6 +29,7 @@ export default function SecurityHome() {
               />
             </Col>
             <div>
+              <br />
               <br />
               <br />
               <br />

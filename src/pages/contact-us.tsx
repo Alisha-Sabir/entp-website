@@ -2,13 +2,23 @@ import AMLSection from "@/components/AMLSection";
 import ContactHome from "@/components/ContactHome";
 import FAQs from "@/components/FAQs";
 import FindUs from "@/components/FindUs";
+import Loader from "@/components/Loader";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import NewsLetter from "@/layout/NewsLetter";
+import { useEffect, useState } from "react";
 
 export default function ContactUs() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
     <>
+      {isLoading && <Loader opacity={"50%"} />}
+
       <Header />
       <ContactHome />
       <FAQs />

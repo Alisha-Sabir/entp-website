@@ -28,7 +28,7 @@ export default function VisionMission() {
 
   return (
     <section style={{ backgroundColor: "#22221d", color: "white" }}>
-      <Container className="d-flex py-5">
+      <Container className="d-block d-lg-flex py-5">
         {data.map((item: CardData, index: number) => (
           <CardComponent
             key={index}

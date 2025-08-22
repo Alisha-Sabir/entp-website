@@ -16,7 +16,7 @@ export default function FindUs() {
 
           <Row className="g-3 mt-4">
             {findUsData.map((item) => (
-              <Col key={item.id} xs={12} sm={6} md={6}>
+              <Col key={item.id} xs={12} md={6}>
                 <Card className="h-100 border-1 rounded-4">
                   <div className="px-4 py-2">
                     <Col md={12}>
@@ -29,24 +29,28 @@ export default function FindUs() {
                         className="img-fluid my-3"
                       />
                     </Col>
-                    <div className="d-flex align-items-end">
-                      <Col md={10}>
+                    <div className="d-block d-lg-flex align-items-end">
+                      <Col xs={12} lg={9} xl={10}>
                         <h5 className="fw-bold mb-4">{item.locationName}</h5>
-                        <div className="d-flex align-items-start">
-                          <MdEmail className="me-2" size={20} />
-                          <p
-                            style={{ color: "#6d6d6c", cursor: "pointer" }}
-                            className="text-decoration-underline"
-                            onClick={() =>
-                              (window.location.href =
-                                "mailto:info@entterprice.com")
-                            }
-                          >
-                            {item.email}
-                          </p>
+                        <div className="d-block d-lg-flex align-items-start">
+                          <div>
+                            <MdEmail className="me-2" size={20} />
+                          </div>
+                          <div>
+                            <p
+                              style={{ color: "#6d6d6c", cursor: "pointer" }}
+                              className="text-decoration-underline"
+                              onClick={() =>
+                                (window.location.href =
+                                  "mailto:info@entterprice.com")
+                              }
+                            >
+                              {item.email}
+                            </p>
+                          </div>
                         </div>
                       </Col>
-                      <Col md={2}>
+                      <Col xs={12} lg={3} xl={2}>
                         <h5 className="fw-bold p-0 m-0">Location</h5>
                         <Image
                           src="/images/location_icon.png"
@@ -66,12 +70,18 @@ export default function FindUs() {
                       </Col>
                     </div>
                     <Col>
-                      <div className="d-flex align-items-start">
-                        <FaLocationDot className="me-2" size={20} />
-
-                        <p style={{ color: "#6d6d6c" }} className="font-medium">
-                          {item.address}
-                        </p>
+                      <div className="d-block d-lg-flex align-items-start">
+                        <div>
+                          <FaLocationDot className="me-2" size={20} />
+                        </div>
+                        <div>
+                          <p
+                            style={{ color: "#6d6d6c" }}
+                            className="font-medium"
+                          >
+                            {item.address}
+                          </p>
+                        </div>
                       </div>
                     </Col>
                   </div>
@@ -80,7 +90,7 @@ export default function FindUs() {
             ))}
           </Row>
           <div
-            className="text-center mt-3 rounded-5 border border-1 py-5"
+            className="text-center mb-3 mb-lg-0 mt-3 rounded-5 border border-1 py-5 px-2 px-lg-0"
             style={{ backgroundColor: "#fbfbfb" }}
           >
             <h1 className="font-bold">Other locations:</h1>

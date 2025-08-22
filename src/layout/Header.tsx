@@ -126,25 +126,47 @@ const Header = () => {
             >
               <Nav className="mx-auto text-start text-xl-center gap-2 gap-xl-0 gap-xl-1">
                 <Nav.Link
-                  // onClick={() => router.push("/about-us")}
-                  className="text-white nav-links pe-xl-4"
+                  onClick={() => router.push("/about-us")}
+                  className={`nav-links px-xl-3 ${
+                    router.pathname === "/about-us"
+                      ? "active-link"
+                      : "text-white"
+                  }`}
                 >
                   About
                 </Nav.Link>
                 <div className="glow-line d-none d-xl-block"></div>
-                <Nav.Link className="text-white nav-links px-xl-3">
+                <Nav.Link
+                  onClick={() => router.push("/services")}
+                  className={`nav-links px-xl-3 ${
+                    router.pathname === "/services"
+                      ? "active-link"
+                      : "text-white"
+                  }`}
+                >
                   Services
                 </Nav.Link>
                 <div className="glow-line d-none d-xl-block"></div>
 
-                <Nav.Link className="text-white nav-links px-xl-3">
-                  Pay & Get Paid
+                <Nav.Link
+                  onClick={() => router.push("/payout-&-collection")}
+                  className={`nav-links px-xl-3 ${
+                    router.pathname === "/payout-&-collection"
+                      ? "active-link"
+                      : "text-white"
+                  }`}
+                >
+                  Pay Out & Collection
                 </Nav.Link>
                 <div className="glow-line d-none d-xl-block"></div>
 
                 <Nav.Link
                   onClick={() => router.push("/governance")}
-                  className="text-white nav-links px-xl-3"
+                  className={`nav-links px-xl-3 ${
+                    router.pathname === "/governance"
+                      ? "active-link"
+                      : "text-white"
+                  }`}
                 >
                   Governance
                 </Nav.Link>

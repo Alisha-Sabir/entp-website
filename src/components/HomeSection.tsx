@@ -201,10 +201,10 @@ const HomeSection = () => {
         >
           <HomeSubSection />
           </div> */}
-        <Row className="text-center">
+        <Row className="text-center pe-xl-3">
           <div
             // style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-md-flex pt-5 pb-3 pb-xl-0 gap-1 gap-xl-3 position-relative"
+            className="d-block d-md-flex pt-5 pb-3 pb-xl-0 gap-md-2 gap-xl-2 position-relative"
           >
             {cards.map((item: any, index: any) => (
               <Col

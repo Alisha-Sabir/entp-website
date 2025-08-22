@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
       id: 2,
       heading: "Virtual IBANs",
       description:
-        "Seamlessly send and receive international payments with speed and transparency.",
+        "Simplify global collections with dedicated virtual accounts tailored to your business.",
     },
     {
       id: 3,
@@ -26,13 +26,13 @@ const WhyChooseUs = () => {
       id: 4,
       heading: "SaaS Services",
       description:
-        "Seamlessly send and receive international payments with speed and transparency.",
+        "Delivering Software as a Service & Bespoke Software Development. Specifically for the GCC market in accordance with local regulations.",
     },
     {
       id: 5,
       heading: "Ready-to-Use Solutions",
       description:
-        "Seamlessly send and receive international payments with speed and transparency.",
+        "Access fully developed, customizable platforms to quickly launch industry-specific digital services.",
     },
   ];
   return (

@@ -30,6 +30,16 @@ export default function RegulatoryCompliance() {
                     zIndex: 1,
                   }}
                 >
+                  <Col md={12} className="ps-lg-4">
+                    <Image
+                      src={item.img}
+                      alt={item.imgAlt}
+                      width={item.width}
+                      height={item.height}
+                      quality={100}
+                      className="img-fluid mt-3"
+                    />
+                  </Col>
                   <div className="p-4">
                     <h5 className="fw-bold">{item.heading}</h5>
                     <p
@@ -38,16 +48,6 @@ export default function RegulatoryCompliance() {
                     >
                       {item.text}
                     </p>
-                    <Col md={12}>
-                      <Image
-                        src={item.img}
-                        alt={item.imgAlt}
-                        width={item.width}
-                        height={item.height}
-                        quality={100}
-                        className="img-fluid my-3"
-                      />
-                    </Col>
                   </div>
                 </Card>
               </Col>

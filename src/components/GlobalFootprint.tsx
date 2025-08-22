@@ -6,25 +6,25 @@ const GlobalFootprint = () => {
     {
       id: 1,
       cardText: "Dubai, UAE",
-      cardImg: "/images/united_arab_emirates.png",
+      cardImg: "/images/dubai_uae.png",
       imgAlt: "UAE",
     },
     {
       id: 1,
       cardText: "Toronto, Canada",
-      cardImg: "/images/canada.png",
+      cardImg: "/images/toronto.png",
       imgAlt: "Canada",
     },
     {
       id: 1,
-      cardText: "Hong Kong",
+      cardText: "Hong Kong, SAR, China",
       cardImg: "/images/hong_kong.png",
       imgAlt: "Hong Kong",
     },
     {
       id: 1,
       cardText: "Lahore, Pakistan",
-      cardImg: "/images/pakistan.png",
+      cardImg: "/images/lahore_pak.png",
       imgAlt: "Pakistan",
     },
   ];

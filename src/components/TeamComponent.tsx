@@ -71,7 +71,7 @@ export default function TeamComponent({
     <section>
       <Container className="mt-5 text-center text-lg-start mb-4 mb-md-5 pb-xl-0">
         <div className="justify-content-center d-flex">
-          <Col xs={12} xl={8} className="text-center">
+          <Col xs={12} xl={10} className="text-center">
             <h1 className="font-bold">{heading}</h1>
             <style>
               {`
@@ -105,13 +105,16 @@ export default function TeamComponent({
                     className="manager-image"
                   />
                   <div className="manager-overlay"></div>
-                  <p className="position-absolute text-white bottom-0 ms-3 fs-5 fw-semibold manager-name">
+                  <p className="position-absolute text-white bottom-0 ms-3 fs-5 fw-semibold">
+                    {member.memberName}
+                  </p>
+                  {/* <p className="position-absolute text-white bottom-0 ms-3 fs-5 fw-semibold manager-name">
                     {member.memberName}
                   </p>
                   <div className="manager-details rounded-3 text-start">
                     <b style={{ fontSize: "18px" }}>{member.memberName}</b>
                     <p style={{ fontSize: "15px" }}>{member.memberQualities}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

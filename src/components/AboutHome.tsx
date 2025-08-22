@@ -6,8 +6,11 @@ import Header from "@/layout/Header";
 export default function AboutHome() {
   return (
     <>
-      <section style={{ backgroundColor: "#22221D", color: "white" }}>
-        <Container className="py-5 pt-lg-5 text-center">
+      <section
+        className="home-pattern"
+        style={{ backgroundColor: "#22221D", color: "white" }}
+      >
+        <Container className="py-lg-5 pt-lg-5 text-center">
           <Row className="d-flex align-items-center justify-content-center py-5">
             <Col md={12} className="mt-5 pe-lg-5">
               <h1 className="font-bold display-5 mb-3">
@@ -21,18 +24,13 @@ export default function AboutHome() {
             {/* <Col lg={2} /> */}
             <Col md={12} className="text-center">
               <Image
-                src="/images/wide_map.png"
-                alt="Saftey_logo"
+                src="/images/Map.png"
+                alt="Map"
                 width={1500}
                 height={60}
                 className="img-fluid pt-5 pt-lg-3"
               />
             </Col>
-            <div>
-              <br />
-              <br />
-              <br />
-            </div>
           </Row>
         </Container>
       </section>

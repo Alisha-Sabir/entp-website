@@ -18,21 +18,21 @@ const FXSection = () => {
           <Row className="my-5">
             <Col md={6} className="text-start">
               <Image
-                src="/images/fx_screen_1.png"
+                src="/images/img_1.png"
                 alt="FX Major Currencies"
                 width={700}
                 height={100}
-                className="img-fluid mb-3 mb-md-0"
+                className="img-fluid mb-3 mb-md-0 yellow-left-gradient"
                 // style={{ zIndex: 1 }}
               />
             </Col>
             <Col md={6} className="text-end">
               <Image
-                src="/images/fx_screen_2.png"
+                src="/images/img_2.png"
                 alt="FX Other Currencies"
                 width={700}
                 height={100}
-                className="img-fluid"
+                className="img-fluid yellow-right-gradient"
                 // style={{ zIndex: 1 }}
               />
             </Col>

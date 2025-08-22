@@ -68,12 +68,16 @@ export default function ContactHome() {
   return (
     <>
       <section
-        className="home-pattern  text-white"
+        className="home-pattern text-white"
         style={{ backgroundColor: "#22221d" }}
       >
         <Container className="pb-5 pt-lg-3">
           <Row className="d-flex align-items-center justify-content-center py-5">
-            <Col md={12} lg={6} className="mt-5 pe-lg-5">
+            <Col
+              md={12}
+              lg={6}
+              className="text-center text-lg-start mt-5 pe-lg-5"
+            >
               <h1 className="font-bold display-4 mb-3">
                 <span style={{ color: "#FFDE1F" }}>We’d Love To</span>
                 <br /> Hear From You{" "}
@@ -82,7 +86,10 @@ export default function ContactHome() {
             {/* <Col lg={2} /> */}
             <Col md={12} lg={5} className="text-center text-lg-start">
               <div className="glass-bg">
+                {/* <div className="d-none d-lg-block"> */}
                 <svg
+                  // className="position-absolute"
+                  style={{ left: "0%" }}
                   height="100%"
                   width="100%"
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,9 +103,13 @@ export default function ContactHome() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <Row className="d-flex flex-column align-items-center mb-4 text-center">
-                  <Col md={10} lg={10}>
-                    <h1 className="my-4 text-start">Contact Us</h1>
+                {/* </div> */}
+                <Row className="d-flex flex-column align-items-center mb-4 text-center px-2 px-md-4 px-lg-0">
+                  <Col xs={12} md={10} lg={10}>
+                    <h1 className="my-4 text-center text-md-start text-lg-start">
+                      Contact Us
+                    </h1>
+
                     {/* Display success or error message */}
                     {/* {successMessage && (
               <div className="alert border border-2" role="alert">
@@ -228,6 +239,7 @@ export default function ContactHome() {
                           className="rounded-3 border-0 font-medium text-dark"
                           style={{
                             backgroundColor: "#f8d613",
+                            cursor: "pointer",
                           }}
                         >
                           Submit
