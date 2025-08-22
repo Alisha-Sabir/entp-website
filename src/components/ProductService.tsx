@@ -84,7 +84,13 @@ export default function ProductServices() {
               <div className="rounded-2 h-100 d-flex flex-column flex-md-row align-items-center kyc-gradient">
                 <svg
                   // className="position-absolute"
-                  style={{ left: "0%" }}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    zIndex: 0,
+                    pointerEvents: "none",
+                  }}
                   height="100%"
                   width="100%"
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,11 +142,17 @@ export default function ProductServices() {
                   backgroundSize: "contain",
                   backgroundPosition: "right",
                   backgroundColor: "#fff9d6",
+                  zIndex: 1,
                 }}
               >
                 <svg
-                  // className="position-absolute"
-                  style={{ left: "0%" }}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    zIndex: 0,
+                    pointerEvents: "none",
+                  }}
                   height="100%"
                   width="100%"
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,9 +163,10 @@ export default function ProductServices() {
                     className="lines"
                     height="100%"
                     width="100%"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
+
                 <div className="flex-grow-1 py-5 py-lg-0">
                   <Col xs={6} lg={6} className="px-3">
                     <h3
@@ -166,7 +179,7 @@ export default function ProductServices() {
                       Enabling fast, secure peer-to-peer digital transactions.
                     </p>
                     <Button
-                      style={{ backgroundColor: "#f8d613" }}
+                      style={{ backgroundColor: "#f8d613", zIndex: 1 }}
                       className="py-2 px-4 font-semibold border-0 text-dark mt-2"
                     >
                       Read More
@@ -192,7 +205,13 @@ export default function ProductServices() {
                     <div className="d-block">
                       <svg
                         // className="position-absolute"
-                        style={{ left: "0%" }}
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          zIndex: 0,
+                          pointerEvents: "none",
+                        }}
                         height="100%"
                         width="100%"
                         xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +267,13 @@ export default function ProductServices() {
                     <div className="d-block">
                       <svg
                         // className="position-absolute"
-                        style={{ left: "0%" }}
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          zIndex: 0,
+                          pointerEvents: "none",
+                        }}
                         height="100%"
                         width="100%"
                         xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +329,13 @@ export default function ProductServices() {
                     <div className="d-block">
                       <svg
                         // className="position-absolute"
-                        style={{ left: "0%" }}
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          zIndex: 0,
+                          pointerEvents: "none",
+                        }}
                         height="100%"
                         width="100%"
                         xmlns="http://www.w3.org/2000/svg"

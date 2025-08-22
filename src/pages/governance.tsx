@@ -8,6 +8,7 @@ import SecurityHome from "@/components/SecurityHome";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -19,7 +20,10 @@ export default function Home() {
   return (
     <>
       {isLoading && <Loader opacity={"50%"} />}
-
+      <Head>
+        <title>Governance - Entterprice</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header />
       <SecurityHome />
       <IntroSection />

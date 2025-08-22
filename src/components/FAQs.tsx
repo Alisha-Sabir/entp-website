@@ -8,7 +8,7 @@ import faqsData from "@/data/faqsData";
 const FaQs = () => {
   return (
     <>
-      <section id="FaQs" className="position-relative">
+      <section id="FAQs" className="position-relative">
         <div className="position-absolute" style={{ top: "-200px", right: 0 }}>
           <Image
             width={250}

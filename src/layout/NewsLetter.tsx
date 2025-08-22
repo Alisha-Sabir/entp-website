@@ -29,40 +29,40 @@ const NewsLetter = ({ style }: any) => {
     }, 3000);
   };
 
-  //   const handleSubmitData: SubmitHandler<FormFields> = async (data) => {
-  //     debugger;
-  //     try {
-  //       const response = await fetch("/api/sendLetter", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(data),
-  //       });
+  const handleSubmitData: SubmitHandler<FormFields> = async (data) => {
+    debugger;
+    try {
+      const response = await fetch("/api/sendLetter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-  //       const result = await response.json();
-  //       console.log("result ,", result);
-  //       debugger;
-  //       if (response.ok) {
-  //         console.log(result.message);
-  //         setSuccessMessage("Email sent successfully!");
-  //         setErrorMessage(""); // Clear any previous error message
-  //         clearMessages();
-  //       } else {
-  //         console.error(result.message);
-  //         setSuccessMessage(""); // Clear any previous success message
-  //         setErrorMessage("Failed to send the email.");
-  //         clearMessages();
-  //       }
-  //     } catch (error) {
-  //       console.error("Error:", error);
-  //       setSuccessMessage(""); // Clear any previous success message
-  //       setErrorMessage("An error occurred while sending the email.");
-  //       clearMessages();
-  //     }
+      const result = await response.json();
+      console.log("result ,", result);
+      debugger;
+      if (response.ok) {
+        console.log(result.message);
+        setSuccessMessage("Email sent successfully!");
+        setErrorMessage(""); // Clear any previous error message
+        clearMessages();
+      } else {
+        console.error(result.message);
+        setSuccessMessage(""); // Clear any previous success message
+        setErrorMessage("Failed to send the email.");
+        clearMessages();
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSuccessMessage(""); // Clear any previous success message
+      setErrorMessage("An error occurred while sending the email.");
+      clearMessages();
+    }
 
-  //     reset();
-  //   };
+    reset();
+  };
 
   const onSubmit = (data: any) => {
     console.log("data", data);
@@ -76,7 +76,7 @@ const NewsLetter = ({ style }: any) => {
           backgroundColor: "#f8d613",
         }}
       >
-        <Form onSubmit={handleSubmit(onSubmit)} className="px-xl-5">
+        <Form onSubmit={handleSubmit(handleSubmitData)} className="px-xl-5">
           <Row className="d-flex flex-row align-items-center justify-content-center px-xl-5">
             <Col xs={12} md={12} lg={10} className="text-center pt-5">
               <Image
@@ -109,6 +109,7 @@ const NewsLetter = ({ style }: any) => {
                 size="lg"
                 className="  py-2"
                 maxLength={50}
+                autoComplete="off"
               />
               {errors.Name && (
                 <div className="text-start pt-2 ps-2 text-danger">
@@ -130,6 +131,7 @@ const NewsLetter = ({ style }: any) => {
                 size="lg"
                 className="  py-2"
                 maxLength={50}
+                autoComplete="off"
               />
               {errors.SurName && (
                 <div className="text-start pt-2 ps-2 text-danger">
@@ -151,6 +153,7 @@ const NewsLetter = ({ style }: any) => {
                 size="lg"
                 className="py-2"
                 maxLength={100}
+                autoComplete="off"
               />
               {errors.email && (
                 <div className="text-start pt-2 ps-2 text-danger">

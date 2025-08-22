@@ -11,6 +11,7 @@ import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import NewsLetter from "@/layout/NewsLetter";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function PayoutAndCollection() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -22,7 +23,10 @@ export default function PayoutAndCollection() {
   return (
     <>
       {isLoading && <Loader opacity={"50%"} />}
-
+      <Head>
+        <title>Pay Out & Collection - Entterprice</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header />
       <GetPaidHome />
       <ImporterExporter />

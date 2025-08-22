@@ -83,6 +83,11 @@ export default function Footer({ padding = true }) {
                   Contact Us
                 </Link>
               </p>
+              <p>
+                <Link href="/contact-us#FAQs" className="text-reset">
+                  FAQs
+                </Link>
+              </p>
             </Col>
 
             <Col md={6} lg={2} xl={3} className="mx-auto mb-4 custom-link">
