@@ -123,23 +123,6 @@ export default function ContactHome() {
                     Contact Us
                   </h1>
 
-                  {/* Display success or error message */}
-                  {successMessage && (
-                    <div className="alert border border-2" role="alert">
-                      <Col>
-                        <IoCheckmarkOutline size={40} />
-                      </Col>
-                      <Col>{successMessage}</Col>
-                    </div>
-                  )}
-                  {errorMessage && (
-                    <div className="alert border border-2" role="alert">
-                      <Col>
-                        <IoCloseOutline size={40} />
-                      </Col>
-                      <Col>{errorMessage}</Col>
-                    </div>
-                  )}
                   <Form
                     // onSubmit={handleSubmit(handleSubmitData)}
                     onSubmit={handleSubmit(handleSubmitData)}
@@ -264,6 +247,29 @@ export default function ContactHome() {
                         Submit
                       </Button>
                       {/* </Col> */}
+                      {/* Display success or error message */}
+                      {successMessage && (
+                        <div
+                          className="alert border border-2 text-center mt-2"
+                          role="alert"
+                        >
+                          {/* <Col>
+                        <IoCheckmarkOutline size={40} />
+                      </Col> */}
+                          <Col>{successMessage}</Col>
+                        </div>
+                      )}
+                      {errorMessage && (
+                        <div
+                          className="alert border border-2 text-center mt-2"
+                          role="alert"
+                        >
+                          {/* <Col>
+                        <IoCloseOutline size={40} />
+                      </Col> */}
+                          <Col>{errorMessage}</Col>
+                        </div>
+                      )}
                     </Row>
                   </Form>
                 </Col>
