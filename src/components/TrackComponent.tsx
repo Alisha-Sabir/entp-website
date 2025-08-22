@@ -76,7 +76,7 @@ const TrackComponent = ({
                 width={550}
                 height={40}
                 alt="Globe"
-                src="/images/payment_globe.png"
+                src="/images/globe_date.png"
                 className="img-fluid mb-5 mb-md-0"
               />
             </Col>

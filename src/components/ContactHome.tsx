@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/layout/Header";
 import { MdOutlineMail } from "react-icons/md";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { IoCheckmarkOutline, IoCloseOutline } from "react-icons/io5";
 
 export default function ContactHome() {
   const [successMessage, setSuccessMessage] = useState("");
@@ -123,22 +124,22 @@ export default function ContactHome() {
                   </h1>
 
                   {/* Display success or error message */}
-                  {/* {successMessage && (
-              <div className="alert border border-2" role="alert">
-                <Col>
-                  <IoCheckmarkOutline size={40} />
-                </Col>
-                <Col>{successMessage}</Col>
-              </div>
-            )}
-            {errorMessage && (
-              <div className="alert border border-2" role="alert">
-                <Col>
-                  <IoCloseOutline size={40} />
-                </Col>
-                <Col>{errorMessage}</Col>
-              </div>
-            )} */}
+                  {successMessage && (
+                    <div className="alert border border-2" role="alert">
+                      <Col>
+                        <IoCheckmarkOutline size={40} />
+                      </Col>
+                      <Col>{successMessage}</Col>
+                    </div>
+                  )}
+                  {errorMessage && (
+                    <div className="alert border border-2" role="alert">
+                      <Col>
+                        <IoCloseOutline size={40} />
+                      </Col>
+                      <Col>{errorMessage}</Col>
+                    </div>
+                  )}
                   <Form
                     // onSubmit={handleSubmit(handleSubmitData)}
                     onSubmit={handleSubmit(handleSubmitData)}
@@ -172,7 +173,7 @@ export default function ContactHome() {
                     </Col>
                     {/************ Last Name **************/}
                     <Col>
-                      <InputGroup className="mb-3 ">
+                      <InputGroup className="mb-3">
                         <InputGroup.Text id="last-name" className=" gap-2">
                           Last Name{" "}
                         </InputGroup.Text>

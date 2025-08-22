@@ -18,7 +18,7 @@ export default function AboutHome() {
                   Building Products, Enabling Trade,
                 </span>{" "}
                 <br />
-                Connecting Businesses across the Globe
+                Connecting Businesses Across the Globe
               </h1>
             </Col>
             {/* <Col lg={2} /> */}

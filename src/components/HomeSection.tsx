@@ -76,8 +76,8 @@ const HomeSection = () => {
                 className="px-xl-4 pt-xl-2 align-items-center font-semibold rounded-2"
                 onClick={handleOpenModal}
               >
-                <BsPlayFill className="mb-1" size={24} />
-                <small className="ms-1">Explore EnTTerprice</small>
+                {/* <BsPlayFill className="mb-1" size={24} /> */}
+                <small className="ms-1">Get Started</small>
               </Button>
             </div>
           </Col>

@@ -26,8 +26,8 @@ export default async function handler(
       port: 25,
       secure: false,
       auth: {
-        user: "alishay717@gmail.com",
-        pass: "Alisha3326.*",
+        user: "alisha.sabir@entterprice.com",
+        pass: "Alisha3326%",
       },
     });
 

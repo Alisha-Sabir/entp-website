@@ -12,7 +12,7 @@ export default function ServicesHome() {
             <Col md={12} lg={5} className="mt-5 text-center text-md-start">
               <h1 className="font-bold display-5 mb-3">
                 <span style={{ color: "#FFDE1F" }}>
-                  Seamless Global Payment Platforms
+                  Seamless Global Payment Platform
                 </span>{" "}
                 <br />
                 For Today’s Business
