@@ -17,22 +17,22 @@ import Head from "next/head";
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   const handleLoad = () => {
-  //     setIsLoading(false);
-  //   };
-
-  //   if (document.readyState === "complete") {
-  //     handleLoad();
-  //   } else {
-  //     window.addEventListener("load", handleLoad);
-  //     return () => window.removeEventListener("load", handleLoad);
-  //   }
-  // }, []);
-
   useEffect(() => {
-    setIsLoading(false);
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
   }, []);
+
+  // useEffect(() => {
+  //   setIsLoading(false);
+  // }, []);
 
   return (
     <>
