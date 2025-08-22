@@ -73,7 +73,7 @@ const Highlights = () => {
   const text: Text[] = [
     {
       //   icon: "https://entterprice-dev.s3.me-central-1.amazonaws.com/Entterprice_images/transact_icon.png",
-      title: "Man-days od experience",
+      title: "Man-hours or experience",
       count: 25,
       subtitle: "Countries",
     },

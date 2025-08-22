@@ -36,7 +36,7 @@ const WorkWith = () => {
                     style={{ color: "#383838", lineHeight: "33px" }}
                     className="font-medium pe-xl-5"
                   >
-                    We provide EnTTerPrice Accounts for Payout, Collection and
+                    We provide EntterPrice Accounts for Payout, Collection and
                     Corporate FX to Startups, SME’s and Traders within the
                     UAE-China corridor and beyond.
                   </h4>

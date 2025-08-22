@@ -92,7 +92,7 @@ export default function PersonalizedWeb() {
             </h1>
             <h3 className="font-bold display-3 text-white">Websites</h3>
             <h3 style={{ color: "#DEDEDE" }}>
-              Tailor-Made Web Solutions That Drive Success
+              Tailor-Made Web Solutions that Drive Success
             </h3>
           </Col>
         </Row>

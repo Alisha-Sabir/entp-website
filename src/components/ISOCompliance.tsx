@@ -7,17 +7,17 @@ export default function ISOCompliance() {
     {
       id: 1,
       img: "/images/iso_icon_1.png",
-      text: "Risk-based security controls",
+      text: "Risk-based security controls.",
     },
     {
       id: 2,
       img: "/images/iso_icon_2.png",
-      text: "Regular audits and vulnerability assessments",
+      text: "Regular audits and vulnerability assessments.",
     },
     {
       id: 3,
       img: "/images/iso_icon_3.png",
-      text: "Business continuity and incident response planning",
+      text: "Business continuity and incident response planning.",
     },
   ];
   return (
@@ -43,7 +43,10 @@ export default function ISOCompliance() {
               <p style={{ color: "#6D6D6C", fontSize: "20px" }}>
                 Our internal Information Security Management System (ISMS) is
                 aligned with ISO/IEC 27001, the international standard for
-                managing sensitive company and customer information. It covers:
+                managing sensitive company and customer information.
+                <br />
+                <br />
+                <b>It covers:</b>
               </p>
               <Row>
                 {data.map((item, index) => (

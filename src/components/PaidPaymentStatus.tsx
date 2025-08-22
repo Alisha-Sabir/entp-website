@@ -2,9 +2,9 @@ import TrackComponent from "./TrackComponent";
 
 const TrackSection = () => {
   const list = [
-    "Real-Time Tracking Dashboard Users can see live status of every transaction",
-    "Phases Covered Initiated → In Transit → Delivered",
-    "Peace of Mind Transparency and reduced payment uncertainty",
+    "Real-Time tracking dashboard users can see live status of every transaction.",
+    "Phases covered initiated → In transit → Delivered.",
+    "Peace of mind transparency and reduced payment uncertainty.",
   ];
   return (
     <>

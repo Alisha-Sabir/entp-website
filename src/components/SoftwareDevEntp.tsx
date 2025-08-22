@@ -43,11 +43,11 @@ export default function SoftwareDevEntp() {
             className="px-2 font-medium mx-auto"
           >
             Entterprice offers expert software development tailored for startups
-            and SMEs across fintech, mobile, web, and backend solutions.
+            and SMEs across Fintech, mobile, web, and backend solutions.
             <br />
             Leveraging cutting-edge technology, we drive transformational change
             across industries and geographies. Partner with us to accelerate
-            innovation and elevate your digital presence
+            innovation and elevate your digital presence.
           </p>
         </div>
       </Container>

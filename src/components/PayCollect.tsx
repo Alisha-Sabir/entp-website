@@ -14,7 +14,7 @@ const PayCollect = () => {
       image: "/images/pay_icon_1.png",
       title: "Payment Collection & Disbursements",
       description:
-        "Chinese businesses can collect payments locally in the UAE through our virtual account facility",
+        "Chinese businesses can collect payments locally in the UAE through our virtual account facility.",
     },
     {
       image: "/images/pay_icon_2.png",
@@ -24,7 +24,7 @@ const PayCollect = () => {
     },
     {
       image: "/images/pay_icon_3.png",
-      title: "Digital Payment account & Optimal FX Solutions  ",
+      title: "Digital Payment Account & Optimal FX Solutions",
       description:
         "Traders and SME’s can hold, convert, and transfer multiple currencies and make and receive Cross Border Payments. ",
     },
@@ -37,11 +37,11 @@ const PayCollect = () => {
           <div>
             <Col>
               <h1 className="font-bold">
-                Pay to and Collect From China & Hong Kong
+                Pay to and Collect from China & Hong Kong
               </h1>
               <p className="para-color px-xl-5">
                 Facilitating seamless cross border payments at competitive FX
-                Rates
+                rates
               </p>
             </Col>
             {/* <Row className="justify-content-center align-items-center mt-5 d-flex">

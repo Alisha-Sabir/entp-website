@@ -9,11 +9,11 @@ export default function ImporterExporter() {
       heading: "Pay to Exporter",
       image: "/images/export_icon.png",
       list: [
-        "Supported Corridors e.g., UAE, China, Hong Kong, Africa",
-        "Real-time Payments",
-        "Multi-Currency Payments, Supported currencies, no forced conversions",
-        "Speed & FX Transparency, competitive mid-market FX rates",
-        "Payment Steps Overview Quick summary: create account → verify → initiate payments",
+        "Supported corridors e.g., UAE, China, Hong Kong, Africa.",
+        "Real-time payments.",
+        "Multi-currency payments, supported currencies, no forced conversions.",
+        "Speed & FX transparency, competitive mid-market FX rates.",
+        "Payment steps overview quick summary: create account → verify → initiate payments.",
       ],
     },
     {
@@ -21,10 +21,10 @@ export default function ImporterExporter() {
       heading: "Collect from Importer",
       image: "/images/import_icon.png",
       list: [
-        "How Incoming payments work collecting via Virtual IBAN",
-        "Currencies Supported: USD, AED, HKD, CNY, etc.",
-        "Notifications & Tracking Instant updates and status alerts",
-        "Corporate FX Calculator",
+        "How incoming payments work collecting via virtual IBAN.",
+        "Currencies supported: USD, AED, HKD, CNY, etc.",
+        "Notifications & tracking instant updates and status alerts.",
+        "Corporate FX calculator.",
       ],
     },
   ];

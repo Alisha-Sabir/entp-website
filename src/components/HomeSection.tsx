@@ -21,14 +21,14 @@ const HomeSection = () => {
       icon: "/images/home_icon_1.png",
       wave: "/images/wave_1.png",
       heading: "Multi Currency Business Accounts",
-      text: "Transact in USD, AED, HKD, CNY and more without delays or forced conversions",
+      text: "Transact in USD, AED, HKD, CNY and more without delays or forced conversions.",
     },
     {
       id: 2,
       icon: "/images/home_icon_2.png",
       wave: "/images/wave_2.png",
-      heading: "Pay And Collect Within Minutes, 24/7",
-      text: "Move money across borders securely with transparent FX rates and no hidden fees",
+      heading: "Pay and Collect within Minutes, 24/7",
+      text: "Move money across borders securely with transparent FX rates and no hidden fees.",
     },
     {
       id: 3,
@@ -61,8 +61,8 @@ const HomeSection = () => {
                 <span className="entp-text">International Trade Payments</span>
               </h1>
               <p className="text-white">
-                Our One Stop Shop Solution For Corporate FX, Payouts And
-                Collections From UAE To China And Beyond.
+                Our One Stop Shop Solution for Corporate FX, Payouts and
+                Collections from UAE to China and Beyond.
               </p>
               <Button
                 href="#"

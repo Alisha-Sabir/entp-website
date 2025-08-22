@@ -14,7 +14,7 @@ const InternationalTransaction = () => {
   const cards = [
     {
       id: 1,
-      text: "Compliance Made Simple.",
+      text: "Compliance Made Simple",
       img: "/images/b_icon_1.png",
     },
     {
@@ -77,7 +77,7 @@ const InternationalTransaction = () => {
               <h1 className="font-bold">
                 Purpose-built to facilitate
                 <br />
-                International Trade
+                international Trade
               </h1>
               <h5 className="fw-medium pe-md-5">
                 Pay and collect from vendors instantly, anywhere anytime,

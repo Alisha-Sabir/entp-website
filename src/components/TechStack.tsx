@@ -53,7 +53,7 @@ export default function TechStack() {
 
         <Col md={6} className="text-center my-5 my-md-0">
           <h1 className="font-bold">
-            Technology Stack <br /> And Architecture Overview
+            Technology Stack <br /> and Architecture Overview
           </h1>
           <p className="font-medium fs-5" style={{ color: "#6D6D6C" }}>
             Entterprise uses modern microservices, React/Angular frontends, and

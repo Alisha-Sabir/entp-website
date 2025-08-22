@@ -7,7 +7,7 @@ const BackedBy = () => {
   return (
     <Container className="my-5">
       <div className="my-5">
-        <h1 className="text-center fw-bold">Backed By The Best</h1>
+        <h1 className="text-center fw-bold">Backed by the best</h1>
         <Row className="gy-3 mt-4 justify-content-center">
           {technologiesData.map((item: any) => (
             <Col

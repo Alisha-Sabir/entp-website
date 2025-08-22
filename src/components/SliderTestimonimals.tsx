@@ -147,10 +147,10 @@ const SliderTestimonials = () => {
               /> */}
         <div className="text-center">
           <h1 className="font-bold">What Our Happy Clients Say</h1>
-          <p style={{ maxWidth: "1000px" }} className="para-color mx-auto">
+          {/* <p style={{ maxWidth: "1000px" }} className="para-color mx-auto">
             Lorem ipsum dolor sit amet consectetur. Massa sed dapibus adipiscing
             felis at. Integer at dictum ullamcorper magna nam eget.{" "}
-          </p>
+          </p> */}
         </div>
         <div className="slider-wrapper mt-3 mt-lg-5">
           <Slider {...settings}>

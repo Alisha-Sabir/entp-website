@@ -6,13 +6,13 @@ import { PiSealCheckFill } from "react-icons/pi";
 
 export default function PrivacySecurity() {
   const listItems = [
-    "ISO/IEC 27001: Information Security Management",
-    "ISO/IEC 27017: Cloud Security",
-    "ISO/IEC 27018: Data Protection",
-    "SOC 1, SOC 2, SOC 3 Reports",
-    "PCI DSS Compliance",
-    "CSA STAR Certification",
-    "GDPR Alignment",
+    "ISO/IEC 27001: Information Security Management.",
+    "ISO/IEC 27017: Cloud Security.",
+    "ISO/IEC 27018: Data Protection.",
+    "SOC 1, SOC 2, SOC 3 Reports.",
+    "PCI DSS Compliance.",
+    "CSA STAR Certification.",
+    "GDPR Alignment.",
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function PrivacySecurity() {
             <h1 className="font-bold text-dark">Data Privacy & Security</h1>
             <p className="para-color">
               We recognize that the integrity and security of our infrastructure
-              are critical to customer trust. Our security posture includes
+              are critical to customer trust. Our security posture includes.
             </p>
           </div>
           <div className="d-block d-lg-flex align-items-center">

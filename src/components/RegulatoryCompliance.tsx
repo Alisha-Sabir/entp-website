@@ -13,7 +13,7 @@ export default function RegulatoryCompliance() {
             <p className="para-color px-lg-5">
               We operate within a multi-jurisdictional regulatory environment
               and comply with the requirements of respected financial regulators
-              across regions:
+              across regions.
             </p>
           </div>
 

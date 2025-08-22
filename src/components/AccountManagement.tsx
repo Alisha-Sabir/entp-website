@@ -24,7 +24,7 @@ const AccountManagement = () => {
       id: 4,
       li: "Multilingual Support / Relationship Managers",
       subText:
-        "Benefit from multilingual support and dedicated Relationship Managers, ensuring personalized assistance in your preferred language for smoother communication.",
+        "Benefit from multilingual support and dedicated relationship managers, ensuring personalized assistance in your preferred language for smoother communication.",
     },
   ];
   return (

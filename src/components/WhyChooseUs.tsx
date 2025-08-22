@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
       id: 4,
       heading: "SaaS Services",
       description:
-        "Delivering Software as a Service & Bespoke Software Development. Specifically for the GCC market in accordance with local regulations.",
+        "Delivering Software as a Service & Bespoke software development. Specifically for the GCC market in accordance with local regulations.",
     },
     {
       id: 5,

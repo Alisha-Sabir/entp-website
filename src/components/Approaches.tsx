@@ -8,10 +8,10 @@ const Approaches = () => {
       img: "/images/bespoke.png",
       heading: "Bespoke Software Development",
       list: [
-        "Tailored Solutions with Clear Timelines",
-        "Detailed proposal covering development costs and timelines",
-        "Comprehensive project coverage from start to finish",
-        "Focused on delivering results that meet your specific requirements",
+        "Tailored solutions with clear timelines.",
+        "Detailed proposal covering development costs and timelines.",
+        "Comprehensive project coverage from start to finish.",
+        "Focused on delivering results that meet your specific requirements.",
       ],
     },
     {
@@ -19,9 +19,9 @@ const Approaches = () => {
       img: "/images/subscription.png",
       heading: "Software as a Service Subscription",
       list: [
-        "Exclusive team focused solely on your project",
-        "Flexible, ongoing support tailored to your evolving needs",
-        "Full integration with your in-house operations for smooth collaboration",
+        "Exclusive team focused solely on your project.",
+        "Flexible, ongoing support tailored to your evolving needs.",
+        "Full integration with your in-house operations for smooth collaboration.",
       ],
     },
   ];
