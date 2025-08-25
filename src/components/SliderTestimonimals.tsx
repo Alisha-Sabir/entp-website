@@ -51,7 +51,7 @@ const SliderTestimonials = () => {
       stars: 5,
       designation: "CEO Zenith",
       remarks:
-        "Elementum semper ultrices quam elementum dignissim etiam velit molestie diam. Netus arcu varius lectus dignissim mollis lorem pulvinar tortor arcu.",
+        "Partnering with EnTTerprice to build our website has been a game-changer for Zenith. They quickly understood our industry needs and delivered a sleek, intuitive platform that builds trust with our clients. The result is a website that truly reflects our brand and supports our business goals.",
     },
   ];
 

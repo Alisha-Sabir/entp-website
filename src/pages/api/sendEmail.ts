@@ -48,6 +48,7 @@ export default async function handler(
     const mailOptions = {
       from: email,
       to: "alisha.sabir@entterprice.com",
+      // to: ["", ""],
       subject: "New Contact Form Submission",
       text: `You have a new contact form submission:
              \nFirst Name: ${FirstName}
