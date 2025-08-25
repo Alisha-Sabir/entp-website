@@ -41,17 +41,19 @@ const VirtualIBAN = () => {
     },
   ];
   return (
-    <DetailsComponent
-      centerHeading="Virtual IBAN"
-      img="/images/IBAN_img.png"
-      imgAlt="Partners"
-      data={data}
-      rightImg={true}
-      leftImg={false}
-      background="iban-bg"
-      // backgroundColor={{ backgroundColor: "#F5F5F5", color : "white" }}
-      descriptionStyle={{ color: "#DDDDDD" }}
-    />
+    <section id="IBAN">
+      <DetailsComponent
+        centerHeading="Virtual IBAN"
+        img="/images/IBAN_img.png"
+        imgAlt="Partners"
+        data={data}
+        rightImg={true}
+        leftImg={false}
+        background="iban-bg"
+        // backgroundColor={{ backgroundColor: "#F5F5F5", color : "white" }}
+        descriptionStyle={{ color: "#DDDDDD" }}
+      />
+    </section>
   );
 };
 

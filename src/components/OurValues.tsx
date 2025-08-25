@@ -35,7 +35,7 @@ export default function OurValues() {
               <div>
                 <h1 className="font-bold text-dark">Our Values</h1>
                 <p className="p-0 m-0" style={{ fontSize: "20px" }}>
-                  At Entterprice, our values guide everything we do. We put
+                  At EnTTerprice, our values guide everything we do. We put
                   customers first by solving real-world problems that drive
                   business impact. We build with a long-term mindset, designing
                   systems and teams that scale with purpose. Clarity matters to

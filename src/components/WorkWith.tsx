@@ -5,8 +5,8 @@ const WorkWith = () => {
   const cards = [
     {
       id: 1,
-      heading: "Startups",
-      text: "Quick onboarding, no setup fees, and major currency support — all from day one. Entterprice helps you start simple and scale confidently.",
+      heading: "E-commerce market places",
+      text: "Quick onboarding, no setup fees, and major currency support — all from day one. EnTTerprice helps you start simple and scale confidently.",
       icons: "/images/card_icon_1.png",
     },
     {
@@ -17,8 +17,8 @@ const WorkWith = () => {
     },
     {
       id: 3,
-      heading: "Traders",
-      text: "Streamline regular imports and vendor payments with dedicated corridor support. Entterprice ensures speed, visibility, and full compliance.",
+      heading: "Travel agencies and Airlines",
+      text: "Streamline regular imports and vendor payments with dedicated corridor support. EnTTerprice ensures speed, visibility, and full compliance.",
       icons: "/images/card_icon_3.png",
     },
   ];
@@ -36,9 +36,10 @@ const WorkWith = () => {
                     style={{ color: "#383838", lineHeight: "33px" }}
                     className="font-medium pe-xl-5"
                   >
-                    We provide EntterPrice Accounts for Payout, Collection and
-                    Corporate FX to Startups, SME’s and Traders within the
-                    UAE-China corridor and beyond.
+                    We provide Entterprice Accounts for Payout, Collection and
+                    Corporate FX to Startups, SME’s and Traders within the UAE-
+                    <span style={{ color: "#f8d613" }}>China</span> corridor and
+                    beyond.
                   </h4>
                 </>
               </Row>

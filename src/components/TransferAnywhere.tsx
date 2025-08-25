@@ -63,7 +63,11 @@ const TransferAnywhere = () => {
   };
 
   return (
-    <section className="py-lg-5" style={{ backgroundColor: "#22221D" }}>
+    <section
+      id="transferAnywhere"
+      className="py-lg-5"
+      style={{ backgroundColor: "#22221D" }}
+    >
       <Container fluid className="overflow-hidden py-3">
         <Row className="justify-content-center text-center align-items-center">
           <div className="mt-5">

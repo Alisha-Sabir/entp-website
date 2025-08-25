@@ -90,7 +90,7 @@ export default function ContactHome() {
               <br /> Hear From You{" "}
             </h1>
           </Col>
-          {/* <Col lg={2} /> */}
+          <Col lg={1} />
           <Col md={12} lg={5} className="text-center text-lg-start">
             <div className="glass-bg">
               {/* <div className="d-none d-lg-block"> */}

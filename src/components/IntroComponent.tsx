@@ -50,10 +50,38 @@ export default function IntroComponent({
             </Col>
             {padding ? (
               <div className="px-lg-5">
-                <p className="para-color px-lg-5">{description}</p>
+                {/* <p className="para-color px-lg-5">{description}</p> */}
+                {description &&
+                  description
+                    .replace(
+                      /china/gi,
+                      (match: any) =>
+                        `<span style="color: #f8d613;">${match}</span>`
+                    )
+                    .split("\n")
+                    .map((line: any, idx: any) => (
+                      <span
+                        key={idx}
+                        dangerouslySetInnerHTML={{ __html: line }}
+                      />
+                    ))}
               </div>
             ) : (
-              <p className="para-color">{description}</p>
+              description &&
+              description
+                .replace(
+                  /china/gi,
+                  (match: any) =>
+                    `<span style="color: #f8d613;">${match}</span>`
+                )
+                .split("\n")
+                .map((line: any, idx: any) => (
+                  <p
+                    key={idx}
+                    className="para-color"
+                    dangerouslySetInnerHTML={{ __html: line }}
+                  />
+                ))
             )}
           </div>
         </Container>

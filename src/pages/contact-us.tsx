@@ -20,7 +20,7 @@ export default function ContactUs() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>Contact Us - Entterprice</title>
+        <title>Contact Us - EnTTerprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

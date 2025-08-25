@@ -49,9 +49,9 @@ const GlobalFootprint = () => {
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <p style={{ maxWidth: "800px" }} className="para-color">
-              {/* Explore Entterprice’s presence across strategic markets and
+              {/* Explore EnTTerprice’s presence across strategic markets and
               financial corridors. */}
-              Entterprice has a global presence across four jurisdictions and
+              EnTTerprice has a global presence across four jurisdictions and
               expanding.
             </p>
           </Col>
@@ -66,9 +66,22 @@ const GlobalFootprint = () => {
                     height={40}
                     className="img-fluid rounded-3"
                   />
-                  <p className="font-bold mt-3" style={{ fontSize: "19px" }}>
+                  {/* <p className="font-bold mt-3" style={{ fontSize: "19px" }}>
                     {item.cardText}
-                  </p>
+                  </p> */}
+                  {item.cardText && (
+                    <p
+                      className="font-bold mt-3"
+                      style={{ fontSize: "19px" }}
+                      dangerouslySetInnerHTML={{
+                        __html: item.cardText.replace(
+                          /china/gi,
+                          (match: any) =>
+                            `<span style="color: #f8d613;">${match}</span>`
+                        ),
+                      }}
+                    />
+                  )}
                 </Card>
               </Col>
             ))}

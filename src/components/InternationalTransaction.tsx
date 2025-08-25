@@ -105,7 +105,18 @@ const InternationalTransaction = () => {
                         />
                       </Col>
                       <Col md={10} xl={8} className="fw-bold mt-3">
-                        <h5>{item.text}</h5>
+                        {/* <h5>{item.text}</h5> */}
+                        {item.text && (
+                          <h5
+                            dangerouslySetInnerHTML={{
+                              __html: item.text.replace(
+                                /china/gi,
+                                (match: any) =>
+                                  `<span style="color: #f8d613;">${match}</span>`
+                              ),
+                            }}
+                          />
+                        )}
                       </Col>
                     </Col>
                   ))}
@@ -132,7 +143,18 @@ const InternationalTransaction = () => {
                         />
                       </Col>
                       <Col md={10} xl={9} className="fw-bold mt-3">
-                        <h5>{item.text}</h5>
+                        {/* <h5>{item.text}</h5> */}
+                        {item.text && (
+                          <h5
+                            dangerouslySetInnerHTML={{
+                              __html: item.text.replace(
+                                /china/gi,
+                                (match: any) =>
+                                  `<span style="color: #f8d613;">${match}</span>`
+                              ),
+                            }}
+                          />
+                        )}
                       </Col>
                     </Col>
                   ))}

@@ -21,7 +21,7 @@ export default function Services() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>Services - Entterprice</title>
+        <title>Services - EnTTerprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

@@ -15,7 +15,7 @@ const SliderTestimonials = () => {
       stars: 5,
       designation: "CEO of Digitt Plus AFT",
       remarks:
-        "Working with Entterprice was a game-changer for us. They developed a mobile fintech app tailored to the needs of Pakistan’s farmers — simple, intuitive, and perfectly aligned with our vision. Their ability to design technology that truly matches the user’s knowledge level has helped us onboard farmers who struggled with conventional money transfer apps.",
+        "Working with EnTTerprice was a game-changer for us. They developed a mobile fintech app tailored to the needs of Pakistan’s farmers — simple, intuitive, and perfectly aligned with our vision. Their ability to design technology that truly matches the user’s knowledge level has helped us onboard farmers who struggled with conventional money transfer apps.",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const SliderTestimonials = () => {
       stars: 4,
       designation: "Founder & CEO ExAim",
       remarks:
-        "Entterprice delivered exactly what we needed — a reliable, scalable educational technology platform for the UAE market. Their team was professional, fast, and focused on quality from day one. I highly recommend Entterprice to any business looking for innovative and dependable software solutions.",
+        "EnTTerprice delivered exactly what we needed — a reliable, scalable educational technology platform for the UAE market. Their team was professional, fast, and focused on quality from day one. I highly recommend EnTTerprice to any business looking for innovative and dependable software solutions.",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const SliderTestimonials = () => {
       stars: 5,
       designation: "Product Manager ExAim",
       remarks:
-        "From a technical perspective, Entterprice exceeded our expectations. The educational web app they built for us is robust, scalable, and optimized for performance in the UAE market. Their development team was highly collaborative, ensuring smooth integration and clean code architecture throughout the project. I would strongly recommend Entterprice for any organization seeking a technically sound and future-ready software solution.",
+        "From a technical perspective, EnTTerprice exceeded our expectations. The educational web app they built for us is robust, scalable, and optimized for performance in the UAE market. Their development team was highly collaborative, ensuring smooth integration and clean code architecture throughout the project. I would strongly recommend EnTTerprice for any organization seeking a technically sound and future-ready software solution.",
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const SliderTestimonials = () => {
       stars: 5,
       designation: "Navigate CEO",
       remarks:
-        "Entterprice helped us bring our vision to life with a professional, user-friendly real estate website. The design is sleek, fast, and tailored to showcase our properties in the best light, which has been crucial in promoting our business online. I highly recommend Entterprice to any company looking to strengthen their digital presence.",
+        "EnTTerprice helped us bring our vision to life with a professional, user-friendly real estate website. The design is sleek, fast, and tailored to showcase our properties in the best light, which has been crucial in promoting our business online. I highly recommend EnTTerprice to any company looking to strengthen their digital presence.",
     },
     {
       id: 5,

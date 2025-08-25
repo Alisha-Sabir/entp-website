@@ -63,15 +63,21 @@ export default function CardComponent({
               className="order-list mt-3"
               style={{ paddingLeft: 15, marginLeft: 0 }}
             >
-              {list.map((item, i) => (
-                <li
-                  style={{ color: "#55585D", fontSize: "19px" }}
-                  key={i}
-                  className="text-start order-list-item px-3"
-                >
-                  {item}
-                </li>
-              ))}
+              {list.map((item, i) => {
+                const highlighted = item.replace(
+                  /china/gi,
+                  (match) => `<span style="color: #f8d613;">${match}</span>`
+                );
+
+                return (
+                  <li
+                    key={i}
+                    style={{ color: "#55585D", fontSize: "19px" }}
+                    className="text-start order-list-item px-3"
+                    dangerouslySetInnerHTML={{ __html: highlighted }}
+                  />
+                );
+              })}
             </ol>
           </>
         )}

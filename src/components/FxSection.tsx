@@ -4,7 +4,7 @@ import Image from "next/image";
 const FXSection = () => {
   return (
     <>
-      <section className="fx-wave-bg">
+      <section id="fxRates" className="fx-wave-bg">
         <Container fluid className="mt-xl-5 text-center py-3 py-xl-5">
           <Col className="pt-3">
             <h1 className="font-bold">Slash your FX Rates</h1>
@@ -12,7 +12,8 @@ const FXSection = () => {
           <Col className="d-flex justify-content-center align-items-center">
             <p style={{ maxWidth: "1000px" }} className="para-color">
               Get real-time mid-market rates with low commissions across UAE,
-              Hong Kong, China, and key trade corridors.
+              Hong Kong, <span style={{ color: "#f8d613" }}>China,</span> and
+              key trade corridors.
             </p>
           </Col>
           <Row className="my-5">

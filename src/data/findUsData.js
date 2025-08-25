@@ -37,7 +37,7 @@ const findUsData = [
     locationName: "Toronto, Canada",
     email: "Info@entterprice.com",
     address:
-      "Church St Devenport road, Unit Number 2105 Toronto ON M4W 3Z4 Entterprice Canada Limited",
+      "Church St Devenport road, Unit Number 2105 Toronto ON M4W 3Z4 EnTTerprice Canada Limited",
     img: "/images/cad_location.png",
 
     imgAlt: "CANADA",

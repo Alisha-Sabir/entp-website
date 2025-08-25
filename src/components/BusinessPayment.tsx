@@ -11,9 +11,9 @@ export default function BusinessPayment() {
     {
       id: 1,
       // icon: "/images/copy_icon.png",
-      title: "Create a free account",
+      title: "Create Your Account",
       description:
-        "Onboard with entterprice within minutes - no fees, no hassle, no minimum balance.",
+        "Onboard with EnTTerprice within minutes - no fees, no hassle, no minimum balance.",
       slide: "/images/slide_1.png",
       //   width: 800,
       //   height: 400,
@@ -95,7 +95,7 @@ export default function BusinessPayment() {
           <h1 className="fw-bold">Streamlining Global Trade Payments</h1>
           <Col className="d-flex justify-content-center align-items-center">
             <p style={{ maxWidth: "800px" }} className="para-color">
-              Pay international vendors seamlessly with your Entterprice
+              Pay international vendors seamlessly with your EnTTerprice
               business account
             </p>
           </Col>

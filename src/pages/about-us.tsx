@@ -20,7 +20,7 @@ export default function AboutUs() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>About Us - Entterprice</title>
+        <title>About Us - EnTTerprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

@@ -69,7 +69,18 @@ const DetailsComponent = ({
                 <p style={descriptionStyle} className="font-medium">
                   <b style={{ color: "#4D4D3F" }}>{item.subHeading}</b>{" "}
                   {/* <br className="d-block d-lg-none" /> */}
-                  <span>{item.description}</span>
+                  {/* <span>{item.description}</span> */}
+                  {item.description && (
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: item.description.replace(
+                          /china/gi,
+                          (match: any) =>
+                            `<span style="color: #f8d613;">${match}</span>`
+                        ),
+                      }}
+                    />
+                  )}
                 </p>
                 {item.li && (
                   <>

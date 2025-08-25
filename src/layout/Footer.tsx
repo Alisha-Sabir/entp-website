@@ -6,8 +6,10 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { RiTwitterXFill, RiYoutubeFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 export default function Footer({ padding = true }) {
+  const router = useRouter();
   return (
     <section
       className="text-light overflow-hidden d-flex flex-column justify-content-end"
@@ -27,6 +29,8 @@ export default function Footer({ padding = true }) {
               height={80}
               quality={100}
               className="img-fluid"
+              onClick={() => router.push("/")}
+              style={{ cursor: "pointer" }}
             />
           </Col>
         </Row>
@@ -51,8 +55,8 @@ export default function Footer({ padding = true }) {
                 Pakistan – Lahore
               </p>
               {/* <p 
-//onClick={handleOpenModal}
->Lahore, Pakistan</p> */}
+                //onClick={handleOpenModal}
+                >Lahore, Pakistan</p> */}
               <p
                 onClick={() =>
                   (window.location.href = "mailto:info@entterprice.com")
@@ -92,22 +96,16 @@ export default function Footer({ padding = true }) {
 
             <Col md={6} lg={2} xl={3} className="mx-auto mb-4 custom-link">
               <h6 className="mb-4">Our Services</h6>
-              <p
-              //onClick={handleOpenModal}
-              >
+              <p onClick={() => router.push("/#transferAnywhere")}>
                 Multi-currency Accounts
               </p>
+              <p onClick={() => router.push("/services#IBAN")}>Virtual IBANs</p>
+              <p onClick={() => router.push("/#fxRates")}>Corporate FX</p>
               <p
-              //onClick={handleOpenModal}
+                onClick={() => router.push("/payout-&-collection#payToCollect")}
               >
-                Virtual IBANs
+                Payments to <span style={{ color: "#f8d613" }}>China</span>
               </p>
-              <p
-              //onClick={handleOpenModal}
-              >
-                Corporate FX
-              </p>
-              <p>Payments to China</p>
               <p>
                 <Link href="/software-development" className="text-reset">
                   Software Development
@@ -182,16 +180,16 @@ export default function Footer({ padding = true }) {
                 <Button
                   variant="warning"
                   className="me-2 me-md-3 py-2 px-2 social-link"
-
-                  //onClick={handleOpenModal}
+                  href="https://www.facebook.com/profile.php?id=61578406230734&sk=about_contact_and_basic_info"
+                  target="_blank"
                 >
                   <FaFacebook size={28} />
                 </Button>
                 <Button
                   variant="warning"
                   className="me-2 me-md-3 py-2 px-2 social-link"
-
-                  //onClick={handleOpenModal}
+                  href="https://www.instagram.com/entterprice/"
+                  target="_blank"
                 >
                   <IoLogoInstagram size={28} />
                 </Button>
@@ -206,14 +204,14 @@ export default function Footer({ padding = true }) {
                 >
                   <FaLinkedin size={28} />
                 </Button>
-                <Button
+                {/* <Button
                   variant="warning"
                   className="me-2 me-md-4 py-2 px-2 social-link"
 
                   //onClick={handleOpenModal}
                 >
                   <RiYoutubeFill size={28} />
-                </Button>
+                </Button> */}
               </div>
             </Col>
           </Row>

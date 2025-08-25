@@ -2,7 +2,7 @@ const relationshipManager = {
   heading: "Choose your Relationship Manager",
   subHeading:
     // " Get personalized support — on-demand, in multiple languages, and through your preferred channel <b>(Email, Phone, or WhatsApp). (Coming Soon)</b>",
-    "Fuel your global growth with dedicated FinTech-savvy account managers who master FX and cross-border money movement — available soon through your preferred channels  <b>(email, phone, or WhatsApp).</b>",
+    "Fuel your global growth with dedicated FinTech-savvy account managers who master FX and cross-border money movement — available soon through your preferred channels  <b>(Email, Phone, WhatsApp or Wechat).</b>",
   managers: [
     {
       id: 1,
@@ -28,7 +28,7 @@ const relationshipManager = {
     {
       id: 4,
       image: "/images/Member_4.png",
-      managerName: "Rhye Smith",
+      managerName: "Yang Chen",
       qualities:
         "Expert in FX conversions, international transfers, invoices services.",
     },

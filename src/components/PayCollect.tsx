@@ -31,13 +31,14 @@ const PayCollect = () => {
   ];
 
   return (
-    <section>
+    <section id="payToCollect">
       <Container>
         <Row className="text-center pt-xl-5">
           <div>
             <Col>
               <h1 className="font-bold">
-                Pay to and Collect from China & Hong Kong
+                Pay to and Collect from{" "}
+                <span style={{ color: "#f8d613" }}>China</span> & Hong Kong
               </h1>
               <p className="para-color px-xl-5">
                 Facilitating seamless cross border payments at competitive FX
@@ -140,12 +141,26 @@ const PayCollect = () => {
                         >
                           {item.title}
                         </Card.Title>
-                        <Card.Text
+                        {/* <Card.Text
                           className="font-medium"
                           style={{ color: "#6D6D6C" }}
                         >
                           {item.description}
-                        </Card.Text>
+                        </Card.Text> */}
+                        {item.description &&
+                          item.description
+                            .replace(
+                              /china/gi,
+                              (match: any) =>
+                                `<span style="color: #f8d613;">${match}</span>`
+                            )
+                            .split("\n")
+                            .map((line: any, idx: any) => (
+                              <span
+                                key={idx}
+                                dangerouslySetInnerHTML={{ __html: line }}
+                              />
+                            ))}
                       </Card.Body>
                     </Card>
                   </div>

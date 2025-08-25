@@ -42,7 +42,7 @@ export default function SoftwareDevEntp() {
             style={{ maxWidth: "1100px", fontSize: "18px" }}
             className="px-2 font-medium mx-auto"
           >
-            Entterprice offers expert software development tailored for startups
+            EnTTerprice offers expert software development tailored for startups
             and SMEs across Fintech, mobile, web, and backend solutions.
             <br />
             Leveraging cutting-edge technology, we drive transformational change
