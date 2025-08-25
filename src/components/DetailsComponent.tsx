@@ -155,8 +155,8 @@ const DetailsComponent = ({
         <Col className="mx-auto text-center">
           <Button
             size={"lg"}
-            style={{ backgroundColor: "#FFDE1F" }}
-            className="px-5 border-0 text-dark font-bold mb-3 mb-xl-0"
+            // style={{ backgroundColor: "#FFDE1F" }}
+            className="px-5 border-0 font-bold mb-3 mb-xl-0 get-started-btn"
           >
             Get Started
           </Button>
