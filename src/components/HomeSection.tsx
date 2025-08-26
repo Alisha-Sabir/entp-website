@@ -18,25 +18,32 @@ const HomeSection = () => {
   const cards = [
     {
       id: 1,
+      icon: "/images/home_icon_4.png",
+      wave: "/images/card_1.png",
+      heading: "Stablecoin Issuance",
+      text: "Unlock yield revenue by issuing your own stable coins, instant conversion between fiat and stable coins.",
+    },
+    {
+      id: 2,
       icon: "/images/home_icon_1.png",
-      wave: "/images/wave_1.png",
+      wave: "/images/card_2.png",
       heading: "Multi Currency Business Accounts",
       text: "Transact in USD, AED, HKD, CNY and more without delays or forced conversions.",
     },
     {
-      id: 2,
+      id: 3,
       icon: "/images/home_icon_2.png",
-      wave: "/images/wave_2.png",
+      wave: "/images/card_3.png",
       heading: "Pay and Collect within Minutes, 24/7",
       text: "Move money across borders securely with transparent FX rates and no hidden fees.",
     },
-    {
-      id: 3,
-      icon: "/images/home_icon_3.png",
-      wave: "/images/wave_3.png",
-      heading: "Account Management",
-      text: "Easily assign Viewer, Maker, or Approver roles to manage workflows with control and clarity.",
-    },
+    // {
+    //   id: 4,
+    //   icon: "/images/home_icon_3.png",
+    //   wave: "/images/card_4.png",
+    //   heading: "Account Management",
+    //   text: "Easily assign Viewer, Maker, or Approver roles to manage workflows with control and clarity.",
+    // },
   ];
 
   return (
@@ -211,9 +218,10 @@ const HomeSection = () => {
               <Col
                 key={item.id}
                 xs={12}
-                md={4}
-                lg={4}
-                className="rounded-4 pt-5 pb-3 px-0 px-md-2 px-xl-5 mb-2 mb-md-0"
+                md={6}
+                lg={3}
+                xl={3}
+                className="rounded-4 pt-5 pb-3 px-2 px-xl-3 mb-2 mb-md-0"
                 style={{
                   borderTop: "2px solid #45453e",
                   borderBottom: "2px solid #31312b",
@@ -236,7 +244,7 @@ const HomeSection = () => {
                     className="img-fluid"
                   />
                 </Col>
-                <Col md={12} className="mt-4 pb-3">
+                <Col md={12} className="mt-4 mt-xl-5 pb-3">
                   <h4 className="font-bold entp-text">{item.heading}</h4>
                   <p className="font-medium text-white">{item.text}</p>
                 </Col>

@@ -18,7 +18,13 @@ export default async function handler(
   if (req.method === "POST") {
     const { Name, SurName, email }: EmailData = req.body;
 
-    // const filePath = path.join("C:", "Users", "aks", "Documents", "subscribers.txt");
+    try {
+      const filePath = path.resolve(process.cwd(), "contact_submissions.txt");
+      const line = `${email}\n`;
+      fs.appendFileSync(filePath, line, "utf8");
+    } catch (err) {
+      console.error("Error writing to file:", err);
+    }
 
     // Configure the SMTP transport
     const transporter = nodemailer.createTransport({
@@ -26,14 +32,14 @@ export default async function handler(
       port: 25,
       secure: false,
       auth: {
-        user: "alisha.sabir@entterprice.com",
-        pass: "Alisha3326%",
+        user: "shafiq.sarwar@entterprice.com",
+        pass: "cgwcghddhllslwfc",
       },
     });
 
     // Configure the email options
     const mailOptions = {
-      from: "info@entterprice.com",
+      from: "shafiq.sarwar@entterprice.com",
       to: email,
       subject: "Subscription Confirmation",
       text: `Dear ${Name} ${SurName},

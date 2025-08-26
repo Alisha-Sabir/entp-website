@@ -21,14 +21,6 @@ export default async function handler(
 
     console.log("req", req.body);
 
-    try {
-      const filePath = path.resolve(process.cwd(), "contact_submissions.txt");
-      const line = `${email}\n`;
-      fs.appendFileSync(filePath, line, "utf8");
-    } catch (err) {
-      console.error("Error writing to file:", err);
-    }
-
     // Configure the SMTP transport
     const transporter = nodemailer.createTransport({
       host: "entterprice-com.mail.protection.outlook.com",
@@ -37,24 +29,42 @@ export default async function handler(
       auth: {
         // user: process.env.SMTP_USER,
         // pass: process.env.SMTP_PASS,
-        user: "alisha.sabir@entterprice.com",
-        pass: "Alishasabir3326%",
+        user: "shafiq.sarwar@entterprice.com",
+        pass: "cgwcghddhllslwfc",
         // user: "noreply@entterprice.com",
         // pass: "wSy$tem@321*",
       },
     });
 
     // Configure the email options
+    // const mailOptions = {
+    //   from: email,
+    //   // to: "alisha.sabir@entterprice.com",
+    //   to: [
+    //     "marketing@entterprice.com",
+    //     "info@entterprice.com",
+    //     "noreply@entterprice.com",
+    //   ],
+    //   subject: "New Contact Form Submission",
+    //   text: `You have a new contact form submission: \nFirst Name: ${FirstName} \nLast Name: ${LastName} \nEmail: ${email} \nMessage: ${message}`,
+    // };
+
     const mailOptions = {
+      // from: `"${FirstName} ${LastName}" <shafiq.sarwar@entterprice.com>`, // your domain
       from: email,
-      to: "alisha.sabir@entterprice.com",
-      // to: ["", ""],
+      // replyTo: email, // user’s email
+      // to: [
+      //   "marketing@entterprice.com",
+      //   "info@entterprice.com",
+      //   "noreply@entterprice.com",
+      // ],
+      to: "shafiq.sarwar@entterprice.com",
       subject: "New Contact Form Submission",
       text: `You have a new contact form submission:
-             \nFirst Name: ${FirstName}
-             \nLast Name: ${LastName}
-             \nEmail: ${email}
-             \nMessage: ${message}`,
+First Name: ${FirstName}
+Last Name: ${LastName}
+Email: ${email}
+Message: ${message}`,
     };
 
     try {
