@@ -9,7 +9,7 @@ export default function MoneyMovement() {
       id: 1,
       image: "/images/first.png",
       title: "Sending Currency (AED)",
-      description: "Original currency collected using local Rails",
+      description: "Original currency collected using local rails",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function MoneyMovement() {
     {
       id: 3,
       image: "/images/third.png",
-      title: "Target Currency (CNY)",
+      title: "Target Currency (HKD)",
       description: "Converted at destination currency for local payout",
     },
   ];
@@ -117,16 +117,26 @@ export default function MoneyMovement() {
               <Col md={10} lg={12} xl={10} className="mt-4 mt-lg-auto">
                 <div
                   style={{ backgroundColor: "white" }}
-                  className="d-flex justify-content-between align-items-center p-3 border border-2 rounded-4"
+                  className="justify-content-between align-items-center p-3 border border-2 rounded-4"
                 >
-                  <Col md={9} lg={8} xl={9}>
+                  <Col md={12}>
                     <span className="font-bold" style={{ color: "#6D6D6C" }}>
-                      Processing Time:
+                      Bank route: Fees
                     </span>
+                    <br />
+                    <b className="fs-5">2.0% – 5.6% of the principal</b>
                   </Col>
-                  <Col md={3} lg={4} xl={3}>
-                    <b className="fs-5">3-5 Days</b>
-                  </Col>
+                  <hr />
+                  <div className="d-block d-md-flex">
+                    <Col xs={12} md={9} lg={8} xl={7} xxl={9}>
+                      <span className="font-bold" style={{ color: "#6D6D6C" }}>
+                        Processing Time:
+                      </span>
+                    </Col>
+                    <Col xs={12} md={3} lg={4} xl={5} xxl={3}>
+                      <b className="fs-5">3-5 Days</b>
+                    </Col>
+                  </div>
                 </div>
               </Col>
             </Col>
@@ -162,14 +172,14 @@ export default function MoneyMovement() {
                         className="img-fluid"
                       />
                       {index < 2 && (
-                        <div className="d-none d-md-block">
+                        <div className="d-none d-md-block ps-xl-1 ps-xxl-0">
                           <Image
                             src="/images/Lineline.png"
                             alt="line_pattern"
                             width={10}
                             height={10}
                             quality={100}
-                            className="img-fluid my-xl-0 ms-md-3 ms-lg-2 ms-xl-3"
+                            className="img-fluid my-xl-0 ms-md-3 ms-lg-2 ms-xl-2 ms-xxl-3"
                           />
                         </div>
                       )}
@@ -200,7 +210,7 @@ export default function MoneyMovement() {
                     background:
                       "linear-gradient(164deg, rgba(241, 237, 213, 1) 0%, rgba(255, 240, 179, 1) 0%, rgba(255, 253, 245, 1) 97%)",
                   }}
-                  className="d-flex justify-content-between align-items-center p-3 rounded-4 highlight-border"
+                  className="justify-content-between align-items-center p-3 rounded-4 highlight-border"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -216,14 +226,26 @@ export default function MoneyMovement() {
                       height="100%"
                     />
                   </svg>
-                  <Col md={9} lg={8} xl={9}>
-                    <span className="font-bold">Processing Time:</span>
-                  </Col>
-                  <Col md={3} lg={4} xl={3}>
+                  <Col md={12}>
+                    <span className="font-bold">
+                      EnTTerPrice Crypto rails Fees:
+                    </span>
+                    <br />
                     <b className="fs-5" style={{ color: "#E1C106" }}>
-                      Instant
+                      0.3% – 0.8% of the principal
                     </b>
                   </Col>
+                  <hr />
+                  <div className="d-block d-md-flex">
+                    <Col md={9} lg={8} xl={7} xxl={9}>
+                      <span className="font-bold">Processing Time:</span>
+                    </Col>
+                    <Col md={3} lg={4} xl={5} xxl={3}>
+                      <b className="fs-5" style={{ color: "#E1C106" }}>
+                        Instant
+                      </b>
+                    </Col>
+                  </div>
                 </div>
               </Col>
             </Col>
