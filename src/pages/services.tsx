@@ -9,6 +9,7 @@ import Header from "@/layout/Header";
 import NewsLetter from "@/layout/NewsLetter";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import MoneyMovement from "@/components/MoneyMovement";
 
 export default function Services() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -41,6 +42,7 @@ export default function Services() {
       <ServicesHome />
       <OurServices />
       <CBPayments />
+      <MoneyMovement />
       <VirtualIBAN />
       <AccountManagement />
       <div className="d-none d-md-block" style={{ position: "relative" }}>

@@ -16,18 +16,18 @@ const HomeSection = () => {
   const subSectionRef = useRef(null);
 
   const cards = [
-    // {
-    //   id: 1,
-    //   icon: "/images/home_icon_4.png",
-    //   wave: "/images/card_1.png",
-    //   heading: "Stablecoin Issuance",
-    //   text: "Unlock yield revenue by issuing your own stable coins, instant conversion between fiat and stable coins.",
-    // },
+    {
+      id: 1,
+      icon: "/images/home_icon_4.png",
+      wave: "/images/wave_bg_1.png",
+      heading: "Stablecoin Issuance",
+      text: "Unlock yield revenue by issuing your own stable coins, instant conversion between fiat and stable coins.",
+    },
     {
       id: 2,
       icon: "/images/home_icon_1.png",
       // wave: "/images/card_2.png",
-      wave: "/images/wave_1.png",
+      wave: "/images/wave_bg_2.png",
       heading: "Multi Currency Business Accounts",
       text: "Transact in USD, AED, HKD, CNY and more without delays or forced conversions.",
     },
@@ -35,7 +35,7 @@ const HomeSection = () => {
       id: 3,
       icon: "/images/home_icon_2.png",
       // wave: "/images/card_3.png",
-      wave: "/images/wave_2.png",
+      wave: "/images/wave_bg_3.png",
       heading: "Pay and Collect within Minutes, 24/7",
       text: "Move money across borders securely with transparent FX rates and no hidden fees.",
     },
@@ -43,7 +43,7 @@ const HomeSection = () => {
       id: 4,
       icon: "/images/home_icon_3.png",
       // wave: "/images/card_4.png",
-      wave: "/images/wave_3.png",
+      wave: "/images/wave_bg_4.png",
       heading: "Account Management",
       text: "Easily assign Viewer, Maker, or Approver roles to manage workflows with control and clarity.",
     },
@@ -212,19 +212,19 @@ const HomeSection = () => {
         >
           <HomeSubSection />
           </div> */}
-        <Row className="text-center pe-xl-3">
+        <Row className="text-center">
           <div
             // style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-md-flex pt-5 pb-3 pb-xl-0 gap-md-2 gap-xl-2 position-relative"
+            className="d-block d-lg-flex px-3 px-md-5 px-lg-0 pt-5 pb-3 pb-xl-0 gap-md-2 position-relative"
           >
             {cards.map((item: any, index: any) => (
               <Col
                 key={item.id}
                 xs={12}
-                md={6}
-                lg={4}
-                xl={4}
-                className="rounded-4 pt-5 pb-3 px-2 px-xl-5 mb-2 mb-md-0"
+                md={12}
+                lg={3}
+                xl={3}
+                className="rounded-4 pt-5 pb-3 px-2 px-xl-3 mb-2 mb-md-3 mb-lg-0 home-wave-bg"
                 style={{
                   borderTop: "2px solid #45453e",
                   borderBottom: "2px solid #31312b",
@@ -234,7 +234,7 @@ const HomeSection = () => {
                   backgroundImage: `url(${item.wave})`,
                   backgroundPosition: "bottom",
                   backgroundRepeat: "no-repeat",
-                  backgroundSize: "contain",
+                  // backgroundSize: "contain",
                 }}
               >
                 <Col md={12}>

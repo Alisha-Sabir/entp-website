@@ -5,6 +5,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { IoCheckmarkOutline, IoCloseOutline } from "react-icons/io5";
 
 const NewsLetter = ({ style }: any) => {
+  const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -30,6 +31,8 @@ const NewsLetter = ({ style }: any) => {
   };
 
   const handleSubmitData: SubmitHandler<FormFields> = async (data) => {
+    setLoading(true);
+
     debugger;
     try {
       const response = await fetch("/api/sendLetter", {
@@ -44,17 +47,20 @@ const NewsLetter = ({ style }: any) => {
       console.log("result ,", result);
       debugger;
       if (response.ok) {
+        setLoading(false);
         console.log(result.message);
         setSuccessMessage("Email sent successfully!");
         setErrorMessage(""); // Clear any previous error message
         clearMessages();
       } else {
+        setLoading(false);
         console.error(result.message);
         setSuccessMessage(""); // Clear any previous success message
         setErrorMessage("Failed to send the email.");
         clearMessages();
       }
     } catch (error) {
+      setLoading(false);
       console.error("Error:", error);
       setSuccessMessage(""); // Clear any previous success message
       setErrorMessage("An error occurred while sending the email.");
@@ -162,23 +168,6 @@ const NewsLetter = ({ style }: any) => {
               )}
             </Col>
           </Row>
-          {/* Display success or error message */}
-          {successMessage && (
-            <div className="alert border border-2 text-center" role="alert">
-              <Col>
-                <IoCheckmarkOutline size={40} />
-              </Col>
-              <Col>{successMessage}</Col>
-            </div>
-          )}
-          {errorMessage && (
-            <div className="alert border border-2 text-center" role="alert">
-              <Col>
-                <IoCloseOutline size={40} />
-              </Col>
-              <Col>{errorMessage}</Col>
-            </div>
-          )}
           <Row>
             <Col
               xs={12}
@@ -190,11 +179,36 @@ const NewsLetter = ({ style }: any) => {
                 type="submit"
                 variant="warning"
                 className="rounded-2 px-5 py-2 border-0 btn-black inter-font"
+                disabled={loading}
               >
-                Subscribe
+                {/* Subscribe */}
+                {loading ? "Subscribing..." : "Subscribe"}
               </Button>
             </Col>
           </Row>
+          {/* Display success or error message */}
+          {successMessage && (
+            <div
+              className="alert border border-2 text-center mt-3"
+              role="alert"
+            >
+              <Col>
+                <IoCheckmarkOutline size={40} />
+              </Col>
+              <Col>{successMessage}</Col>
+            </div>
+          )}
+          {errorMessage && (
+            <div
+              className="alert border border-2 text-center mt-3"
+              role="alert"
+            >
+              <Col>
+                <IoCloseOutline size={40} />
+              </Col>
+              <Col>{errorMessage}</Col>
+            </div>
+          )}
         </Form>
       </Container>
     </section>

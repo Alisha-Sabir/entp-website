@@ -7,6 +7,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { IoCheckmarkOutline, IoCloseOutline } from "react-icons/io5";
 
 export default function ContactHome() {
+  const [loading, setLoading] = useState(false);
+
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -33,6 +35,8 @@ export default function ContactHome() {
   };
 
   const handleSubmitData: SubmitHandler<FormFields> = async (data) => {
+    setLoading(true);
+
     debugger;
     try {
       const response = await fetch("/api/sendEmail", {
@@ -47,17 +51,20 @@ export default function ContactHome() {
       console.log("result ,", result);
       debugger;
       if (response.ok) {
+        setLoading(false);
         console.log(result.message);
         setSuccessMessage("Email sent successfully!");
         setErrorMessage(""); // Clear any previous error message
         clearMessages();
       } else {
+        setLoading(false);
         console.error(result.message);
         setSuccessMessage(""); // Clear any previous success message
         setErrorMessage("Failed to send the email.");
         clearMessages();
       }
     } catch (error) {
+      setLoading(false);
       console.error("Error:", error);
       setSuccessMessage(""); // Clear any previous success message
       setErrorMessage("An error occurred while sending the email.");
@@ -65,11 +72,6 @@ export default function ContactHome() {
     }
 
     reset();
-  };
-
-  const onSubmit = (data: any) => {
-    reset();
-    console.log("onSubmit", data);
   };
 
   return (
@@ -243,8 +245,9 @@ export default function ContactHome() {
                           cursor: "pointer",
                           zIndex: 1,
                         }}
+                        disabled={loading}
                       >
-                        Submit
+                        {loading ? "Submitting..." : "Submit"}
                       </Button>
                       {/* </Col> */}
                       {/* Display success or error message */}
