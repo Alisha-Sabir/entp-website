@@ -121,7 +121,7 @@ export default function MoneyMovement() {
                 >
                   <Col md={12}>
                     <span className="font-bold" style={{ color: "#6D6D6C" }}>
-                      Bank route: Fees
+                      Bank route fees:
                     </span>
                     <br />
                     <b className="fs-5">2.0% – 5.6% of the principal</b>
@@ -228,7 +228,7 @@ export default function MoneyMovement() {
                   </svg>
                   <Col md={12}>
                     <span className="font-bold">
-                      EnTTerPrice Crypto rails Fees:
+                      EnTTerPrice Crypto rails fees:
                     </span>
                     <br />
                     <b className="fs-5" style={{ color: "#E1C106" }}>
