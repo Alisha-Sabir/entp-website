@@ -28,7 +28,8 @@ export default function GetPaidHome() {
               >
                 {" "}
                 Instant, Transparent, Secure and Cheaper Trade Payments between
-                the UAE and <span style={{ color: "#f8d613" }}>China</span>
+                {/* the UAE and <span style={{ color: "#f8d613" }}>China</span> */}
+                the UAE and China
               </p>
             </Col>
             {/* <Col lg={2} /> */}

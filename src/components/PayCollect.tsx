@@ -38,7 +38,8 @@ const PayCollect = () => {
             <Col>
               <h1 className="font-bold">
                 Pay to and Collect from{" "}
-                <span style={{ color: "#f8d613" }}>China</span> & Hong Kong
+                {/* <span style={{ color: "#f8d613" }}>China</span> & Hong Kong */}
+                China & Hong Kong
               </h1>
               <p className="para-color px-xl-5">
                 Facilitating seamless cross border payments at competitive FX
@@ -141,13 +142,13 @@ const PayCollect = () => {
                         >
                           {item.title}
                         </Card.Title>
-                        {/* <Card.Text
+                        <Card.Text
                           className="font-medium"
                           style={{ color: "#6D6D6C" }}
                         >
                           {item.description}
-                        </Card.Text> */}
-                        {item.description &&
+                        </Card.Text>
+                        {/* {item.description &&
                           item.description
                             .replace(
                               /china/gi,
@@ -160,7 +161,7 @@ const PayCollect = () => {
                                 key={idx}
                                 dangerouslySetInnerHTML={{ __html: line }}
                               />
-                            ))}
+                            ))} */}
                       </Card.Body>
                     </Card>
                   </div>

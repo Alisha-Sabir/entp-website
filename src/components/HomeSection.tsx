@@ -72,8 +72,8 @@ const HomeSection = () => {
               </h1>
               <p className="text-white">
                 Your One Stop Shop Solution for Corporate FX, Payouts and
-                Collections from UAE to{" "}
-                <span style={{ color: "#f8d613" }}>China</span> and Beyond.
+                Collections from UAE to China and Beyond.
+                {/* <span style={{ color: "#f8d613" }}>China</span> and Beyond. */}
               </p>
               <Button
                 href="#"

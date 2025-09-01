@@ -34,8 +34,8 @@ export default function OurServices() {
         <div className="text-center">
           <h1 className="font-bold pt-5 pt-lg-0">{data.heading}</h1>
           <div className="px-lg-5 pb-5">
-            {/* <p className="para-color px-lg-5">{description}</p> */}
-            {data.description &&
+            <p className="para-color px-lg-5">{data.description}</p>
+            {/* {data.description &&
               data.description
                 .replace(
                   /china/gi,
@@ -49,7 +49,7 @@ export default function OurServices() {
                     key={idx}
                     dangerouslySetInnerHTML={{ __html: line }}
                   />
-                ))}
+                ))} */}
           </div>
         </div>
       </Container>

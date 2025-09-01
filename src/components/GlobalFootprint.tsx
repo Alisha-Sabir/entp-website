@@ -66,10 +66,10 @@ const GlobalFootprint = () => {
                     height={40}
                     className="img-fluid rounded-3"
                   />
-                  {/* <p className="font-bold mt-3" style={{ fontSize: "19px" }}>
+                  <p className="font-bold mt-3" style={{ fontSize: "19px" }}>
                     {item.cardText}
-                  </p> */}
-                  {item.cardText && (
+                  </p>
+                  {/* {item.cardText && (
                     <p
                       className="font-bold mt-3"
                       style={{ fontSize: "19px" }}
@@ -81,7 +81,7 @@ const GlobalFootprint = () => {
                         ),
                       }}
                     />
-                  )}
+                  )} */}
                 </Card>
               </Col>
             ))}

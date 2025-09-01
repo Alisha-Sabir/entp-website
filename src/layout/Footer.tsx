@@ -104,7 +104,8 @@ export default function Footer({ padding = true }) {
               <p
                 onClick={() => router.push("/payout-&-collection#payToCollect")}
               >
-                Payments to <span style={{ color: "#f8d613" }}>China</span>
+                {/* Payments to <span style={{ color: "#f8d613" }}>China</span> */}
+                Payments to China
               </p>
               <p>
                 <Link href="/software-development" className="text-reset">
