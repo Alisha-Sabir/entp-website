@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
     },
     {
       id: 2,
-      heading: "Virtual IBANs",
+      heading: "Multicurrency Virtual IBANs",
       description:
         "Simplify global collections with dedicated virtual accounts tailored to your business.",
     },
@@ -24,15 +24,16 @@ const WhyChooseUs = () => {
     },
     {
       id: 4,
-      heading: "SaaS Services",
+      heading: "Bespoke Software Solutions",
       description:
-        "Delivering Software as a Service & Bespoke software development. Specifically for the GCC market in accordance with local regulations.",
+        // "Delivering Software as a Service & Bespoke software development. Specifically for the GCC market in accordance with local regulations.",
+        "Providing software as a service and customized software development specifically for the GCC market in accordance with local regulations.",
     },
     {
       id: 5,
-      heading: "Ready-to-Use Solutions",
+      heading: "Blockchain Technology",
       description:
-        "Access fully developed, customizable platforms to quickly launch industry-specific digital services.",
+        "Leveraging stablecoin rails to facilitate the fastest and cheapest possible payment experience.",
     },
   ];
   return (

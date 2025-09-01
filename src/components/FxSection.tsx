@@ -29,7 +29,7 @@ const FXSection = () => {
             </Col>
             <Col md={6} className="text-end">
               <Image
-                src="/images/img_2.png"
+                src="/images/other_addition.png"
                 alt="FX Other Currencies"
                 width={700}
                 height={100}

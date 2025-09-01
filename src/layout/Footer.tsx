@@ -41,7 +41,7 @@ export default function Footer({ padding = true }) {
               <p
               //onClick={handleOpenModal}
               >
-                UAE-ADGM Abu Dhabi (Coming Soon)
+                UAE - Central Bank of UAE
               </p>
               {/* <p>Toronto, Canada</p> */}
               <p
@@ -52,7 +52,7 @@ export default function Footer({ padding = true }) {
               <p
               //onClick={handleOpenModal}
               >
-                Pakistan – Lahore
+                Pakistan - Pakistan Software Export Board
               </p>
               {/* <p 
                 //onClick={handleOpenModal}
@@ -97,7 +97,11 @@ export default function Footer({ padding = true }) {
             <Col md={6} lg={2} xl={3} className="mx-auto mb-4 custom-link">
               <h6 className="mb-4">Our Services</h6>
               <p onClick={() => router.push("/#transferAnywhere")}>
-                Multi-currency Accounts
+                {/* Multi-currency Accounts */}
+                Multicurrency Virtual IBANs
+              </p>
+              <p onClick={() => router.push("/services#money-movement")}>
+                Stablecoin Rails
               </p>
               <p onClick={() => router.push("/services#IBAN")}>Virtual IBANs</p>
               <p onClick={() => router.push("/#fxRates")}>Corporate FX</p>
@@ -105,11 +109,13 @@ export default function Footer({ padding = true }) {
                 onClick={() => router.push("/payout-&-collection#payToCollect")}
               >
                 {/* Payments to <span style={{ color: "#f8d613" }}>China</span> */}
-                Payments to China
+                {/* Payments to China */}
+                China Payments
               </p>
               <p>
                 <Link href="/software-development" className="text-reset">
-                  Software Development
+                  {/* Software Development */}
+                  Fintech Software
                 </Link>
               </p>
             </Col>

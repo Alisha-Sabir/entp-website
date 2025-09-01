@@ -51,6 +51,7 @@ export default function MoneyMovement() {
   return (
     <>
       <section
+        id="money-movement"
         style={{ backgroundColor: "#fffef4" }}
         className="position-relative py-5"
       >

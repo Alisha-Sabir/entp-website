@@ -103,7 +103,7 @@ const Header = () => {
             }}
           >
             <Navbar.Brand
-              href="#home"
+              // href="#home"
               className="d-flex align-items-center p-0 m-0"
             >
               <Image

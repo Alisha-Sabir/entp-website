@@ -59,6 +59,12 @@ const transferAnywhereData = [
     cardText: "SGD",
     imgAlt: "SGD",
   },
+  {
+    id: 9,
+    cardImg: "/images/pak_transfser.png",
+    cardText: "PAK",
+    imgAlt: "PAK",
+  },
 ];
 
 export default transferAnywhereData;

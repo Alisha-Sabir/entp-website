@@ -12,7 +12,7 @@ export default function sSecurityHome() {
             <Col md={12} lg={6} className="mt-5 pe-lg-5">
               <h1 className="font-bold display-5 mb-3">
                 Your <span style={{ color: "#FFDE1F" }}>Payments,</span>{" "}
-                Properly Protected
+                Adequately Protected
               </h1>
               <p style={{ fontSize: "20px" }} className="pe-lg-5 me-lg-5">
                 Bank Standard Security, Fintech Level Agility and Service Bank
