@@ -3,23 +3,45 @@ import { Container, Col, Row } from "react-bootstrap";
 
 const WorkWith = () => {
   const cards = [
+    // {
+    //   id: 1,
+    //   heading: "E-commerce market places",
+    //   text: "Quick onboarding, no setup fees, and major currency support — all from day one. EnTTerprice helps you start simple and scale confidently.",
+    //   icons: "/images/card_icon_1.png",
+    // },
+    // {
+    //   id: 2,
+    //   heading: "SME’s",
+    //   text: "As your business expands, move money faster with real-time FX and multi-currency tools. All accessible through one secure, intuitive dashboard.",
+    //   icons: "/images/card_icon_2.png",
+    // },
+    // {
+    //   id: 3,
+    //   heading: "Travel agencies and Airlines",
+    //   text: "Streamline regular imports and vendor payments with dedicated corridor support. EnTTerprice ensures speed, visibility, and full compliance.",
+    //   icons: "/images/card_icon_3.png",
+    // },
+
     {
       id: 1,
-      heading: "E-commerce market places",
-      text: "Quick onboarding, no setup fees, and major currency support — all from day one. EnTTerprice helps you start simple and scale confidently.",
-      icons: "/images/card_icon_1.png",
+      heading: "SMEs & Traders",
+      text: "We help SMEs and global traders move money across borders instantly with secure.",
+      icons: "/images/obj_1.png",
+      // icons: "/images/traders.png",
     },
     {
       id: 2,
-      heading: "SME’s",
-      text: "As your business expands, move money faster with real-time FX and multi-currency tools. All accessible through one secure, intuitive dashboard.",
-      icons: "/images/card_icon_2.png",
+      heading: "Airlines & Travel Agencies",
+      text: "We enable instant, transparent settlement between airlines, OTAs, and agencies.",
+      icons: "/images/obj_2.png",
+      // icons: "/images/travel_agencies.png",
     },
     {
       id: 3,
-      heading: "Travel agencies and Airlines",
-      text: "Streamline regular imports and vendor payments with dedicated corridor support. EnTTerprice ensures speed, visibility, and full compliance.",
-      icons: "/images/card_icon_3.png",
+      heading: "E-Commerce B2B Marketplaces",
+      text: "We empower the trade payments of global B2B marketplaces, enabling faster, borderless, and secure transactions.",
+      icons: "/images/obj_3.png",
+      // icons: "/images/marketplace.png",
     },
   ];
   return (
@@ -36,10 +58,13 @@ const WorkWith = () => {
                     style={{ color: "#383838", lineHeight: "33px" }}
                     className="font-medium pe-xl-5"
                   >
-                    We provide Entterprice Accounts for Payout, Collection and
+                    {/* We provide Entterprice Accounts for Payout, Collection and
                     Corporate FX to Startups, SME’s and Traders within the UAE-
                     <span style={{ color: "#f8d613" }}>China</span> corridor and
-                    beyond.
+                    beyond. */}
+                    Provide Corporate FX, Payout and Collection via EnTTerprice
+                    Accounts for SME's and Traders, Airlines and Travel Agencies
+                    and E-Commerce Marketplaces. 
                   </h4>
                 </>
               </Row>
@@ -47,7 +72,7 @@ const WorkWith = () => {
           </Col>
           <Col xs={12} md={6} lg={6} className="text-center overflow-hidden">
             <Image
-              src="/images/partners.png"
+              src="/images/work_partners.png"
               alt="Partners"
               width={500}
               height={50}
@@ -59,9 +84,9 @@ const WorkWith = () => {
         <div className="text-center">
           <div
             style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-lg-flex pt-5 pb-3 pb-xl-0"
+            className="d-block d-xl-flex pt-5 pb-3 pb-xl-0"
           >
-            {cards.map((item: any, index: any) => (
+            {/* {cards.map((item: any, index: any) => (
               <Col
                 key={item.id}
                 xs={12}
@@ -87,7 +112,100 @@ const WorkWith = () => {
                   </p>
                 </Col>
               </Col>
+            ))} */}
+
+            {cards.map((item: any, index: any) => (
+              <Col
+                key={item.id}
+                xs={12}
+                md={12}
+                xl={4}
+                className="rounded-3 pt-3 pt-lg-5 pb-3 b-2 mb-lg-0 me-lg-3 text-center text-xl-start"
+                // style={{ border: "2px solid #ededed" }}
+              >
+                <Col
+                  md={12}
+                  className="position-relative align-items-center justify-content-center"
+                >
+                  {/* xl or above */}
+                  <div
+                    style={{ width: "200px", height: "150px" }}
+                    className="d-none d-xl-block"
+                  >
+                    <Image
+                      src="/images/mesh.png"
+                      alt="mesh_bg"
+                      width={250}
+                      height={250}
+                      quality={100}
+                      className="img-fluid text-start position-absolute"
+                      style={{ zIndex: 0 }}
+                    />
+                    <Image
+                      src={item.icons}
+                      alt={`Icon ${index + 1}`}
+                      width={170}
+                      height={170}
+                      quality={100}
+                      className="img-fluid text-start position-relative"
+                      style={{ zIndex: 1 }}
+                    />
+                  </div>
+                  {/* xs, md, lg */}
+                  <div className="d-block d-xl-none">
+                    <Image
+                      src="/images/mesh.png"
+                      alt="mesh_bg"
+                      width={250}
+                      height={250}
+                      quality={100}
+                      className="img-fluid text-start position-absolute"
+                      style={{ zIndex: 0 }}
+                    />
+                    <Image
+                      src={item.icons}
+                      alt={`Icon ${index + 1}`}
+                      width={170}
+                      height={170}
+                      quality={100}
+                      className="img-fluid text-start position-relative"
+                      style={{ zIndex: 1 }}
+                    />
+                  </div>
+                </Col>
+                <Col md={12} className="mt-5 mt-lg-4 pe-xl-5">
+                  <h5 className="font-bold">{item.heading}</h5>
+                  <p
+                    className="font-medium pe-xl-5"
+                    style={{ color: "#6D6D6C" }}
+                  >
+                    {item.text}
+                  </p>
+                </Col>
+              </Col>
             ))}
+          </div>
+
+          <div className="rounded-3 px-lg-4 py-3 text-center gray-border light-yellow-gradient h-100 w-100">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-100 h-100">
+              <rect
+                rx="8"
+                ry="8"
+                className="lines"
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+              />
+            </svg>
+            <p
+              style={{ fontSize: "18px" }}
+              className="font-medium px-2 px-lg-5 pt-3"
+            >
+              By combining stablecoin efficiency with fiat accessibility,
+              EnTTerprice empowers these industries to transact globally with
+              speed, security, and trust.
+            </p>
           </div>
         </div>
       </Container>

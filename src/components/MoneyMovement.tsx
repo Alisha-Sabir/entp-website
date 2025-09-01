@@ -63,7 +63,7 @@ export default function MoneyMovement() {
             className="img-fluid"
           />
         </div>
-        <Container className="pt-xl-5 p-lg-5">
+        <Container className="pt-xl-5 p-lg-1 p-xl-5">
           <div className="text-center">
             <h1 className="font-bold">Simplifying Money Movement</h1>
             <Col md={9} className="mx-auto">
@@ -204,7 +204,7 @@ export default function MoneyMovement() {
                   </div>
                 ))}
               </div>
-              <Col md={10} lg={12} xl={10} className="mt-4 mt-lg-auto">
+              <Col md={10} lg={12} xl={12} xxl={10} className="mt-4 mt-lg-auto">
                 <div
                   style={{
                     background:
@@ -237,12 +237,16 @@ export default function MoneyMovement() {
                   </Col>
                   <hr />
                   <div className="d-block d-md-flex">
-                    <Col md={9} lg={8} xl={7} xxl={9}>
+                    <Col md={8} lg={6} xl={7} xxl={6}>
                       <span className="font-bold">Processing Time:</span>
                     </Col>
-                    <Col md={3} lg={4} xl={5} xxl={3}>
-                      <b className="fs-5" style={{ color: "#E1C106" }}>
-                        Instant
+                    <Col md={4} lg={6} xl={5} xxl={6}>
+                      <b
+                        className="fs-5 ms-lg-4 ms-xl-0"
+                        style={{ color: "#E1C106" }}
+                      >
+                        {/* Instant */}
+                        Within Minutes
                       </b>
                     </Col>
                   </div>
