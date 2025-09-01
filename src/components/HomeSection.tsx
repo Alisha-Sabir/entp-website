@@ -20,8 +20,8 @@ const HomeSection = () => {
       id: 1,
       icon: "/images/home_icon_4.png",
       wave: "/images/wave_bg_1.png",
-      heading: "Stablecoin Issuance",
-      text: "Unlock yield revenue by issuing your own stable coins, instant conversion between fiat and stable coins.",
+      heading: "Stablecoin Rails",
+      text: "EnTTerpice leverages Blackchain Technology behind Payment Tokens such as USDT, USDC, and HKDA to facilitate seamless international trade payments.",
     },
     {
       id: 2,
