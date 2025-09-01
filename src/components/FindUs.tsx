@@ -50,7 +50,7 @@ export default function FindUs() {
                           </div>
                         </div>
                       </Col>
-                      <Col xs={12} lg={3} xl={2}>
+                      <Col xs={12} lg={3} xxl={2}>
                         <h5 className="fw-bold p-0 m-0">Location</h5>
                         <Image
                           src="/images/location_icon.png"
