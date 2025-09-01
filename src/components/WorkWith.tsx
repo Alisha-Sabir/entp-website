@@ -26,21 +26,23 @@ const WorkWith = () => {
       id: 1,
       heading: "SMEs & Traders",
       text: "We help SMEs and global traders move money across borders instantly with secure.",
-      icons: "/images/obj_1.png",
+      // icons: "/images/obj_1.png",
+      // icons: "/images/object_1.png",
+      icons: "/images/svg_obj_1.svg",
       // icons: "/images/traders.png",
     },
     {
       id: 2,
       heading: "Airlines & Travel Agencies",
       text: "We enable instant, transparent settlement between airlines, OTAs, and agencies.",
-      icons: "/images/obj_2.png",
+      icons: "/images/object_2.png",
       // icons: "/images/travel_agencies.png",
     },
     {
       id: 3,
       heading: "E-Commerce B2B Marketplaces",
       text: "We empower the trade payments of global B2B marketplaces, enabling faster, borderless, and secure transactions.",
-      icons: "/images/obj_3.png",
+      icons: "/images/object_3.png",
       // icons: "/images/marketplace.png",
     },
   ];
@@ -84,7 +86,7 @@ const WorkWith = () => {
         <div className="text-center">
           <div
             style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-xl-flex pt-5 pb-3 pb-xl-0"
+            className="d-block d-md-flex pt-5 pb-3 pb-xl-0"
           >
             {/* {cards.map((item: any, index: any) => (
               <Col
@@ -118,8 +120,8 @@ const WorkWith = () => {
               <Col
                 key={item.id}
                 xs={12}
-                md={12}
-                xl={4}
+                md={4}
+                lg={4}
                 className="rounded-3 pt-3 pt-lg-5 pb-3 b-2 mb-lg-0 me-lg-3 text-center text-xl-start"
                 // style={{ border: "2px solid #ededed" }}
               >
@@ -129,8 +131,8 @@ const WorkWith = () => {
                 >
                   {/* xl or above */}
                   <div
-                    style={{ width: "200px", height: "150px" }}
-                    className="d-none d-xl-block"
+                  // style={{ width: "200px", height: "150px" }}
+                  // className="d-none d-xl-block"
                   >
                     <Image
                       src="/images/mesh.png"
@@ -152,7 +154,7 @@ const WorkWith = () => {
                     />
                   </div>
                   {/* xs, md, lg */}
-                  <div className="d-block d-xl-none">
+                  {/* <div className="d-block d-xl-none">
                     <Image
                       src="/images/mesh.png"
                       alt="mesh_bg"
@@ -171,7 +173,7 @@ const WorkWith = () => {
                       className="img-fluid text-start position-relative"
                       style={{ zIndex: 1 }}
                     />
-                  </div>
+                  </div> */}
                 </Col>
                 <Col md={12} className="mt-5 mt-lg-4 pe-xl-5">
                   <h5 className="font-bold">{item.heading}</h5>
