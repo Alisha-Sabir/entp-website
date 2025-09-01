@@ -114,6 +114,7 @@ const Header = () => {
                 quality={100}
                 onClick={() => handleHomeNavigation("/")}
                 className="img-fluid"
+                style={{ cursor: "pointer" }}
               />
             </Navbar.Brand>
             <Navbar.Toggle

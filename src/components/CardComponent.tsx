@@ -79,7 +79,10 @@ export default function CardComponent({
                 );
               })}
             </ol> */}
-            <ol>
+            <ol
+              className="order-list mt-3"
+              style={{ paddingLeft: 15, marginLeft: 0 }}
+            >
               {list.map((item, i) => (
                 <li
                   key={i}

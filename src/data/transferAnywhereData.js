@@ -62,8 +62,8 @@ const transferAnywhereData = [
   {
     id: 9,
     cardImg: "/images/pak_transfser.png",
-    cardText: "PAK",
-    imgAlt: "PAK",
+    cardText: "PKR",
+    imgAlt: "PKR",
   },
 ];
 

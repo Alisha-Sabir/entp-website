@@ -96,14 +96,14 @@ export default function Footer({ padding = true }) {
 
             <Col md={6} lg={2} xl={3} className="mx-auto mb-4 custom-link">
               <h6 className="mb-4">Our Services</h6>
-              <p onClick={() => router.push("/#transferAnywhere")}>
+              <p onClick={() => router.push("/services#IBAN")}>
                 {/* Multi-currency Accounts */}
                 Multicurrency Virtual IBANs
               </p>
               <p onClick={() => router.push("/services#money-movement")}>
                 Stablecoin Rails
               </p>
-              <p onClick={() => router.push("/services#IBAN")}>Virtual IBANs</p>
+              {/* <p onClick={() => router.push("/services#IBAN")}>Virtual IBANs</p> */}
               <p onClick={() => router.push("/#fxRates")}>Corporate FX</p>
               <p
                 onClick={() => router.push("/payout-&-collection#payToCollect")}
