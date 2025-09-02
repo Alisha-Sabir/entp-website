@@ -20,7 +20,7 @@ const FXSection = () => {
           <Row className="my-5">
             <Col md={6} className="text-start">
               <Image
-                src="/images/left_currencies.png"
+                src="/images/updated_currencies_right.png"
                 alt="FX Major Currencies"
                 width={700}
                 height={100}

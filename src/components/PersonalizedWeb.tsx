@@ -71,7 +71,7 @@ export default function PersonalizedWeb() {
         <Row className="align-items-center">
           <Col xs={12} lg={6} xl={7}>
             <Image
-              src="/images/personalized_web.png"
+              src="/images/app_wide_img.png"
               alt="Web"
               width={1000}
               height={500}
