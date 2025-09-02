@@ -3,8 +3,20 @@ import { Container, Row, Col, Form, InputGroup, Button } from "react-bootstrap";
 import InputGroupText from "react-bootstrap/esm/InputGroupText";
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 export default function SearchOpportunities() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<any>();
+
+  const handleSubmitData = (data: any) => {
+    reset();
+    console.log("data", data);
+  };
   return (
     <section className="pt-5">
       <Container
@@ -31,9 +43,7 @@ export default function SearchOpportunities() {
             Search Opportunities
           </h1>
           <div className="pb-5">
-            <Form
-            //    onSubmit={handleSubmit(handleSubmitData)}
-            >
+            <Form onSubmit={handleSubmit(handleSubmitData)}>
               <Col md={10} className="mx-auto">
                 <InputGroup className="mb-3 position-relative">
                   <InputGroupText className="bg-white border-end-0">
@@ -49,6 +59,13 @@ export default function SearchOpportunities() {
                   <Form.Control
                     size="lg"
                     placeholder="Search Here"
+                    {...register("FirstName", {
+                      required: "This field is required",
+                      pattern: {
+                        value: /^[a-zA-Z]+$/,
+                        message: "Invalid first name",
+                      },
+                    })}
                     maxLength={50}
                     className="form-control-search border-start-0"
                     style={{ paddingRight: "140px" }}
@@ -64,6 +81,7 @@ export default function SearchOpportunities() {
                         backgroundColor: "#FFDE1F",
                         color: "black",
                       }}
+                      onClick={() => reset()}
                       className="px-5 border-0 font-medium me-2"
                     >
                       Search
@@ -76,6 +94,7 @@ export default function SearchOpportunities() {
                     backgroundColor: "#FFDE1F",
                     color: "black",
                   }}
+                  onClick={() => reset()}
                   className="px-5 border-0 font-medium me-2 d-block d-lg-none"
                 >
                   Search

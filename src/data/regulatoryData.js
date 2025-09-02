@@ -6,17 +6,17 @@ const regulatoryData = [
     bgImage: "/images/uae_bg_img.png",
     img: "/images/compliance_icon_1.png",
     imgAlt: "UAE",
-    width: 80,
+    width: 70,
     height: 80,
   },
   {
     id: 2,
     heading: "Canada:",
-    text: "Registered as a Money Services Business (MSB) with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC), ensuring adherence to strict AML, reporting, and operational standards.",
+    text: "Registered with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) as a Money Services Business (MSB), and we have also applied for registration with the Bank of Canada under the Retail Payment Activities Act (RPAA).",
     bgImage: "/images/cad_bg_img.png",
     img: "/images/compliance_icon_2.png",
     imgAlt: "Canada",
-    width: 220,
+    width: 150,
     height: 80,
   },
   {
@@ -26,7 +26,7 @@ const regulatoryData = [
     bgImage: "/images/hk_bg_img.png",
     img: "/images/compliance_icon_3.png",
     imgAlt: "Hong Kong",
-    width: 100,
+    width: 80,
     height: 80,
   },
   {
@@ -36,7 +36,7 @@ const regulatoryData = [
     bgImage: "/images/pak_bg_img.png",
     img: "/images/compliance_icon_4.png",
     imgAlt: "Pakistan",
-    width: 120,
+    width: 100,
     height: 80,
   },
 ];

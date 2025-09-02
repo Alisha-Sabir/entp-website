@@ -30,17 +30,7 @@ export default function RegulatoryCompliance() {
                     zIndex: 1,
                   }}
                 >
-                  <Col md={12} className="ps-lg-4">
-                    <Image
-                      src={item.img}
-                      alt={item.imgAlt}
-                      width={item.width}
-                      height={item.height}
-                      quality={100}
-                      className="img-fluid mt-3"
-                    />
-                  </Col>
-                  <div className="p-4">
+                  <div className="px-4 pt-4">
                     <h5 className="fw-bold">{item.heading}</h5>
                     <p
                       style={{ color: "#6d6d6c", fontSize: "20px" }}
@@ -49,6 +39,29 @@ export default function RegulatoryCompliance() {
                       {item.text}
                     </p>
                   </div>
+                  <Col
+                    md={12}
+                    className="ps-lg-4 d-block d-lg-flex align-items-center"
+                  >
+                    <Image
+                      src={item.img}
+                      alt={item.imgAlt}
+                      width={item.width}
+                      height={item.height}
+                      quality={100}
+                      className="img-fluid mb-3"
+                    />
+                    {item.id === 2 && (
+                      <Image
+                        src="/images/bank_of_canada.png"
+                        alt={item.imgAlt}
+                        width={200}
+                        height={200}
+                        quality={100}
+                        className="img-fluid ms-4 mt-2 mb-3 mb-lg-0"
+                      />
+                    )}
+                  </Col>
                 </Card>
               </Col>
             ))}

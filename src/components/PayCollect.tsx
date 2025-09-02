@@ -43,7 +43,7 @@ const PayCollect = () => {
               </h1>
               <p className="para-color px-xl-5">
                 Facilitating seamless cross border payments at competitive FX
-                rates
+                rates.
               </p>
             </Col>
             {/* <Row className="justify-content-center align-items-center mt-5 d-flex">

@@ -6,7 +6,7 @@ const WorkWith = () => {
     // {
     //   id: 1,
     //   heading: "E-commerce market places",
-    //   text: "Quick onboarding, no setup fees, and major currency support — all from day one. EnTTerprice helps you start simple and scale confidently.",
+    //   text: "Quick onboarding, no setup fees, and major currency support — all from day one. Entterprice helps you start simple and scale confidently.",
     //   icons: "/images/card_icon_1.png",
     // },
     // {
@@ -18,7 +18,7 @@ const WorkWith = () => {
     // {
     //   id: 3,
     //   heading: "Travel agencies and Airlines",
-    //   text: "Streamline regular imports and vendor payments with dedicated corridor support. EnTTerprice ensures speed, visibility, and full compliance.",
+    //   text: "Streamline regular imports and vendor payments with dedicated corridor support. Entterprice ensures speed, visibility, and full compliance.",
     //   icons: "/images/card_icon_3.png",
     // },
 
@@ -64,7 +64,7 @@ const WorkWith = () => {
                     Corporate FX to Startups, SME’s and Traders within the UAE-
                     <span style={{ color: "#f8d613" }}>China</span> corridor and
                     beyond. */}
-                    Provide Corporate FX, Payout and Collection via EnTTerprice
+                    Provide Corporate FX, Payout and Collection via Entterprice
                     Accounts for SME's and Traders, Airlines and Travel Agencies
                     and E-Commerce Marketplaces. 
                   </h4>
@@ -205,7 +205,7 @@ const WorkWith = () => {
               className="font-medium px-2 px-lg-5 pt-3"
             >
               By combining stablecoin efficiency with fiat accessibility,
-              EnTTerprice empowers these industries to transact globally with
+              Entterprice empowers these industries to transact globally with
               speed, security, and trust.
             </p>
           </div>

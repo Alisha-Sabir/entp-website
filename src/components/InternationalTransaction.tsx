@@ -82,7 +82,7 @@ const InternationalTransaction = () => {
               <h5 className="fw-medium pe-md-5">
                 Pay and collect from vendors instantly, anywhere anytime,
                 <br />
-                using Entteprice
+                using Entteprice.
               </h5>
               <Row>
                 <div className="d-block d-md-flex pt-5 pb-3 pb-xl-0">

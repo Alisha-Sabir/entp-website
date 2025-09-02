@@ -21,7 +21,7 @@ export default function ISOCompliance() {
     },
   ];
   return (
-    <section className="position-relative">
+    <section className="position-relative yellow-gradient py-5 gray-border">
       <div className="position-absolute" style={{ top: 0, right: 0 }}>
         <Image
           width={250}
@@ -85,7 +85,7 @@ export default function ISOCompliance() {
         </div>
 
         <div
-          style={{ backgroundColor: "#FFFBE4" }}
+          style={{ backgroundColor: "white" }}
           className="rounded-3 px-2 px-lg-4 py-4 text-center mb-5 gray-border mt-3 mt-md-0"
         >
           <svg xmlns="http://www.w3.org/2000/svg">

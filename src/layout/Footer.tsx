@@ -144,7 +144,7 @@ export default function Footer({ padding = true }) {
                 style={{ cursor: "default" }}
               >
                 Onboard with us for an unparalleled international
-                trade payment journey
+                trade payment journey.
               </p>
               <div className="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start">
                 <div className="mb-3 mb-md-0 me-md-3">
@@ -183,7 +183,7 @@ export default function Footer({ padding = true }) {
           <Row className="align-items-center gap-3 gap-lg-0">
             <Col xs={12} md={12} lg={6}>
               <small style={{ color: "#91918e" }}>
-                EnTTerprice UAE Ltd &copy; 2025
+                Entterprice UAE Ltd &copy; 2025
               </small>
             </Col>
             <Col

@@ -108,7 +108,7 @@ const Header = () => {
             >
               <Image
                 src="/images/entp_white_logo.png"
-                alt="EnTTerprice logo"
+                alt="Entterprice logo"
                 height={90}
                 width={170}
                 quality={100}

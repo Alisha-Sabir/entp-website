@@ -15,7 +15,7 @@ export default function sSecurityHome() {
                 Adequately Protected
               </h1>
               <p style={{ fontSize: "20px" }} className="pe-lg-5 me-lg-5">
-                Bank Standard Security, Fintech Level Agility and Service Bank
+                Bank Standard Security, Fintech Level Agility and Service Bank.
               </p>
             </Col>
             {/* <Col lg={2} /> */}

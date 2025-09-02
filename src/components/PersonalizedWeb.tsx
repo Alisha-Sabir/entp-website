@@ -28,7 +28,7 @@ export default function PersonalizedWeb() {
     ],
     webApp: [
       { id: 1, text: "ExAIm", img: "/images/exaim.png" },
-      { id: 2, text: "EnTTerprice", img: "/images/entp.png" },
+      { id: 2, text: "Entterprice", img: "/images/entp.png" },
       {
         id: 3,
         text: "CRM",

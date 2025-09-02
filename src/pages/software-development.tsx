@@ -25,7 +25,7 @@ export default function SoftwareDevelopment() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>Software Development - EnTTerprice</title>
+        <title>Software Development - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

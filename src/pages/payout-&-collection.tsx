@@ -24,7 +24,7 @@ export default function PayoutAndCollection() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>Pay Out & Collection - EnTTerprice</title>
+        <title>Pay Out & Collection - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

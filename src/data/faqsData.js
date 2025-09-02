@@ -17,7 +17,7 @@ const faqsData = [
   {
     question: "Is your company licensed by ADGM?",
     answer:
-      "EnTTerprice is currently licensed by FINTRAC in Canada, where it holds an MSB license, and it is in the process of trying to attain the MSB license from ADGM after which it will be regulated by FSRA in the UAE and will be able to directly onboard businesses operating in the UAE as its clients.",
+      "Entterprice is currently licensed by FINTRAC in Canada, where it holds an MSB license, and it is in the process of trying to attain the MSB license from ADGM after which it will be regulated by FSRA in the UAE and will be able to directly onboard businesses operating in the UAE as its clients.",
   },
   {
     question: "What services do you offer?",

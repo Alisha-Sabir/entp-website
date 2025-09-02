@@ -38,7 +38,7 @@ export default function Home() {
     <>
       {isLoading && <Loader opacity={"50%"} />}
       <Head>
-        <title>Home - EnTTerprice</title>
+        <title>Home - Entterprice</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       {/* {isLoading ? (

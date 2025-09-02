@@ -4,7 +4,7 @@ const findUsData = [
     locationName: "Lahore, Pakistan",
     email: "Info@entterprice.com",
     address:
-      "Office No: 1017, 10th floor High Q Tower, Jail Road, Lahore Pakistan",
+      "Office No: 1017, 10th floor High Q Tower, Jail Road, Lahore Pakistan.",
     img: "/images/pak_location.png",
     imgAlt: "PAK",
     // locationURL:
@@ -15,7 +15,7 @@ const findUsData = [
     locationName: "Dubai, UAE",
     email: "Info@entterprice.com",
     address:
-      "DD-14-124-027, 14, Al Khatem Tower Wework Hub 71, Adgm Square, Abu Dhabi, Al Maryah Island, UAE",
+      "DD-14-124-027, 14, Al Khatem Tower Wework Hub 71, Adgm Square, Abu Dhabi, Al Maryah Island, UAE.",
     img: "/images/uae_location.png",
 
     imgAlt: "UAE",
@@ -37,7 +37,7 @@ const findUsData = [
     locationName: "Toronto, Canada",
     email: "Info@entterprice.com",
     address:
-      "Church St Devenport road, Unit Number 2105 Toronto ON M4W 3Z4 EnTTerprice Canada Limited",
+      "Church St Devenport road, Unit Number 2105 Toronto ON M4W 3Z4 Entterprice Canada Limited.",
     img: "/images/cad_location.png",
 
     imgAlt: "CANADA",
