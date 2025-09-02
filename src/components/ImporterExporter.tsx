@@ -95,7 +95,7 @@ export default function ImporterExporter() {
                     <li
                       key={i}
                       style={{ color: "#6D6D6C", fontSize: "19px" }}
-                      className="text-start px-3 font-medium"
+                      className="text-start px-1 font-medium"
                     >
                       {item}
                     </li>
