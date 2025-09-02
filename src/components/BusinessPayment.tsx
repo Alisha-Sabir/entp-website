@@ -44,7 +44,8 @@ export default function BusinessPayment() {
       title: "Start Making Global Payments",
       description:
         "Once verified, initiate vendor payments globally, set beneficiaries, and track transfers in real-time.",
-      slide: "/images/slide_4.png",
+      // slide: "/images/slide_4.png",
+      slide: "/images/slide_new_4.png",
       //   width: 500,
       //   height: 400,
     },

@@ -37,33 +37,43 @@ export default function Footer({ padding = true }) {
         <div>
           <Row className="mt-3 gy-4">
             <Col md={6} lg={4} xl={4} className="mx-auto mb-4 custom-link">
-              <h6 className="mb-4">Jurisdiction</h6>
+              {/* <h6 className="mb-4">Jurisdiction</h6> */}
+              <h6 className="mb-4">Offices</h6>
               <p
               //onClick={handleOpenModal}
               >
-                UAE - Central Bank of UAE
+                {/* UAE - Central Bank of UAE */}
+                United Arab Emirates
               </p>
               {/* <p>Toronto, Canada</p> */}
               <p
               //onClick={handleOpenModal}
               >
-                Canada – FINTRAC
+                {/* Canada – FINTRAC */}
+                Hong Kong
               </p>
               <p
               //onClick={handleOpenModal}
               >
-                Pakistan - Pakistan Software Export Board
+                {/* Pakistan - Pakistan Software Export Board */}
+                Canada
+              </p>
+              <p
+              //onClick={handleOpenModal}
+              >
+                {/* Pakistan - Pakistan Software Export Board */}
+                Pakistan
               </p>
               {/* <p 
                 //onClick={handleOpenModal}
                 >Lahore, Pakistan</p> */}
-              <p
+              {/* <p
                 onClick={() =>
                   (window.location.href = "mailto:info@entterprice.com")
                 }
               >
                 info@entterprice.com
-              </p>
+              </p> */}
             </Col>
             <Col md={6} lg={2} xl={2} className="mx-auto mb-4 custom-link">
               <h6 className="mb-4">About Us</h6>

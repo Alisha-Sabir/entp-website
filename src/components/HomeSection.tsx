@@ -21,7 +21,7 @@ const HomeSection = () => {
       icon: "/images/home_icon_4.png",
       wave: "/images/wave_bg_1.png",
       heading: "Stablecoin Rails",
-      text: "EnTTerpice leverages Blackchain Technology behind Payment Tokens such as USDT, USDC, and HKDA to facilitate seamless international trade payments.",
+      text: "EnTTerprice leverages Blockchain Technology behind Payment Tokens such as USDT, USDC, and HKDA to facilitate seamless international trade payments.",
     },
     {
       id: 2,
