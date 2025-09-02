@@ -73,7 +73,7 @@ export default function MoneyMovement() {
                   style={{ color: "#6D6D6C" }}
                   className="font-medium mt-4 mb-2"
                 >
-                  Powered by Stablecoins Send. Receive. Settle. All in Minute
+                  Powered by Stablecoins Send. Receive. Settle. All in Minutes.
                 </h3>
               </div>
             </Col>

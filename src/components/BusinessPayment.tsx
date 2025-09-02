@@ -13,7 +13,7 @@ export default function BusinessPayment() {
       // icon: "/images/copy_icon.png",
       title: "Create Your Account",
       description:
-        "Onboard with Entterprice within minutes - no fees, no hassle, no minimum balance.",
+        "Onboard with Entterprice within minutes and no fees, no hassle, no minimum balance.",
       slide: "/images/slide_1.png",
       //   width: 800,
       //   height: 400,

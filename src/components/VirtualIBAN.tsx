@@ -24,7 +24,7 @@ const VirtualIBAN = () => {
     },
     {
       id: 4,
-      heading: "Why Choose Enterprise for Your Virtual IBAN?",
+      heading: "Why Choose Entterprice for Your Virtual IBAN?",
       description:
         "Get your Virtual IBAN quickly with simple, seamless integration.",
     },
@@ -43,7 +43,7 @@ const VirtualIBAN = () => {
   return (
     <section id="IBAN">
       <DetailsComponent
-        centerHeading="Virtual IBAN"
+        centerHeading="Multicurrency Virtual IBAN"
         img="/images/IBAN_img.png"
         imgAlt="Partners"
         data={data}

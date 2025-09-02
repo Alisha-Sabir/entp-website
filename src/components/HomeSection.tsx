@@ -215,7 +215,7 @@ const HomeSection = () => {
         <Row className="text-center">
           <div
             // style={{ backgroundColor: "#ffffff" }}
-            className="d-block d-lg-flex px-3 px-md-5 px-lg-0 pt-5 pb-3 pb-xl-0 gap-md-2 position-relative"
+            className="d-block d-lg-flex px-3 px-md-5 px-lg-0 pt-5 pb-3 pb-xl-0 gap-md-2 gap-lg-1 gap-xl-2 position-relative"
           >
             {cards.map((item: any, index: any) => (
               <Col

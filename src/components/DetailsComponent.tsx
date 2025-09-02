@@ -37,7 +37,7 @@ const DetailsComponent = ({
   background = "yellow-gradient",
 }: DataProps) => {
   return (
-    <section className={background}>
+    <section className={`${background} py-lg-4 py-xl-0`}>
       <Container
         // fluid
         className="text-center text-md-start py-xl-5"
@@ -128,7 +128,7 @@ const DetailsComponent = ({
                     style={{ zIndex: 10 }}
                   >
                     <Image
-                      src="/images/iban_pic.png"
+                      src="/images/updated_virtual_iban.png"
                       alt="Iban Pic"
                       width={600}
                       height={100}
@@ -140,7 +140,7 @@ const DetailsComponent = ({
               {/* xs img */}
               <Col xs={12} className="pt-3 d-block d-lg-none">
                 <Image
-                  src="/images/iban_pic.png"
+                  src="/images/updated_virtual_iban.png"
                   alt="Iban Pic"
                   width={1000}
                   height={100}

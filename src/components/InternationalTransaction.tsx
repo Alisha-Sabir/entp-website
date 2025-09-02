@@ -24,7 +24,7 @@ const InternationalTransaction = () => {
     },
     {
       id: 3,
-      text: "Faster Settlement Times",
+      text: "Faster Settlement Time",
       img: "/images/b_icon_3.png",
     },
     {

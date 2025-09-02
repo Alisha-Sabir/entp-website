@@ -47,7 +47,7 @@ export default function PersonalizedWeb() {
     ],
   };
 
-  const [activeTab, setActiveTab] = useState("website");
+  const [activeTab, setActiveTab] = useState("mobileApp");
 
   return (
     <>
@@ -90,9 +90,9 @@ export default function PersonalizedWeb() {
             <h1 style={{ color: "#FFDE1F" }} className="font-bold display-3">
               Personalized
             </h1>
-            <h3 className="font-bold display-3 text-white">Websites</h3>
+            <h3 className="font-bold display-3 text-white">Mobile Apps</h3>
             <h3 style={{ color: "#DEDEDE" }}>
-              Tailor-Made Web Solutions that Drive Success
+              Tailor Made Web Applications that Drive Success
             </h3>
           </Col>
         </Row>

@@ -11,7 +11,8 @@ const FXSection = () => {
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <p style={{ maxWidth: "1000px" }} className="para-color">
-              Get real-time mid-market rates with low commissions across UAE,
+              Get real-time mid-market rates with low commissions across UAE,{" "}
+              {""}
               {/* Hong Kong, <span style={{ color: "#f8d613" }}>China,</span> and */}
               Hong Kong, China, and key trade corridors.
             </p>

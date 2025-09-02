@@ -32,7 +32,7 @@ const regulatoryData = [
   {
     id: 4,
     heading: "Pakistan:",
-    text: "Our technology and operations hub is registered with the Pakistan Software Export Board (PSEB). While we don’t offer regulated financial services in Pakistan, we operate in full compliance with local software and fintech laws.",
+    text: "Our technology and operations hub is registered with the Pakistan Software Export Board (PSEB). While we don’t offer regulated financial services in Pakistan, we operate in full compliance with local software and Fintech laws.",
     bgImage: "/images/pak_bg_img.png",
     img: "/images/compliance_icon_4.png",
     imgAlt: "Pakistan",

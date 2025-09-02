@@ -25,7 +25,7 @@ const WorkWith = () => {
     {
       id: 1,
       heading: "SMEs & Traders",
-      text: "We help SMEs and global traders move money across borders instantly with secure.",
+      text: "We help SMEs and global traders move money across borders with instant and secure money rails.",
       // icons: "/images/obj_1.png",
       // icons: "/images/object_1.png",
       icons: "/images/svg_obj_1.svg",
@@ -34,7 +34,7 @@ const WorkWith = () => {
     {
       id: 2,
       heading: "Airlines & Travel Agencies",
-      text: "We enable instant, transparent settlement between airlines, OTAs, and agencies.",
+      text: "We enable instant, transparent settlements between airlines, OTAs, and agencies.",
       icons: "/images/object_2.png",
       // icons: "/images/travel_agencies.png",
     },
@@ -64,9 +64,9 @@ const WorkWith = () => {
                     Corporate FX to Startups, SME’s and Traders within the UAE-
                     <span style={{ color: "#f8d613" }}>China</span> corridor and
                     beyond. */}
-                    Provide Corporate FX, Payout and Collection via Entterprice
-                    Accounts for SME's and Traders, Airlines and Travel Agencies
-                    and E-Commerce Marketplaces. 
+                    We provide Entterprice business accounts for Payout,
+                    Collection and Corporate FX to SME's & Traders, Airlines and
+                    Travel Agencies, E-Commerce B2B market.
                   </h4>
                 </>
               </Row>

@@ -109,7 +109,7 @@ export default function ISOCompliance() {
             </span>{" "}
             and relevant{" "}
             <span className="text-dark font-bold">EU privacy directives,</span>{" "}
-            ensuring data subjects’ rights are respected, and personal data is
+            ensuring data subject rights are respected, and personal data is
             processed lawfully, fairly, and transparently. Our privacy policies,
             data retention practices, and user consent mechanisms reflect these
             obligations.
