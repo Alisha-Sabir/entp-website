@@ -2,7 +2,7 @@ const regulatoryData = [
   {
     id: 1,
     heading: "United Arab Emirates (UAE):",
-    text: "Licensed by the Central Bank of UAE under the Retail Payment Services and Card Schemes framework, enabling us to deliver secure, regulated financial services across the UAE.",
+    text: "Applied for the license of the Central Bank of UAE under the Retail Payment Services and Card Schemes framework. It will enable us to deliver secure, regulated financial services across the UAE.",
     bgImage: "/images/uae_bg_img.png",
     img: "/images/compliance_icon_1.png",
     imgAlt: "UAE",
@@ -22,7 +22,7 @@ const regulatoryData = [
   {
     id: 3,
     heading: "Hong Kong:",
-    text: "Regulated as a Money Service Operator (MSO) under the Hong Kong Customs and Excise Department providing regulatory oversight for our remittance and foreign exchange operations.",
+    text: "Applied for the Money Service Operator (MSO) license under the Hong Kong Customs and Excise Department to provide regulatory oversight for our remittance and foreign exchange operations.",
     bgImage: "/images/hk_bg_img.png",
     img: "/images/compliance_icon_3.png",
     imgAlt: "Hong Kong",

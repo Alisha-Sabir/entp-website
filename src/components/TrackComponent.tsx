@@ -17,7 +17,7 @@ const TrackComponent = ({
 }: DataProps) => {
   return (
     <>
-      <section className="position-relative">
+      <section className="position-relative mb-3 mb-lg-5">
         {pattern && (
           <div className="position-absolute" style={{ top: "-200px" }}>
             <Image

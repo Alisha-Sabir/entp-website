@@ -90,7 +90,7 @@ export default function FindUs() {
             ))}
           </Row>
           <div
-            className="text-center mb-3 mb-lg-0 mt-3 rounded-5 border border-1 py-5 px-2 px-lg-0"
+            className="text-center mb-3 mb-lg-5 mt-3 rounded-5 border border-1 py-5 px-2 px-lg-0"
             style={{ backgroundColor: "#fbfbfb" }}
           >
             <h1 className="font-bold">Other locations:</h1>

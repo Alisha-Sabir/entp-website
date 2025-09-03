@@ -13,7 +13,7 @@ export default function ImporterExporter() {
         "Real-time payments.",
         "Multi-currency payments, supported currencies, no forced conversions.",
         "Speed & FX transparency, competitive mid-market FX rates.",
-        "Payment steps overview quick summary: create account → verify → initiate payments.",
+        "Payment steps: Create account → verify → initiate payments.",
       ],
     },
     {

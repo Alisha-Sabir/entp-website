@@ -20,8 +20,8 @@ export default function SaasHome() {
               <p style={{ fontSize: "20px" }}>
                 {" "}
                 We partner with banks, remittance agents and Fintech’s on a
-                subscription basis or provide customized development for the GCC
-                market in accordance with local regulations.
+                subscription basis and provide customized development for the
+                GCC market in accordance with local regulations.
               </p>
               <Button
                 style={{ border: "1px solid #72725F", color: "#ffd700" }}

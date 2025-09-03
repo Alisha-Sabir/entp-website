@@ -12,7 +12,7 @@ const CBPayments = () => {
       id: 2,
       subHeading: "Key Trade Corridors:",
       description:
-        "Specializing in UAE-China trade with plans to expand into additional major global trade corridors.",
+        "Specializing in UAE - China trade with plans to expand into additional global trade corridors.",
     },
     {
       id: 3,

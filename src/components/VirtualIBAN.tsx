@@ -8,13 +8,13 @@ const VirtualIBAN = () => {
       id: 1,
       heading: "Key Features",
       description:
-        "Quick setup, multi-currency support, secure transactions, and easy integration.",
+        "Quick setup, multicurrency support, secure transactions, and easy integration.",
     },
     {
       id: 2,
       heading: "Use Cases",
       description:
-        "Ideal for global payments, e-commerce, and cross-border services.",
+        "Ideal for global payments, e-commerce, and cross border services.",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const VirtualIBAN = () => {
       id: 4,
       heading: "Why Choose Entterprice for Your Virtual IBAN?",
       description:
-        "Get your Virtual IBAN quickly with simple, seamless integration.",
+        "Pay and collect seamlessly across jurisdictions with Entterprice Multicurrency Virtual IBANs.",
     },
     {
       id: 5,

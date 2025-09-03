@@ -8,7 +8,7 @@ export default function VisionMission() {
       heading: "Our Vision",
       image: "/images/vision.png",
       description:
-        "To become a leading global platform empowering businesses engaged in international trade, by providing seamless, end-to-end digital trade finance and cross-border payment solutions. We strive to accelerate economic growth, foster financial inclusion, and create meaningful connections across markets and geographies.",
+        "To become a leading global platform empowering businesses engaged in international trade, by providing seamless, end-to-end digital trade finance and cross border payment solutions. We strive to accelerate economic growth, foster financial inclusion, and create meaningful connections across markets and geographies.",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ export default function VisionMission() {
       image: "/images/mission.png",
 
       description:
-        "To deliver fast, transparent, and cost-effective cross-border payment and fintech solutions through a technology-first, client-focused approach. We aim to simplify international transactions, enabling businesses to grow confidently in a connected global economy.",
+        "To deliver fast, transparent, and cost-effective cross border payment and fintech solutions through a technology-first, client-focused approach. We aim to simplify international transactions, enabling businesses to grow confidently in a connected global economy.",
     },
   ];
   interface CardData {

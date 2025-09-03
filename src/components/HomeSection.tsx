@@ -21,7 +21,7 @@ const HomeSection = () => {
       icon: "/images/home_icon_4.png",
       wave: "/images/wave_bg_1.png",
       heading: "Stablecoin Rails",
-      text: "Entterprice leverages Blockchain Technology behind Payment Tokens such as USDT, USDC, and HKDA to facilitate seamless international trade payments.",
+      text: "Entterprice leverages blockchain technology behind payment tokens such as USDT, USDC, and HKDA to facilitate seamless international trade payments.",
     },
     {
       id: 2,
@@ -71,8 +71,8 @@ const HomeSection = () => {
                 <span className="entp-text">International Trade Payments</span>
               </h1>
               <p className="text-white">
-                Your One Stop Shop Solution for Corporate FX, Payouts and
-                Collections from UAE to China and Beyond.
+                Your one stop shop solution for corporate FX, payouts and
+                collections from UAE to China and beyond.
                 {/* <span style={{ color: "#f8d613" }}>China</span> and Beyond. */}
               </p>
               <Button

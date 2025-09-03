@@ -45,7 +45,7 @@ export default function AMLSection() {
                   Anti-Money Laundering (AML) and Transaction Monitoring System
                   (TMS)
                 </b>{" "}
-                tailored to B2B cross-border transactions.
+                tailored to B2B cross border transactions.
                 <br />
                 <br />
                 <b>Key features include:</b>

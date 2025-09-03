@@ -26,7 +26,7 @@ export default function PrivacySecurity() {
             <h1 className="font-bold text-dark">Data Privacy & Security</h1>
             <p className="para-color">
               We recognize that the integrity and security of our infrastructure
-              are critical to customer trust. Our security posture includes.
+              are critical to customer trust.
             </p>
           </div>
           <div className="d-block d-lg-flex align-items-center">
@@ -43,12 +43,12 @@ export default function PrivacySecurity() {
             <Col xs={12} lg={6} className="pt-3 ps-lg-4 ps-xl-0">
               <div className="mb-lg-5 mt-lg-0 p-2 p-md-0">
                 <h2 className="font-bold text-dark">
-                  Cloud & Network Security (AWS Bahrain & UAE Regions):
+                  Cloud & Network Security (AWS Bahrain & UAE Regions)
                 </h2>
                 <p style={{ fontSize: "20px" }}>
-                  We operate our systems on Amazon Web Services (AWS),
-                  leveraging the following key certifications and standards
-                  provided by the AWS Middle East (Bahrain and UAE) regions:
+                  We host our systems on Amazon Web Services (AWS), leveraging
+                  the following key certifications and standards provided by the
+                  AWS Middle East (Bahrain and UAE) regions:
                 </p>
                 <ul style={{ listStyle: "none" }} className="p-0">
                   {listItems.map((item, index) => (

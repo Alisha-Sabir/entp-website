@@ -27,8 +27,8 @@ export default function GetPaidHome() {
                 className="pe-lg-5 me-lg-5 text-center text-lg-start"
               >
                 {" "}
-                Instant, Transparent, Secure and Cheaper Trade Payments between
-                the UAE and China.
+                Instant, transparent, secure and cost-effective trade payments
+                between the UAE and China.
               </p>
             </Col>
             {/* <Col lg={2} /> */}

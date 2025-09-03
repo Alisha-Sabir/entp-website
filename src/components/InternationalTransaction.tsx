@@ -75,9 +75,9 @@ const InternationalTransaction = () => {
           <Col md={12} lg={7} xl={8} className="py-5 px-4 ps-md-5 px-xl-0">
             <div className="ms-lg-5">
               <h1 className="font-bold">
-                Purpose-built to facilitate
+                Purpose-built to Facilitate
                 <br />
-                international Trade
+                International Trade
               </h1>
               <h5 className="fw-medium pe-md-5">
                 Pay and collect from vendors instantly, anywhere anytime,

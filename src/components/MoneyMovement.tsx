@@ -73,7 +73,7 @@ export default function MoneyMovement() {
                   style={{ color: "#6D6D6C" }}
                   className="font-medium mt-4 mb-2"
                 >
-                  Powered by Stablecoins Send. Receive. Settle. All in Minutes.
+                  Powered by Stablecoins. Send. Receive. Settle. All in Minutes.
                 </h3>
               </div>
             </Col>
@@ -125,7 +125,7 @@ export default function MoneyMovement() {
                       Bank route fees:
                     </span>
                     <br />
-                    <b className="fs-5">2.0% – 5.6% of the principal</b>
+                    <b className="fs-5">2.0% – 5.6%</b>
                   </Col>
                   <hr />
                   <div className="d-block d-md-flex">
@@ -229,11 +229,11 @@ export default function MoneyMovement() {
                   </svg>
                   <Col md={12}>
                     <span className="font-bold">
-                      EnTTerPrice Crypto rails fees:
+                      EnTTerPrice stablecoin rails fees:
                     </span>
                     <br />
                     <b className="fs-5" style={{ color: "#E1C106" }}>
-                      0.3% – 0.8% of the principal
+                      0.3% – 0.8%
                     </b>
                   </Col>
                   <hr />

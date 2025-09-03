@@ -43,7 +43,7 @@ export default function SoftwareDevEntp() {
             className="px-2 font-medium mx-auto"
           >
             Entterprice offers expert software development tailored for startups
-            and SMEs across Fintech, Mobile app development and Web app
+            and SMEs across Fintech's, Mobile app development, and Web app
             development and backend solutions.
             <br />
             Leveraging cutting-edge technology, we drive transformational change

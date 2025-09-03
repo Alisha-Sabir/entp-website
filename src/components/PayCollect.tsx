@@ -26,7 +26,7 @@ const PayCollect = () => {
       image: "/images/pay_icon_3.png",
       title: "Digital Payment Account & Optimal FX Solutions",
       description:
-        "Traders and SME’s can hold, convert, and transfer multiple currencies and make and receive Cross Border Payments. ",
+        "Traders and SMEs can hold, convert, and transfer multiple currencies and make and receive cross border payments. ",
     },
   ];
 

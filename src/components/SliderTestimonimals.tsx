@@ -15,7 +15,7 @@ const SliderTestimonials = () => {
       stars: 5,
       designation: "CEO of Digitt Plus AFT",
       remarks:
-        "Working with Entterprice was a game-changer for us. They developed a mobile fintech app tailored to the needs of Pakistan’s farmers — simple, intuitive, and perfectly aligned with our vision. Their ability to design technology that truly matches the user’s knowledge level has helped us onboard farmers who struggled with conventional money transfer apps.",
+        "Working with Entterprice was a game-changer for us. They developed a mobile fintech app tailored to the needs of Pakistan’s farmers, simple, intuitive, and perfectly aligned with our vision. Their ability to design technology that truly matches the user’s knowledge level has helped us onboard farmers who struggled with conventional money transfer apps.",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const SliderTestimonials = () => {
       stars: 4,
       designation: "Founder & CEO ExAim",
       remarks:
-        "Entterprice delivered exactly what we needed — a reliable, scalable educational technology platform for the UAE market. Their team was professional, fast, and focused on quality from day one. I highly recommend Entterprice to any business looking for innovative and dependable software solutions.",
+        "Entterprice delivered exactly what we needed. A reliable, scalable educational technology platform for the UAE market. Their team was professional, fast, and focused on quality from day one. I highly recommend Entterprice to any business looking for innovative and dependable software solutions.",
     },
     {
       id: 3,

@@ -31,7 +31,7 @@ const faqsData = [
   },
   {
     question:
-      "What are the benefits of using your cross-border payment services?",
+      "What are the benefits of using your cross border payment services?",
     answer:
       "Our services offer numerous benefits, including competitive exchange rates, low transaction fees, shorter payment times, and robust security measures. Additionally, our platform provides seamless integration with your existing financial systems.",
   },

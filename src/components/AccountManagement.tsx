@@ -28,14 +28,16 @@ const AccountManagement = () => {
     },
   ];
   return (
-    <DetailsComponent
-      sectionHeading="Account Management"
-      data={data}
-      background={"bg-white"}
-      img="/images/management.png"
-      imgAlt="Account Management"
-      btn={true}
-    />
+    <section className="mb-3 mb-xl-5">
+      <DetailsComponent
+        sectionHeading="Account Management"
+        data={data}
+        background={"bg-white"}
+        img="/images/management.png"
+        imgAlt="Account Management"
+        btn={true}
+      />
+    </section>
   );
 };
 

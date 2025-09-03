@@ -64,9 +64,9 @@ const WorkWith = () => {
                     Corporate FX to Startups, SME’s and Traders within the UAE-
                     <span style={{ color: "#f8d613" }}>China</span> corridor and
                     beyond. */}
-                    We provide Entterprice business accounts for Payout,
-                    Collection and Corporate FX to SME's & Traders, Airlines and
-                    Travel Agencies, E-Commerce B2B market.
+                    We provide Entterprice business accounts for payout,
+                    collection & corporate FX to SMEs & Traders, Airlines &
+                    Travel Agencies, E-Commerce B2B marketplaces.
                   </h4>
                 </>
               </Row>

@@ -10,7 +10,7 @@ export default function IntroSection() {
               operations. Our governance framework ensures that every
               transaction is handled with integrity, backed by international
               best practices and a proactive risk-based approach. We take pride
-              in enabling secure, compliant, and responsible cross-border
+              in enabling secure, compliant, and responsible cross border
               payment services for businesses globally."
       />
     </div>

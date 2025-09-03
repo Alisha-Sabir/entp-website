@@ -45,7 +45,7 @@ export default function PayoutAndCollection() {
       <ImporterExporter />
       <PayCollect />
       <PaidPaymentStatus />
-      <div className="d-none d-md-block" style={{ position: "relative" }}>
+      {/* <div className="d-none d-md-block" style={{ position: "relative" }}>
         <div
           style={{
             position: "absolute",
@@ -66,7 +66,8 @@ export default function PayoutAndCollection() {
       <div className="d-md-none">
         <NewsLetter />
         <Footer />
-      </div>
+      </div> */}
+      <Footer padding={false} />
     </>
     //   )}
     // </>

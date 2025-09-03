@@ -41,7 +41,7 @@ export default function ContactUs() {
       <OurValues />
       <SearchOpportunities />
       <PaymentCompany />
-      <div className="d-none d-md-block" style={{ position: "relative" }}>
+      {/* <div className="d-none d-md-block" style={{ position: "relative" }}>
         <div
           style={{
             position: "absolute",
@@ -62,7 +62,8 @@ export default function ContactUs() {
       <div className="d-md-none">
         <NewsLetter />
         <Footer />
-      </div>
+      </div> */}
+      <Footer padding={false} />
     </>
     //   )}
     // </>

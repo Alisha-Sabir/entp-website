@@ -25,13 +25,13 @@ export default function ProductServices() {
                 className="rounded-4 position-relative h-100 p-4"
               >
                 <h3 className="text-white font-bold mb-lg-3 d-block d-md-none d-lg-block">
-                  Cross-Border Payments <br /> B2B Platform
+                  Cross Border Payments <br /> B2B Platform
                 </h3>
 
                 <Row className="align-items-center">
                   <Col xs={12} md={6} lg={5} xl={5}>
                     <h3 className="text-white font-bold mb-lg-3 d-none d-md-block d-lg-none">
-                      Cross-Border Payments <br /> B2B Platform
+                      Cross Border Payments <br /> B2B Platform
                     </h3>
                     <p style={{ color: "#E0E0E0" }} className="font-medium">
                       Simplifying international payments with speed and

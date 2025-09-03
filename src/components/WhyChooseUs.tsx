@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
     <DetailsComponent
       img="/images/choose_us.png"
       imgAlt="Partners"
-      text="Regulated, reliable, and ready to deliver."
+      text="Regulated, Reliable, and Ready to deliver."
       data={data}
     />
   );
