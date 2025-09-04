@@ -29,8 +29,8 @@ export default function CareersHome() {
                 International Trade Payments for Global Businesses
               </h1> */}
               <h1>
-                As we transform International trade payments for
-                global businesses
+                As We Transform International Trade Payments For
+                Global Businesses
               </h1>
             </Col>
           </Row>
