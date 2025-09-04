@@ -28,7 +28,7 @@ const WorkWith = () => {
       text: "We help SMEs and global traders move money across borders with instant and secure money rails.",
       // icons: "/images/obj_1.png",
       // icons: "/images/object_1.png",
-      icons: "/images/svg_obj_1.svg",
+      icons: "/images/obj_svg.svg",
       // icons: "/images/traders.png",
     },
     {
@@ -74,7 +74,7 @@ const WorkWith = () => {
           </Col>
           <Col xs={12} md={6} lg={6} className="text-center overflow-hidden">
             <Image
-              src="/images/work_partners.png"
+              src="/images/entp_partners.png"
               alt="Partners"
               width={500}
               height={50}
