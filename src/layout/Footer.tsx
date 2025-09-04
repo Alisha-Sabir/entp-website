@@ -184,7 +184,7 @@ export default function Footer({ padding = true }) {
           <Row className="align-items-center gap-3 gap-lg-0">
             <Col xs={12} md={12} lg={6}>
               <small style={{ color: "#91918e" }}>
-                Entterprice UAE Ltd &copy; 2025
+                EnTTerprice Fintech Ltd &copy; 2025
               </small>
             </Col>
             <Col
