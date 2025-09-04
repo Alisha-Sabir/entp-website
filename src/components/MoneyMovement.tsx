@@ -7,19 +7,22 @@ export default function MoneyMovement() {
   const stablecoinCards = [
     {
       id: 1,
-      image: "/images/first.png",
+      // image: "/images/first.png",
+      image: "/images/coin_1.png",
       title: "Sending Currency (AED)",
       description: "Original currency collected using local rails",
     },
     {
       id: 2,
-      image: "/images/sec.png",
+      // image: "/images/sec.png",
+      image: "/images/coin_2.png",
       title: "Stablecoin Bridge (USDC)",
       description: "Converted to stables for instant cross border transfer",
     },
     {
       id: 3,
-      image: "/images/third.png",
+      // image: "/images/third.png",
+      image: "/images/coin_3.png",
       title: "Target Currency (HKD)",
       description: "Converted at destination currency for local payout",
     },
@@ -120,13 +123,30 @@ export default function MoneyMovement() {
                   style={{ backgroundColor: "white" }}
                   className="justify-content-between align-items-center p-3 border border-2 rounded-4"
                 >
-                  <Col md={12}>
+                  {/* <Col md={12}>
                     <span className="font-bold" style={{ color: "#6D6D6C" }}>
                       Bank route fees:
                     </span>
                     <br />
                     <b className="fs-5">2.0% – 5.6%</b>
-                  </Col>
+                  </Col> */}
+                  <div className="d-block d-md-flex">
+                    <Col xs={12} md={9} lg={7} xl={6} xxl={8}>
+                      <span className="font-bold" style={{ color: "#6D6D6C" }}>
+                        Bank route fees:
+                      </span>
+                    </Col>
+                    <Col
+                      xs={12}
+                      md={3}
+                      lg={5}
+                      xl={6}
+                      xxl={4}
+                      className="text-start text-md-end"
+                    >
+                      <b className="fs-5">2.0% – 5.6%</b>
+                    </Col>
+                  </div>
                   <hr />
                   <div className="d-block d-md-flex">
                     <Col xs={12} md={9} lg={8} xl={7} xxl={9}>
@@ -134,7 +154,14 @@ export default function MoneyMovement() {
                         Processing Time:
                       </span>
                     </Col>
-                    <Col xs={12} md={3} lg={4} xl={5} xxl={3}>
+                    <Col
+                      xs={12}
+                      md={3}
+                      lg={4}
+                      xl={5}
+                      xxl={3}
+                      className="text-start text-md-end"
+                    >
                       <b className="fs-5">3-5 Days</b>
                     </Col>
                   </div>
@@ -153,7 +180,7 @@ export default function MoneyMovement() {
             </Col>
 
             <Col lg={5} className="d-flex flex-column mt-5 mt-lg-0">
-              <h3 className="font-bold">EnTTerPrice Stablecoin Sandwich</h3>
+              <h3 className="font-bold">Entterprice Stablecoin Sandwich</h3>
 
               <div className="d-block pt-3 flex-grow-1 mb-xl-3">
                 {stablecoinCards.map((item: any, index: any) => (
@@ -228,24 +255,48 @@ export default function MoneyMovement() {
                     />
                   </svg>
                   <Col md={12}>
-                    <span className="font-bold">
-                      EnTTerPrice stablecoin rails fees:
+                    {/* <span className="font-bold">
+                      EntterPrice stablecoin rails fees:
                     </span>
                     <br />
                     <b className="fs-5" style={{ color: "#E1C106" }}>
                       0.3% – 0.8%
-                    </b>
+                    </b> */}
+                    <div className="d-block d-md-flex">
+                      <Col xs={12} md={9} lg={7} xl={6} xxl={8}>
+                        <span className="font-bold">
+                          Entterprice <br className="d-none d-lg-block" />{" "}
+                          stablecoin rails fees:
+                        </span>
+                      </Col>
+                      <Col
+                        xs={12}
+                        md={3}
+                        lg={5}
+                        xl={6}
+                        xxl={4}
+                        className="text-start text-md-end"
+                      >
+                        <b className="fs-5" style={{ color: "#E1C106" }}>
+                          0.3% – 0.8%
+                        </b>
+                      </Col>
+                    </div>
                   </Col>
                   <hr />
                   <div className="d-block d-md-flex">
-                    <Col md={8} lg={6} xl={7} xxl={6}>
+                    <Col xs={12} md={8} lg={6} xl={7} xxl={6}>
                       <span className="font-bold">Processing Time:</span>
                     </Col>
-                    <Col md={4} lg={6} xl={5} xxl={6}>
-                      <b
-                        className="fs-5 ms-lg-4 ms-xl-0"
-                        style={{ color: "#E1C106" }}
-                      >
+                    <Col
+                      xs={12}
+                      md={4}
+                      lg={6}
+                      xl={5}
+                      xxl={6}
+                      className="text-start text-md-end"
+                    >
+                      <b className="fs-5" style={{ color: "#E1C106" }}>
                         {/* Instant */}
                         Within Minutes
                       </b>

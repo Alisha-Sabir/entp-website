@@ -14,7 +14,7 @@ const VirtualIBAN = () => {
       id: 2,
       heading: "Use Cases",
       description:
-        "Ideal for global payments, e-commerce, and cross border services.",
+        "Ideal for global payments, E-commerce marketplaces and cross border payment services.",
     },
     {
       id: 3,

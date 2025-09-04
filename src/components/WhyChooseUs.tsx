@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
       id: 3,
       heading: "Best FX Rates",
       description:
-        "Seamlessly send and receive international payments with speed and transparency.",
+        "Optimize your global payments with the most competitive FX rates.",
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       id: 5,
       heading: "Blockchain Technology",
       description:
-        "Leveraging stablecoin rails to facilitate the fastest and cheapest possible payment experience.",
+        "Leveraging stablecoin rails to facilitate the fastest and most cost effective possible payment experience.",
     },
   ];
   return (

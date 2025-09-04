@@ -28,7 +28,7 @@ export default function GetPaidHome() {
               >
                 {" "}
                 Instant, transparent, secure and cost-effective trade payments
-                between the UAE and China.
+                between UAE and China.
               </p>
             </Col>
             {/* <Col lg={2} /> */}

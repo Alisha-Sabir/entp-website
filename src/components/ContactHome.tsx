@@ -16,6 +16,7 @@ export default function ContactHome() {
     FirstName: string;
     LastName: string;
     email: string;
+    phone: string;
     message: string;
   };
 
@@ -132,7 +133,9 @@ export default function ContactHome() {
                   >
                     {/************ First Name **************/}
                     <Col>
-                      <InputGroup className="mb-3">
+                      <InputGroup
+                        className={`${errors.FirstName ? "mb-1" : "mb-3"}`}
+                      >
                         <InputGroup.Text id="first-name" className=" gap-2">
                           First Name
                         </InputGroup.Text>
@@ -148,6 +151,22 @@ export default function ContactHome() {
                           className="border-start-0"
                           maxLength={50}
                           autoComplete="off"
+                          onPaste={(
+                            e: React.ClipboardEvent<HTMLInputElement>
+                          ) => {
+                            e.preventDefault();
+                            const pastedText = e.clipboardData.getData("text");
+                            const cleanedText = pastedText.replace(
+                              /[^a-zA-Z]/g,
+                              ""
+                            );
+                            e.currentTarget.value = cleanedText.slice(0, 50);
+                          }}
+                          onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                            e.target.value = e.target.value
+                              .replace(/[^a-zA-Z]/g, "")
+                              .slice(0, 50);
+                          }}
                         />
                       </InputGroup>
                       {errors.FirstName && (
@@ -158,7 +177,9 @@ export default function ContactHome() {
                     </Col>
                     {/************ Last Name **************/}
                     <Col>
-                      <InputGroup className="mb-3">
+                      <InputGroup
+                        className={`${errors.LastName ? "mb-1" : "mb-3"}`}
+                      >
                         <InputGroup.Text id="last-name" className=" gap-2">
                           Last Name{" "}
                         </InputGroup.Text>
@@ -174,6 +195,22 @@ export default function ContactHome() {
                           className="border-start-0"
                           maxLength={50}
                           autoComplete="off"
+                          onPaste={(
+                            e: React.ClipboardEvent<HTMLInputElement>
+                          ) => {
+                            e.preventDefault();
+                            const pastedText = e.clipboardData.getData("text");
+                            const cleanedText = pastedText.replace(
+                              /[^a-zA-Z]/g,
+                              ""
+                            );
+                            e.currentTarget.value = cleanedText.slice(0, 50);
+                          }}
+                          onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                            e.target.value = e.target.value
+                              .replace(/[^a-zA-Z]/g, "")
+                              .slice(0, 50);
+                          }}
                         />
                       </InputGroup>
                       {errors.LastName && (
@@ -182,8 +219,65 @@ export default function ContactHome() {
                         </div>
                       )}
                     </Col>
+                    {/************ Phone **************/}
+                    <InputGroup className={`${errors.phone ? "mb-1" : "mb-3"}`}>
+                      <InputGroup.Text id="phone" className=" gap-1">
+                        Contact Number
+                      </InputGroup.Text>
+                      {/* <Form.Control
+                        type="phone"
+                        {...register("phone", {
+                          required: "This field is required",
+                          pattern: {
+                            value:
+                              /^\+?[0-9]{1,4}?[-.\s]?\(?[0-9]{1,4}\)?[-.\s]?[0-9]{3,4}[-.\s]?[0-9]{3,4}$/,
+                            message: "Invalid contact number",
+                          },
+                        })}
+                        size="lg"
+                        className="border-start-0"
+                        maxLength={17}
+                        autoComplete="off"
+                      /> */}
+                      <Form.Control
+                        type="tel"
+                        {...register("phone", {
+                          required: "This field is required",
+                          pattern: {
+                            value:
+                              /^\+?[0-9]{1,4}?[-]?\(?[0-9]{1,4}\)?[-]?[0-9]{3,4}[-]?[0-9]{3,4}$/,
+                            message: "Invalid contact number",
+                          },
+                        })}
+                        size="lg"
+                        className="border-start-0"
+                        maxLength={17}
+                        autoComplete="off"
+                        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                          e.target.value = e.target.value
+                            .replace(/[^0-9+\-()]/g, "")
+                            .slice(0, 17);
+                        }}
+                        onPaste={(
+                          e: React.ClipboardEvent<HTMLInputElement>
+                        ) => {
+                          e.preventDefault();
+                          const pastedText = e.clipboardData.getData("text");
+                          const cleanedText = pastedText.replace(
+                            /[^0-9+\-()]/g,
+                            ""
+                          );
+                          e.currentTarget.value = cleanedText.slice(0, 17);
+                        }}
+                      />
+                    </InputGroup>
+                    {errors.phone && (
+                      <div className="text-danger text-start pb-2">
+                        {errors.phone.message}
+                      </div>
+                    )}
                     {/************ Email **************/}
-                    <InputGroup className="mb-3 ">
+                    <InputGroup className={`${errors.email ? "mb-1" : "mb-3"}`}>
                       <InputGroup.Text id="email" className=" gap-1">
                         Email Address{" "}
                       </InputGroup.Text>
@@ -201,6 +295,21 @@ export default function ContactHome() {
                         className="border-start-0"
                         maxLength={100}
                         autoComplete="off"
+                        onPaste={(
+                          e: React.ClipboardEvent<HTMLInputElement>
+                        ) => {
+                          e.preventDefault();
+                          const pastedText = e.clipboardData.getData("text");
+                          const cleanedText = pastedText
+                            .replace(/\s+/g, "")
+                            .trim();
+                          e.currentTarget.value = cleanedText.slice(0, 100);
+                        }}
+                        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                          e.target.value = e.target.value
+                            .replace(/\s+/g, "")
+                            .slice(0, 100);
+                        }}
                       />
                     </InputGroup>
                     {errors.email && (
@@ -209,7 +318,9 @@ export default function ContactHome() {
                       </div>
                     )}
                     {/************ Message **************/}
-                    <InputGroup className="mb-3 ">
+                    <InputGroup
+                      className={`${errors.message ? "mb-1" : "mb-3"}`}
+                    >
                       <InputGroup.Text id="message" className=" gap-2">
                         Message{" "}
                       </InputGroup.Text>
@@ -223,6 +334,22 @@ export default function ContactHome() {
                         className="border-start-0"
                         maxLength={256}
                         autoComplete="off"
+                        onPaste={(
+                          e: React.ClipboardEvent<HTMLInputElement>
+                        ) => {
+                          e.preventDefault();
+                          const pastedText = e.clipboardData.getData("text");
+                          const cleanedText = pastedText
+                            .replace(/\s+/g, " ")
+                            .trim();
+                          e.currentTarget.value = cleanedText.slice(0, 256);
+                        }}
+                        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                          e.target.value = e.target.value
+                            .replace(/\s+/g, " ")
+                            .trimStart()
+                            .slice(0, 256);
+                        }}
                       />
                     </InputGroup>
                     {errors.message && (

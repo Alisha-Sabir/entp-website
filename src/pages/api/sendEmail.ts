@@ -9,6 +9,7 @@ interface EmailData {
   FirstName: string;
   LastName: string;
   email: string;
+  phone: number;
   message: string;
 }
 
@@ -17,7 +18,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { FirstName, LastName, email, message }: EmailData = req.body;
+    const { FirstName, LastName, phone, email, message }: EmailData = req.body;
 
     console.log("req", req.body);
 
@@ -61,10 +62,11 @@ export default async function handler(
       to: "shafiq.sarwar@entterprice.com",
       subject: "New Contact Form Submission",
       text: `You have a new contact form submission:
-First Name: ${FirstName}
-Last Name: ${LastName}
-Email: ${email}
-Message: ${message}`,
+      First Name: ${FirstName}
+      Last Name: ${LastName}
+      Contact Number: ${phone}
+      Email: ${email}
+      Message: ${message}`,
     };
 
     try {

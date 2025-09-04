@@ -21,7 +21,7 @@ export default function ImporterExporter() {
       heading: "Collect from Importer",
       image: "/images/import_icon.png",
       list: [
-        "How incoming payments work, collecting via virtual IBAN.",
+        "Receive trade payments from importers instantly, securely, and transparently.",
         "Currencies supported: USD, AED, HKD, CNY, many more.",
         "Notifications & tracking instant updates and status alerts.",
         "Corporate FX calculator.",

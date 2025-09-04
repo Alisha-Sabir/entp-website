@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function FindUs() {
   return (
     <>
-      <section>
+      <section id="find">
         <Container className="pt-lg-2">
           <div className="text-center">
             <h1 className="font-bold">Find Us Here</h1>
