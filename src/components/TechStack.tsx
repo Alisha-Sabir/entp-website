@@ -1,7 +1,10 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function TechStack() {
+  const router = useRouter();
+
   return (
     <section className="ps-xxl-custom">
       {/* <Container fluid className="ps-xxl-custom">
@@ -61,8 +64,9 @@ export default function TechStack() {
             scalable, secure solutions.
           </p>
           <Button
-            style={{ backgroundColor: "#f8d613" }}
-            className="py-2 px-4 font-semibold border-0 text-dark mt-2"
+            // style={{ backgroundColor: "#f8d613" }}
+            className="py-2 px-4 font-semibold border-0 mt-2 get-started-btn"
+            onClick={() => router.push("/contact-us")}
           >
             Learn More
           </Button>

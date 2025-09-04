@@ -2,8 +2,11 @@ import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Image from "next/image";
 import Header from "@/layout/Header";
+import { useRouter } from "next/router";
 
 export default function SaasHome() {
+  const router = useRouter();
+
   return (
     <>
       <section style={{ backgroundColor: "#22221D", color: "white" }}>
@@ -26,6 +29,7 @@ export default function SaasHome() {
               <Button
                 style={{ border: "1px solid #72725F", color: "#ffd700" }}
                 className="bg-transparent py-2 px-4 font-medium"
+                onClick={() => router.push("/contact-us")}
               >
                 Get Demo
               </Button>

@@ -29,7 +29,7 @@ const Approaches = () => {
     <section>
       <Container>
         <div className="text-center mt-5">
-          <h1 className="font-bold">Our Approaches</h1>
+          <h1 className="font-bold">What We Offer</h1>
         </div>
         {/* <div className="position-absolute">
           <Image

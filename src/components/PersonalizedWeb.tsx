@@ -161,6 +161,7 @@ export default function PersonalizedWeb() {
                       <div
                         style={{
                           border: "2px solid #6b6a61",
+                          visibility: "hidden",
                         }}
                         className="rounded-5 mt-2"
                       >

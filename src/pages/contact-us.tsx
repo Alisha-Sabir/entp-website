@@ -38,7 +38,7 @@ export default function ContactUs() {
         <> */}
       <Header />
       <ContactHome />
-      <FAQs />
+      {/* <FAQs /> */}
       <FindUs />
       {/* <div className="d-none d-md-block" style={{ position: "relative" }}>
         <div

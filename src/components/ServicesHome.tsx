@@ -15,7 +15,7 @@ export default function ServicesHome() {
                   Seamless Global Payment Platform
                 </span>{" "}
                 <br />
-                For Today’s Business
+                for Today’s Business
               </h1>
             </Col>
             {/* <Col lg={2} /> */}

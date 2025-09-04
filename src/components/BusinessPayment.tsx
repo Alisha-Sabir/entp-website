@@ -11,7 +11,7 @@ export default function BusinessPayment() {
     {
       id: 1,
       // icon: "/images/copy_icon.png",
-      title: "Create Your Account",
+      title: "Create your Account",
       description:
         "Onboard with Entterprice in minutes, no fees, no hassle, no minimum balance.",
       slide: "/images/slide_1.png",

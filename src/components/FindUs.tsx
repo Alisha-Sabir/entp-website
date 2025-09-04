@@ -9,7 +9,7 @@ export default function FindUs() {
   return (
     <>
       <section id="find">
-        <Container className="pt-lg-2">
+        <Container className="pt-5">
           <div className="text-center">
             <h1 className="font-bold">Find Us Here</h1>
           </div>

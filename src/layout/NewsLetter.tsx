@@ -93,7 +93,7 @@ const NewsLetter = ({ style }: any) => {
                 quality={100}
                 className="img-fluid"
               />
-              <h1 className="fw-bold">Subscribe To Our Newsletter</h1>
+              <h1 className="fw-bold">Subscribe to our newsletter</h1>
               <p className="fs-5" style={{ fontWeight: 500 }}>
                 Stay updated on new features, FX insights, market trends, and
                 smarter ways to move money globally.

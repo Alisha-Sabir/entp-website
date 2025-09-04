@@ -11,7 +11,7 @@ export default function ImporterExporter() {
       list: [
         "Supported corridors e.g., UAE, China, Hong Kong, Africa.",
         "Real-time payments.",
-        "Multi-currency payments, supported currencies, no forced conversions.",
+        "Multicurrency supported platform with no forced conversions.",
         "Speed & FX transparency, competitive mid-market FX rates.",
         "Payment steps: Create account → verify → initiate payments.",
       ],

@@ -28,7 +28,7 @@ const HomeSection = () => {
       icon: "/images/home_icon_1.png",
       // wave: "/images/card_2.png",
       wave: "/images/wave_bg_2.png",
-      heading: "Multi Currency Business Accounts",
+      heading: "Multicurrency Business Accounts",
       text: "Transact in USD, AED, HKD, CNY and more without delays or forced conversions.",
     },
     {

@@ -26,7 +26,7 @@ export default function PrivacySecurity() {
             <h1 className="font-bold text-dark">Data Privacy & Security</h1>
             <p className="para-color">
               We recognize that the integrity and security of our infrastructure
-              are critical to customer trust.
+              are critical to customers trust.
             </p>
           </div>
           <div className="d-block d-lg-flex align-items-center">
