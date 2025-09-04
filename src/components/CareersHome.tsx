@@ -12,13 +12,14 @@ export default function CareersHome() {
         <Container className="pb-5 pt-lg-3 pt-xl-5">
           <Row className="d-flex align-items-center justify-content-center pt-5 pt-xl-0 py-lg-5">
             <Col md={12} lg={12} className="text-center mt-3 pe-xl-5">
-              <h1 className="mb-3 font-medium" style={{ color: "#FFDE1F" }}>
-                {/* <span > */}
+              {/* <h1 className="mb-3 font-medium" style={{ color: "#FFDE1F" }}>
                 Put Your Skills To Work As We Transform
-                {/* </span> */}
+              </h1> */}
+              <h1 className="font-semibold display-2">
+                Put Your Skills To Work
               </h1>
               {/* <br /> */}
-              <h1 className="font-semibold display-5 d-block d-lg-none">
+              {/* <h1 className="font-semibold display-5 d-block d-lg-none">
                 International Trade Payments for Global Businesses
               </h1>
               <h1
@@ -26,6 +27,10 @@ export default function CareersHome() {
                 style={{ fontSize: "60px" }}
               >
                 International Trade Payments for Global Businesses
+              </h1> */}
+              <h1>
+                As we transform International trade payments for
+                global businesses
               </h1>
             </Col>
           </Row>
@@ -40,6 +45,7 @@ export default function CareersHome() {
           />
         </Col>
         <div>
+          <br />
           <br />
           <br />
           <br />

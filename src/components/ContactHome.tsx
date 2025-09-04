@@ -24,6 +24,7 @@ export default function ContactHome() {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<FormFields>();
 
@@ -161,11 +162,17 @@ export default function ContactHome() {
                               ""
                             );
                             e.currentTarget.value = cleanedText.slice(0, 50);
+                            setValue("FirstName", cleanedText, {
+                              shouldValidate: true,
+                            });
                           }}
                           onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                            e.target.value = e.target.value
+                            const cleanedText = e.target.value
                               .replace(/[^a-zA-Z]/g, "")
                               .slice(0, 50);
+                            setValue("FirstName", cleanedText, {
+                              shouldValidate: true,
+                            });
                           }}
                         />
                       </InputGroup>
@@ -205,11 +212,17 @@ export default function ContactHome() {
                               ""
                             );
                             e.currentTarget.value = cleanedText.slice(0, 50);
+                            setValue("LastName", cleanedText, {
+                              shouldValidate: true,
+                            });
                           }}
                           onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                            e.target.value = e.target.value
+                            const cleanedText = e.target.value
                               .replace(/[^a-zA-Z]/g, "")
                               .slice(0, 50);
+                            setValue("LastName", cleanedText, {
+                              shouldValidate: true,
+                            });
                           }}
                         />
                       </InputGroup>
@@ -253,21 +266,25 @@ export default function ContactHome() {
                         className="border-start-0"
                         maxLength={17}
                         autoComplete="off"
-                        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                          e.target.value = e.target.value
-                            .replace(/[^0-9+\-()]/g, "")
-                            .slice(0, 17);
-                        }}
                         onPaste={(
                           e: React.ClipboardEvent<HTMLInputElement>
                         ) => {
                           e.preventDefault();
                           const pastedText = e.clipboardData.getData("text");
-                          const cleanedText = pastedText.replace(
-                            /[^0-9+\-()]/g,
-                            ""
-                          );
-                          e.currentTarget.value = cleanedText.slice(0, 17);
+                          const cleanedText = pastedText
+                            .replace(/[^0-9+\-()]/g, "")
+                            .slice(0, 17);
+                          setValue("phone", cleanedText, {
+                            shouldValidate: true,
+                          });
+                        }}
+                        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+                          const cleanedText = e.target.value
+                            .replace(/[^0-9+\-()]/g, "")
+                            .slice(0, 17);
+                          setValue("phone", cleanedText, {
+                            shouldValidate: true,
+                          });
                         }}
                       />
                     </InputGroup>
@@ -278,8 +295,8 @@ export default function ContactHome() {
                     )}
                     {/************ Email **************/}
                     <InputGroup className={`${errors.email ? "mb-1" : "mb-3"}`}>
-                      <InputGroup.Text id="email" className=" gap-1">
-                        Email Address{" "}
+                      <InputGroup.Text id="email" className="gap-1">
+                        Email Address
                       </InputGroup.Text>
                       <Form.Control
                         type="email"
@@ -302,13 +319,18 @@ export default function ContactHome() {
                           const pastedText = e.clipboardData.getData("text");
                           const cleanedText = pastedText
                             .replace(/\s+/g, "")
-                            .trim();
-                          e.currentTarget.value = cleanedText.slice(0, 100);
+                            .slice(0, 100);
+                          setValue("email", cleanedText, {
+                            shouldValidate: true,
+                          });
                         }}
                         onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                          e.target.value = e.target.value
+                          const cleanedText = e.target.value
                             .replace(/\s+/g, "")
                             .slice(0, 100);
+                          setValue("email", cleanedText, {
+                            shouldValidate: true,
+                          });
                         }}
                       />
                     </InputGroup>
@@ -321,8 +343,8 @@ export default function ContactHome() {
                     <InputGroup
                       className={`${errors.message ? "mb-1" : "mb-3"}`}
                     >
-                      <InputGroup.Text id="message" className=" gap-2">
-                        Message{" "}
+                      <InputGroup.Text id="message" className="gap-2">
+                        Message
                       </InputGroup.Text>
                       <Form.Control
                         {...register("message", {
@@ -341,14 +363,20 @@ export default function ContactHome() {
                           const pastedText = e.clipboardData.getData("text");
                           const cleanedText = pastedText
                             .replace(/\s+/g, " ")
-                            .trim();
-                          e.currentTarget.value = cleanedText.slice(0, 256);
+                            .trim()
+                            .slice(0, 256);
+                          setValue("message", cleanedText, {
+                            shouldValidate: true,
+                          });
                         }}
                         onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                          e.target.value = e.target.value
+                          const cleanedText = e.target.value
                             .replace(/\s+/g, " ")
                             .trimStart()
                             .slice(0, 256);
+                          setValue("message", cleanedText, {
+                            shouldValidate: true,
+                          });
                         }}
                       />
                     </InputGroup>
