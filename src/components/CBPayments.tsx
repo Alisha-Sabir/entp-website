@@ -30,7 +30,7 @@ const CBPayments = () => {
       id: 5,
       subHeading: "Supported Currencies:",
       description:
-        "Multiple currencies supported, including AED, CNY, HKD, and more for seamless global transactions.",
+        "Multiple currencies supported, including USD, AED, CNY, HKD, and more for seamless global transactions.",
     },
     {
       id: 6,

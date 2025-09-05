@@ -23,7 +23,7 @@ export default function BusinessPayment() {
       // icon: "/images/access_icon.png",
       title: "Complete KYB & Upload Documents",
       description:
-        "Submit your business details, ownership structure, and documents to meet regulatory requirements.",
+        "Submit your business details, ownership structure, and other documents to meet the regulatory requirements.",
       slide: "/images/slide_2.png",
       //   width: 800,
       //   height: 400,

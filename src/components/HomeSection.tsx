@@ -71,7 +71,7 @@ const HomeSection = () => {
                 <span className="entp-text">International Trade Payments</span>
               </h1>
               <p className="text-white">
-                Your one stop shop solution for corporate FX, payouts and
+                Your one-stop shop solution for corporate FX, payouts and
                 collections from UAE to China and beyond.
                 {/* <span style={{ color: "#f8d613" }}>China</span> and Beyond. */}
               </p>

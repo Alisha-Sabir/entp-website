@@ -142,7 +142,7 @@ export default function Footer({ padding = true }) {
               </h6>
               <p
                 className="text-center text-md-start"
-                style={{ cursor: "default" }}
+                style={{ cursor: "default", color: "white" }}
               >
                 Onboard with us for an unparalleled international
                 trade payment journey.

@@ -59,7 +59,7 @@ export default function TechStack() {
             Technology Stack <br /> and Architecture Overview
           </h1>
           <p className="font-medium fs-5" style={{ color: "#6D6D6C" }}>
-            Entterprise uses modern microservices, React/Angular frontends, and
+            Entterprice uses modern microservices, React/Angular frontends, and
             native mobile SDKs, deployed on AWS with Kubernetes and CI/CD for
             scalable, secure solutions.
           </p>
