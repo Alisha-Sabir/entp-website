@@ -33,7 +33,7 @@ const AccountManagement = () => {
         sectionHeading="Account Management"
         data={data}
         background={"bg-white"}
-        img="/images/management.png"
+        img="/images/acc_manage.png"
         imgAlt="Account Management"
         btn={true}
       />

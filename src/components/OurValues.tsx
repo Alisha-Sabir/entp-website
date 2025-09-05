@@ -6,7 +6,10 @@ export default function OurValues() {
   return (
     <>
       <section className="position-relative">
-        <div className="position-absolute" style={{ top: "-200px", right: 0 }}>
+        <div
+          className="position-absolute d-none d-md-block"
+          style={{ top: "-200px", right: 0 }}
+        >
           <Image
             width={250}
             height={40}
@@ -19,7 +22,7 @@ export default function OurValues() {
           <div className="d-block d-lg-flex align-items-end">
             <Col xs={12} lg={5} className="text-center text-lg-start">
               <Image
-                src="/images/puzzle.png"
+                src="/images/value.png"
                 alt="Values"
                 width={450}
                 height={100}

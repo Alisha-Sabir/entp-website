@@ -45,7 +45,7 @@ export default function TechStack() {
       <Row className="align-items-center justify-content-center my-5">
         <Col md={3} className="text-center text-md-start">
           <Image
-            src="/images/Left Lines.png"
+            src="/images/left_tech.png"
             alt="Left Tech"
             width={500}
             height={500}
@@ -75,7 +75,7 @@ export default function TechStack() {
         <Col md={3} className="text-end ps-5">
           <div>
             <Image
-              src="/images/Right Lines.png"
+              src="/images/right_tech.png"
               alt="Right Tech"
               width={500}
               height={500}

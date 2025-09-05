@@ -50,8 +50,8 @@ export default function SearchOpportunities() {
                     <Image
                       src="/images/search.png"
                       alt="search"
-                      width={30}
-                      height={30}
+                      width={25}
+                      height={25}
                       className="img-fluid"
                     />
                   </InputGroupText>
@@ -87,18 +87,17 @@ export default function SearchOpportunities() {
                       Search
                     </Button>
                   </div>
+                  <Button
+                    style={{
+                      backgroundColor: "#FFDE1F",
+                      color: "black",
+                    }}
+                    onClick={() => reset()}
+                    className="border-0 font-medium me-2 d-block d-lg-none"
+                  >
+                    Search
+                  </Button>
                 </InputGroup>
-                <Button
-                  size="lg"
-                  style={{
-                    backgroundColor: "#FFDE1F",
-                    color: "black",
-                  }}
-                  onClick={() => reset()}
-                  className="px-5 border-0 font-medium me-2 d-block d-lg-none"
-                >
-                  Search
-                </Button>
               </Col>
             </Form>
           </div>
