@@ -32,14 +32,15 @@ export default async function handler(
       port: 25,
       secure: false,
       auth: {
-        user: "shafiq.sarwar@entterprice.com",
-        pass: "cgwcghddhllslwfc",
+        user: "marketing@entterprice.com",
+        pass: "npytmvxsdpktvbgq",
       },
     });
 
     // Configure the email options
     const mailOptions = {
-      from: "shafiq.sarwar@entterprice.com",
+      // from: "shafiq.sarwar@entterprice.com",
+      from: "marketing@entterprice.com",
       to: email,
       subject: "Subscription Confirmation",
       text: `Dear ${Name} ${SurName},

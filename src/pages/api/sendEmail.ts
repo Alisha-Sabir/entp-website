@@ -30,8 +30,8 @@ export default async function handler(
       auth: {
         // user: process.env.SMTP_USER,
         // pass: process.env.SMTP_PASS,
-        user: "shafiq.sarwar@entterprice.com",
-        pass: "cgwcghddhllslwfc",
+        user: "marketing@entterprice.com",
+        pass: "npytmvxsdpktvbgq",
         // user: "noreply@entterprice.com",
         // pass: "wSy$tem@321*",
       },
@@ -54,12 +54,11 @@ export default async function handler(
       // from: `"${FirstName} ${LastName}" <shafiq.sarwar@entterprice.com>`, // your domain
       from: email,
       // replyTo: email, // user’s email
-      // to: [
-      //   "marketing@entterprice.com",
-      //   "info@entterprice.com",
-      //   "noreply@entterprice.com",
-      // ],
-      to: "shafiq.sarwar@entterprice.com",
+      to: [
+        "marketing@entterprice.com",
+        // "info@entterprice.com",
+      ],
+      // to: "shafiq.sarwar@entterprice.com",
       subject: "New Contact Form Submission",
       text: `You have a new contact form submission:
       First Name: ${FirstName}
